@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  rka-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: titan-rka-proxy
+    restart: unless-stopped
+    ports:
+      - "8090:8090"
+    volumes:
+      # Mount ADB keys for device authorization
+      - ~/.android:/root/.android:ro
+      # Mount USB devices for physical device access
+      - /dev/bus/usb:/dev/bus/usb
+    privileged: true  # Required for USB device access
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8090/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - titan-network
+    labels:
+      - "com.titan.service=rka-proxy"
+      - "com.titan.description=Remote Keybox Attestation Proxy"
+
+networks:
+  titan-network:
+    driver: bridge
+    name: titan-network

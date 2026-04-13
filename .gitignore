@@ -1,0 +1,167 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+!shared/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+*.py,cover
+.hypothesis/
+
+# Logs
+*.log
+*.log.*
+*.out
+
+# Environment variables (contain secrets)
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data files
+masscan_results.txt
+target_cidr_manifest.txt
+*.json
+*.pt
+yolov8n.pt
+
+# Generated outputs
+screenshots/
+frames/
+streaming_archive/
+verification_report_*.json
+stream_manifest_*.json
+*.html
+
+# Documentation (not needed for deployment)
+*.md
+*.txt
+ALL_SL_CAMERAS_STREAMING_GUIDE.md
+AUTONOMOUS_MODE_ACTIVATION.md
+AUTONOMOUS_QUICK_REFERENCE.md
+COMPLETE_REPOSITORY_TREE_GUIDE.md
+COMPREHENSIVE_CODEBASE_ANALYSIS.json
+CONTAINER_ESCAPE_EXECUTION_REPORT.md
+DEEP-CODEBASE-ANALYSIS.md
+DELIVERABLES-SUMMARY.md
+DELIVERABLES_COMPLETE.md
+DELIVERY_SUMMARY_COMPLETE.md
+DEPLOYMENT_COMPLETE.md
+DEVICE_SCAN_REPORT.md
+DIRECT_DEVICE_COMMANDS.md
+DOCUMENTATION_INDEX_MASTER.md
+EXECUTION_ONLY_ENFORCEMENT.md
+FINAL-AUDIT-REPORT.md
+GENESIS-PIPELINE-FIXES.md
+INJECTION_REPORT.md
+INTEGRATE_DEEPSEEK_CODER_6.7B.md
+LOCALHOST_DEPLOYMENT_COMPLETE.md
+MISSION_COMPLETE_SRI_LANKA_CAMERAS.txt
+MULTI_COUNTRY_CCTV_YOLO_REPORT.md
+ONEPLUS_DEVICE_TEST_RESULTS.md
+ONEPLUS_REAL_EXPERIMENT_REPORT.md
+PRODUCTION-DEPLOYMENT-GUIDE.md
+PRODUCTION_READINESS_REPORT.md
+QUICK_REFERENCE_CHEAT_SHEET.md
+README-WORK-COMPLETE.md
+REAL_EXECUTION_NOT_INSTRUCTIONS.md
+REAL_WORK_OPERATIONS_GUIDE.md
+REPOSITORY_TREE_VISUAL_INDEX_GUIDE.md
+SCREENSHOT_CAPTURE_VERIFICATION_COMPLETE.md
+STREAM_READY_COMPLETE.md
+TITAN_APEX_AUTHORITY_GRANT.md
+TITAN_APEX_AUTONOMOUS_V2_DEPLOYMENT.md
+TITAN_APEX_OPERATIONAL_VERIFICATION.md
+TOOLS_COMPREHENSIVE_REPORT.md
+TOOLS_TESTING_DELIVERABLES_INDEX.md
+TOOLS_TESTING_REPORT.md
+TOOLS_TESTING_SUMMARY.md
+UNIFIED_STREAM_ARCHIVE_COMPLETE.md
+VERIFICATION_COMPLETE_ALL_CAMERAS_LIVE.md
+VMOS Cloud API Documentation Research.txt
+VMOSPRO_CLOUD_INTEGRATION_SETUP.md
+VMOS_100EXPERIMENTS_README.md
+VMOS_CLOUD_ONEPLUS_100EXPERIMENTS_GUIDE.md
+VMOS_DEVICE_DEEP_ANALYSIS_REPORT.md
+WORK-COMPLETION-MARKER.txt
+Wallet Injection Success Rate.txt
+sec.txt
+
+# Reports and scans
+detection_scan.json
+scan_results.json
+vmos_complete_analysis_*.json
+vmos_escape_*.json
+vmos_oneplus_100exp_results_*.json
+all_sl_cameras_report_*.json
+sri_lanka_cam_hunt_*.json
+multi_country_cctv_scan_*.json
+screenshot_metadata_*.json
+screenshot_verification_cert_*.txt
+
+# Local development artifacts
+localhost_deployment/
+research-reports/
+titan-x-operations.log
+*.service
+
+# Binary/compiled files
+# bin/
+# build-deb.sh
+vmos_titan_symlink.sh
+run_container_escape.sh
+
+# Debian packaging (keep for installer)
+# debian/
+
+# Test data
+tests/
+tools_testing/
+research-reports/
+genesis_verification/
+purchase-validation/
+
+# Cache
+.pytest_cache/
+__pycache__/

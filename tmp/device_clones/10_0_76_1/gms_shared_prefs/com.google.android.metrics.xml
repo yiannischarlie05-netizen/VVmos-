@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="TelecomstatsPH_collection_config">CAA</string>
+    <boolean name="use_install_source_info" value="true" />
+    <boolean name="clearcut_dropbox_upload_system_app_wtf" value="false" />
+    <boolean name="SettingsStats__assist_gesture_enabled" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_data_app_native_crash" value="true" />
+    <boolean name="SettingsStats__preferred_network_mode1" value="true" />
+    <boolean name="SettingsStats__navigation_mode" value="true" />
+    <boolean name="BatteryStats__enabled" value="false" />
+    <long name="ControlledEventsFeature__ble_end_of_experimental_time_window_minutes" value="1020" />
+    <boolean name="clearcut_dropbox_upload_APANIC_CONSOLE" value="false" />
+    <boolean name="SettingsStats__enabled_notification_policy_access_packages" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_app_anr" value="196608" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_server_strictmode" value="4" />
+    <boolean name="ProcStats__enable_metric_filter" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_data_app_crash" value="true" />
+    <boolean name="SettingsStats__time_12_24" value="true" />
+    <long name="DropboxEntryCompression__compress_threshold_bytes" value="40960" />
+    <boolean name="SettingsStats__backup_enabled" value="true" />
+    <string name="DumpsysFlags__netstats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <long name="clearcut_dropbox_upload_qos_tier_system_server_watchdog" value="3" />
+    <long name="LauncherStats__record_interval_secs" value="86400" />
+    <boolean name="SettingsStats__night_display_custom_end_time" value="true" />
+    <boolean name="SettingsStats__night_display_auto_mode" value="true" />
+    <boolean name="SettingsStats__zen_mode_config_etag" value="false" />
+    <boolean name="enable_consent_api" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_app_crash" value="true" />
+    <boolean name="is_enabled" value="false" />
+    <boolean name="SettingsStats__sound_effects_enabled" value="true" />
+    <boolean name="SettingsStats__haptic_feedback_enabled" value="true" />
+    <boolean name="enable_new_unified_collection" value="true" />
+    <boolean name="DropBox__split_entries" value="true" />
+    <boolean name="clearcut_add_external_ids_log_source_BATTERY_STATS" value="true" />
+    <long name="AppErrors__dropbox_processing_throttling_interval_millis" value="10000" />
+    <long name="ControlledEventsFeature__wakelock_end_of_experimental_time_window_minutes" value="1020" />
+    <boolean name="EastworldError__include_daily_errors" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_SYSTEM_LAST_KMSG" value="196608" />
+    <string name="DropboxTagsV2__record_task_period_secs">CgQYwNEC</string>
+    <boolean name="disable_collection_of_layer_names_in_surfaceflinger_dumpsys" value="true" />
+    <boolean name="Eastworld__listen_for_dropbox_broadcast" value="false" />
+    <boolean name="MediaStats__upload_extractor" value="false" />
+    <string name="MediastatsPH_collection_config">CAA</string>
+    <boolean name="MediaStats__upload_recorder" value="true" />
+    <boolean name="SettingsStats__volume_alarm_speaker" value="true" />
+    <boolean name="NetStats__enabled" value="false" />
+    <boolean name="clearcut_dropbox_background_allowed_SYSTEM_LAST_KMSG" value="false" />
+    <boolean name="clearcut_dropbox_upload_data_app_strictmode" value="false" />
+    <boolean name="clearcut_dropbox_background_allowed_system_server_crash" value="false" />
+    <long name="DropBox__upload_interval_millis" value="600000" />
+    <boolean name="disable_multi_user_checkbox" value="false" />
+    <boolean name="SettingsStats__default_input_method" value="true" />
+    <long name="ControlledEventsFeature__wakeup_number_of_retries" value="3" />
+    <boolean name="SettingsStats__camera_double_tap_power_gesture_disabled" value="true" />
+    <boolean name="telephonystats_simple_dumpsys" value="false" />
+    <boolean name="clearcut_dropbox_background_allowed_data_app_crash" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_strictmode" value="0" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_app_native_crash" value="true" />
+    <boolean name="AppErrors__enable_filtered_error_reporting" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_SYSTEM_KFENCE_ERROR_REPORT" value="false" />
+    <long name="clearcut_dropbox_upload_qos_tier_data_app_crash" value="3" />
+    <string name="DropBox__logcat_start">(?m)^(stack:|memory near|\-\-\-\-\-\-\-\-\- beginning of)</string>
+    <boolean name="clearcut_dropbox_upload_strip_logcat_SYSTEM_LAST_KMSG" value="true" />
+    <string name="AppErrors__app_error_reporting_config">Cg8KBAIDBQYQgN3bARgBIAMQgJD70wkYGSDAzyQooJwBPW8SAztAAQ</string>
+    <boolean name="SettingsStats__assistant" value="true" />
+    <string name="DumpsysFlags__mediastats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <long name="ControlledEventsFeature__wakeup_wakelock_duration_millis" value="1000" />
+    <boolean name="MediaStats__upload_codec" value="true" />
+    <boolean name="SettingsStats__long_press_timeout" value="true" />
+    <boolean name="telecomstats_simple_dumpsys" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_data_app_strictmode" value="51200" />
+    <long name="clearcut_dropbox_upload_qos_tier_SYSTEM_LAST_KMSG" value="0" />
+    <boolean name="SettingsStats__bluetooth_on" value="true" />
+    <boolean name="SettingsStats__accelerometer_rotation" value="true" />
+    <boolean name="surfaceflinger_collect_metrics_only_for_games" value="false" />
+    <long name="clearcut_dropbox_upload_qos_tier_SubsystemRestart" value="2" />
+    <string name="DiskstatsPH_collection_config">CAA</string>
+    <boolean name="SettingsStats__doze_enabled" value="true" />
+    <boolean name="Eastworld__enable_eastworld_error_processor" value="false" />
+    <boolean name="EastworldError__handle_previous_day_metrics" value="true" />
+    <boolean name="SettingsStats__accessibility_display_daltonizer" value="true" />
+    <boolean name="Eastworld__listen_for_battery_broadcast" value="false" />
+    <boolean name="SettingsStats__volte_vt_enabled" value="true" />
+    <boolean name="NotificationStats__filter_first_party" value="true" />
+    <long name="ControlledEventsFeature__wakeup_number_of_alarms" value="3" />
+    <boolean name="SettingsStats__require_charging" value="true" />
+    <string name="DumpsysFlags__procstats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <boolean name="SettingsStats__doze_pulse_on_double_tap" value="true" />
+    <boolean name="NotificationStats__use_max_notification_stats_size" value="true" />
+    <boolean name="SettingsStats__lock_to_app_enabled" value="true" />
+    <string name="ElmyrastatsPH_collection_config">CAA</string>
+    <boolean name="SettingsStats__assist_gesture_sensitivity" value="true" />
+    <boolean name="SettingsStats__wfc_ims_mode" value="true" />
+    <boolean name="ControlledEventsFeature__wakelock_busy" value="false" />
+    <boolean name="MediaStats__upload_audiothread" value="true" />
+    <boolean name="DropBox__enabled" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_watchdog" value="true" />
+    <boolean name="SettingsStats__wfc_ims_enabled" value="true" />
+    <boolean name="MediaStats__upload_mediadrm" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_native_crash" value="true" />
+    <string name="surfaceflinger_metrics_collection_package_name_allowlist">CiVjb20uZ29vZ2xlLmFuZHJvaWQuYXBwcy5uZXh1c2xhdW5jaGVyChpjb20uZ29vZ2xlLmFuZHJvaWQueW91dHViZQoSY29tLmFuZHJvaWQuY2hyb21lChxjb20uZ29vZ2xlLmFuZHJvaWQuYXBwcy5tYXBzCh9jb20uZ29vZ2xlLmFuZHJvaWQuR29vZ2xlQ2FtZXJhCh1jb20uZ29vZ2xlLmFuZHJvaWQuY2FsY3VsYXRvcgobY29tLmdvb2dsZS5hbmRyb2lkLmNhbGVuZGFyChVjb20uZ29vZ2xlLmFuZHJvaWQuZ20KIWNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLm1lc3NhZ2luZwojY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMucGxheWNvbnNvbGU</string>
+    <boolean name="clearcut_dropbox_upload_system_server_wtf" value="false" />
+    <boolean name="SettingsStats__mobile_data" value="true" />
+    <boolean name="clearcut_dropbox_upload_SubsystemRestart" value="false" />
+    <boolean name="AppErrors__only_report_filtered_crashes_once" value="true" />
+    <boolean name="Eastworld__disable_counters" value="true" />
+    <string name="NotificationstatsPH_collection_config">CAA</string>
+    <boolean name="is_errorstats_dogfooder" value="false" />
+    <boolean name="SettingsStats__hide_rotation_lock_toggle_for_accessibility" value="true" />
+    <boolean name="disable_multi_user_lockbox" value="false" />
+    <string name="DumpsysFlags__ipconnectivitystats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <boolean name="SettingsStats__show_password" value="true" />
+    <string name="StoragedPH_collection_config">CAA</string>
+    <boolean name="skip_upload_non_existing_dump_file" value="true" />
+    <boolean name="SettingsStats__development_settings_enabled" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_app_native_crash" value="true" />
+    <boolean name="AppErrors__enable_unfiltered_error_sampling_rate" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_data_app_strictmode" value="true" />
+    <boolean name="SettingsStats__pointer_speed" value="true" />
+    <boolean name="EastworldError__ignore_package_version" value="true" />
+    <boolean name="clearcut_dropbox_background_allowed_SYSTEM_CRASH_REPORT" value="false" />
+    <boolean name="use_facs" value="false" />
+    <boolean name="add_external_experiment_ids" value="true" />
+    <boolean name="LauncherStats__enabled" value="false" />
+    <string name="StatsFlags__periodic_task_fixed_flex_secs">CgMYwEMqAxjwAQ</string>
+    <boolean name="clearcut_dropbox_background_allowed_data_app_anr" value="false" />
+    <long name="clearcut_dropbox_upload_qos_tier_data_app_anr" value="0" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_server_anr" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_watchdog" value="196608" />
+    <long name="clearcut_dropbox_upload_qos_tier_SYSTEM_TOMBSTONE" value="0" />
+    <string name="DumpsysFlags__notificationstats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <string name="ProcstatsPH_collection_config">CAA</string>
+    <long name="BatteryStats__record_interval_secs" value="7200" />
+    <boolean name="EastworldError__include_totals" value="true" />
+    <boolean name="SettingsStats__sms_default_application" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_APANIC_CONSOLE" value="0" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_app_strictmode" value="51200" />
+    <boolean name="drop_logs_on_api_failure" value="false" />
+    <string name="StatsFlags__periodic_task_use_fixed_flex">CgIIACoCCAE</string>
+    <boolean name="clearcut_dropbox_background_allowed_data_app_native_crash" value="false" />
+    <boolean name="SettingsStats__backup_settings_opt_in" value="true" />
+    <boolean name="DropBox__is_charging_required" value="false" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_app_strictmode" value="true" />
+    <boolean name="clearcut_dropbox_background_allowed_system_server_native_crash" value="false" />
+    <boolean name="SettingsStats__screen_brightness_mode" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_server_watchdog" value="true" />
+    <boolean name="SettingsStats__enabled_accessibility_services" value="true" />
+    <boolean name="SettingsStats__adaptive_sleep" value="true" />
+    <boolean name="SettingsStats__doze_always_on" value="true" />
+    <boolean name="SettingsStats__lock_screen_custom_clock_face" value="true" />
+    <boolean name="SettingsStats__low_power" value="true" />
+    <boolean name="SettingsStats__backup_enabled_call_log" value="true" />
+    <boolean name="clearcut_dropbox_background_allowed_SYTEM_TOMBSTONE" value="false" />
+    <string name="surfaceflinger_layer_name_to_package_name_regex_list">ChgoKD86XHcrXC4pK1x3KykoPz1cLy4rJCk</string>
+    <boolean name="SettingsStats__screen_brightness" value="true" />
+    <string name="log_source_list">DISK_STATS,FINGERPRINT_STATS,GRAPHICS_STATS,NOTIFICATION_STATS,PROC_STATS,DROP_BOX,BATTERY_STATS,SETTINGS_STATS,NETSTATS,STORAGED,MEDIA_STATS,LAUNCHER_STATS</string>
+    <long name="clearcut_dropbox_upload_qos_tier_SYSTEM_RECOVERY_LOG" value="4" />
+    <boolean name="MediaStats__upload_audiorecord" value="true" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_app_native_crash" value="3" />
+    <boolean name="SettingsStats__low_power_trigger_level" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_SYSTEM_KASAN_ERROR_REPORT" value="false" />
+    <string name="DumpsysFlags__graphicsstats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <boolean name="SettingsStats__speak_password" value="true" />
+    <boolean name="SettingsStats__user_full_data_backup_aware" value="true" />
+    <boolean name="DropBox__updated_collection_defaults" value="false" />
+    <boolean name="DropBox__enable_error_sessions" value="false" />
+    <boolean name="SettingsStats__lock_screen_lock_after_timeout" value="true" />
+    <boolean name="SettingsStats__enable_accessibility_global_gesture_enabled" value="true" />
+    <boolean name="SettingsStats__vibrate_when_ringing" value="true" />
+    <boolean name="clearcut_dropbox_upload_system_server_strictmode" value="false" />
+    <boolean name="attach_key_attestation" value="true" />
+    <long name="ControlledEventsFeature__wakeup_end_of_experimental_time_window_minutes" value="1020" />
+    <boolean name="use_installer_package_index_in_collector_task" value="true" />
+    <string name="StatsFlags__periodic_task_update_current_task">CgIYASoCGAI</string>
+    <boolean name="SettingsStats__dialer_default_application" value="true" />
+    <boolean name="MediaStats__upload_nuplayer" value="true" />
+    <boolean name="SettingsStats__high_text_contrast_enabled" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_server_pre_watchdog" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_SYSTEM_RECOVERY_LOG" value="false" />
+    <boolean name="SettingsStats__screen_auto_brightness_adj" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_pre_watchdog" value="196608" />
+    <boolean name="SettingsStats__zen_mode" value="true" />
+    <boolean name="StatsFlags__use_form_factor_default_value_for_task_params" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_strictmode" value="false" />
+    <boolean name="SettingsStats__assist_gesture_wake_enabled" value="true" />
+    <boolean name="SettingsStats__night_display_custom_start_time" value="true" />
+    <boolean name="clearcut_dropbox_upload_data_app_wtf" value="false" />
+    <boolean name="SettingsStats__accessibility_display_inversion_enabled" value="true" />
+    <long name="SettingsStats__qos" value="0" />
+    <boolean name="SettingsStats__ui_night_mode" value="true" />
+    <long name="ControlledEventsFeature__wakelock_duration_millis" value="1000" />
+    <boolean name="use_phenotype_flags_for_settings_stats" value="true" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_server_native_crash" value="3" />
+    <boolean name="MediaStats__upload_audiotrack" value="true" />
+    <boolean name="SettingsStats__accessibility_captioning_enabled" value="true" />
+    <boolean name="AppErrors__enable_app_crash_prompt_throttling" value="true" />
+    <boolean name="SettingsStats__lock_screen_show_notifications" value="true" />
+    <boolean name="SettingsStats__enabled_notification_listeners" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_anr" value="true" />
+    <boolean name="MediaStats__upload_widevinedrm" value="true" />
+    <string name="Settingsstats__record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_pre_watchdog" value="true" />
+    <boolean name="SettingsStats__lockscreen_sounds_enabled" value="true" />
+    <long name="clearcut_dropbox_upload_qos_tier_SYSTEM_KFENCE_ERROR_REPORT" value="0" />
+    <long name="ControlledEventsFeature__wakeup_start_of_experimental_time_window_minutes" value="540" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_SYSTEM_CRASH_REPORT" value="true" />
+    <boolean name="SettingsStats__volume_music_speaker" value="true" />
+    <boolean name="clearcut_dropbox_background_allowed_system_server_anr" value="false" />
+    <boolean name="SettingsStats__night_display_activated" value="true" />
+    <boolean name="SettingsStats__nfc_payment_foreground" value="true" />
+    <boolean name="clearcut_dropbox_upload_system_server_lowmem" value="false" />
+    <boolean name="SettingsStats__install_non_market_apps" value="true" />
+    <boolean name="MediaStats__upload_audiopolicy" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_SYSTEM_RECOVERY_LOG" value="0" />
+    <string name="DumpsysFlags__wifistats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <long name="clearcut_dropbox_upload_max_bytes_data_app_native_crash" value="51200" />
+    <boolean name="extract_apk_signing_certificates_hash_in_collector_task" value="true" />
+    <boolean name="SettingsStats__night_display_color_temperature" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_lowmem" value="51200" />
+    <boolean name="SettingsStats__auto_time" value="true" />
+    <boolean name="SettingsStats__volume_ring_speaker" value="true" />
+    <string name="BatterystatsV2__record_task_period_secs">CgMYoDgqAxjYBA</string>
+    <boolean name="SettingsStats__backup_auto_restore" value="true" />
+    <boolean name="clearcut_dropbox_upload_SYSTEM_RECOVERY_LOG" value="false" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_APANIC_CONSOLE" value="false" />
+    <boolean name="clearcut_dropbox_upload_realtime_SYSTEM_CRASH_REPORT" value="true" />
+    <boolean name="SettingsStats__lock_to_app_exit_locked" value="true" />
+    <boolean name="clearcut_add_external_ids_log_source_DROP_BOX" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_app_anr" value="true" />
+    <boolean name="SettingsStats__automatic_power_saver_mode" value="true" />
+    <boolean name="SettingsStats__assist_screenshot_enabled" value="true" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_app_crash" value="3" />
+    <boolean name="clearcut_dropbox_upload_realtime_SYSTEM_LAST_KMSG" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_data_app_wtf" value="51200" />
+    <long name="connectionless_timeout_seconds" value="15" />
+    <long name="attestation_keycert_retry_count" value="4" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_app_anr" value="0" />
+    <boolean name="SettingsStats__doze_pulse_on_pick_up" value="true" />
+    <boolean name="fix_get_qos_tier" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_anr" value="196608" />
+    <boolean name="disable_weak_register" value="false" />
+    <boolean name="mediastats_simple_dumpsys" value="false" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_SYSTEM_TOMBSTONE" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_data_app_crash" value="51200" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_SubsystemRestart" value="true" />
+    <string name="DumpsysFlags__diskstats_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <boolean name="SettingsStats__font_scale" value="true" />
+    <boolean name="use_connectionless" value="true" />
+    <boolean name="SettingsStats__assist_structure_enabled" value="true" />
+    <boolean name="BatteryStats__collect_dogfooder_battery_stats" value="false" />
+    <boolean name="stop_duplicate_heartbeat" value="false" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_data_app_anr" value="true" />
+    <string name="GnssmetricsPH_collection_config">CAA</string>
+    <boolean name="SettingsStats__dtmf_tone" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_data_app_anr" value="196608" />
+    <boolean name="DropBox__log_derived_apk_id" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_app_native_crash" value="102400" />
+    <string name="StatsFlags__initial_task_update_current_task">CgIYASoCGAI</string>
+    <long name="AppErrors__app_crash_prompt_throttling_max_notifications" value="2" />
+    <boolean name="clearcut_dropbox_background_allowed_system_app_crash" value="false" />
+    <boolean name="ControlledEventsFeature__enable_controlled_events" value="false" />
+    <boolean name="SettingsStats__data_roaming" value="true" />
+    <string name="TelephonystatsPH_collection_config">CAA</string>
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_wtf" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_SYSTEM_KFENCE_ERROR_REPORT" value="true" />
+    <boolean name="SettingsStats__display_color_mode" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_app_crash" value="true" />
+    <boolean name="MediaStats__upload_unhandled_fields" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_SYSTEM_KASAN_ERROR_REPORT" value="196608" />
+    <long name="ControlledEventsFeature__ble_start_of_experimental_time_window_minutes" value="540" />
+    <string name="IpconnectivitystatsPH_collection_config">CAA</string>
+    <string name="WifistatsPH_collection_config">CAA</string>
+    <boolean name="ControlledEventsFeature__enable_wakeup_experiment" value="false" />
+    <boolean name="SettingsStats__lock_screen_allow_private_notifications" value="true" />
+    <boolean name="Eastworld__enable_eastworld_battery_processor" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_SYSTEM_KFENCE_ERROR_REPORT" value="196608" />
+    <long name="clearcut_dropbox_upload_max_bytes_SYSTEM_TOMBSTONE" value="51200" />
+    <boolean name="SettingsStats__auto_time_zone" value="true" />
+    <long name="SettingsStats__record_interval_secs" value="86400" />
+    <boolean name="ipconnectivitytats_simple_dumpsys" value="false" />
+    <string name="GraphicsstatsPH_collection_config">CAA</string>
+    <boolean name="graphicsstats_simple_dumpsys" value="false" />
+    <string name="DumpsysFlags__surfaceflinger_record_task_period_secs">CgQYgKMFKgMY2AQ</string>
+    <boolean name="ControlledEventsFeature__enable_ble_experiment" value="false" />
+    <boolean name="use_phenotype_flags_for_dropbox_task" value="true" />
+    <long name="DropBox__max_split" value="100" />
+    <long name="Eastworld__eastworld_alarm_frequency" value="7200000" />
+    <boolean name="di_check" value="true" />
+    <boolean name="clearcut_dropbox_background_allowed_system_app_anr" value="false" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_app_anr" value="true" />
+    <long name="clearcut_dropbox_upload_qos_tier_APANIC_CONSOLE" value="4" />
+    <boolean name="notificationstats_simple_dumpsys" value="false" />
+    <boolean name="SettingsStats__status_bar_show_battery_percent" value="true" />
+    <boolean name="disable_dropbox_bookmark" value="false" />
+    <long name="ControlledEventsFeature__user_opted_in_cache_timeout_millis" value="60000" />
+    <boolean name="Eastworld__switch_to_sqlite" value="true" />
+    <long name="ControlledEventsFeature__wakelock_start_of_experimental_time_window_minutes" value="540" />
+    <boolean name="SettingsStats__tts_default_rate" value="true" />
+    <string name="StatsFlags__initial_task_requires_device_idle">CgIIACoCCAA</string>
+    <long name="NotificationStats__max_notification_stats_size" value="1048576" />
+    <boolean name="SettingsStats__ble_scan_always_enabled" value="true" />
+    <boolean name="BatteryStats__filter_history" value="true" />
+    <boolean name="SettingsStats__adaptive_battery_management_enabled" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_SYSTEM_KASAN_ERROR_REPORT" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_SubsystemRestart" value="196608" />
+    <boolean name="SettingsStats__airplane_mode_on" value="true" />
+    <boolean name="SettingsStats__enabled_print_services" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_SubsystemRestart" value="true" />
+    <boolean name="ControlledEventsFeature__enable_wakelock_experiment" value="false" />
+    <string name="StatsFlags__dropbox_initial_task_max_start_secs">CgQYgKMFEgMYhAcqAhh4</string>
+    <long name="clearcut_dropbox_upload_qos_tier_data_app_native_crash" value="3" />
+    <long name="ControlledEventsFeature__wakeup_alarm_interval_seconds" value="120" />
+    <string name="strip_after_regexp_system_tombstone"></string>
+    <boolean name="SettingsStats__notification_light_pulse" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_server_native_crash" value="true" />
+    <boolean name="drop_specific_security_exceptions" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_wtf" value="102400" />
+    <boolean name="SettingsStats__backup_enabled:com.android.providers.telephony" value="true" />
+    <boolean name="SettingsStats__assist_gesture_silence_alerts_enabled" value="true" />
+    <boolean name="SettingsStats__enabled" value="false" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_server_crash" value="3" />
+    <long name="AppErrors__app_crash_prompt_throttling_interval_seconds" value="86400" />
+    <boolean name="fingerprintstats_simple_dumpsys" value="false" />
+    <boolean name="CollectionExceptionFeedbackRate__enable_collection_exception_feedback" value="false" />
+    <string name="Launcherstats__record_task_period_secs">CgQYgPUkKgMY2AQ</string>
+    <boolean name="SettingsStats__assist_gesture_setup_complete" value="true" />
+    <long name="MediaStats__max_content_length" value="1000" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_data_app_wtf" value="true" />
+    <boolean name="clearcut_dropbox_upload_system_app_strictmode" value="false" />
+    <float name="collection_exception_silent_feedback_rate" value="0.0" />
+    <boolean name="SettingsStats__theme_customization_overlay_packages" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_data_app_anr" value="true" />
+    <boolean name="SettingsStats__accessibility_display_magnification_enabled" value="true" />
+    <boolean name="clearcut_dropbox_upload_realtime_data_app_crash" value="true" />
+    <boolean name="Eastworld__enable_eastworld" value="true" />
+    <string name="StatsFlags__initial_task_window_length_secs">CgIYPCoDGPAB</string>
+    <boolean name="SettingsStats__incall_power_button_behavior" value="true" />
+    <boolean name="SettingsStats__screen_off_timeout" value="true" />
+    <boolean name="SettingsStats__location_providers_allowed" value="true" />
+    <boolean name="clearcut_dropbox_background_allowed_system_app_native_crash" value="false" />
+    <boolean name="SettingsStats__charging_sounds_enabled" value="true" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_server_pre_watchdog" value="0" />
+    <boolean name="SettingsStats__accessibility_enabled" value="true" />
+    <boolean name="wifistats_simple_dumpsys" value="false" />
+    <boolean name="SettingsStats__wifi_scan_always_enabled" value="true" />
+    <long name="DropBox__record_interval_secs" value="14400" />
+    <string name="FingerprintstatsPH_collection_config">CAA</string>
+    <boolean name="SettingsStats__accessibility_display_daltonizer_enabled" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_app_wtf" value="true" />
+    <boolean name="clearcut_dropbox_background_allowed_system_server_watchdog" value="false" />
+    <boolean name="procstats_simple_dumpsys" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_native_crash" value="51200" />
+    <boolean name="SettingsStats__wifi_on" value="true" />
+    <string name="ProcStats__black_list_metrics">PROC_ALL,PKG_SVC_ALL,SYS_MEM_ALL</string>
+    <long name="clearcut_dropbox_upload_qos_tier_SYSTEM_CRASH_REPORT" value="0" />
+    <boolean name="clearcut_dropbox_upload_realtime_system_server_crash" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_crash" value="true" />
+    <long name="__phenotype_configuration_version" value="1774621500" />
+    <boolean name="SettingsStats__spell_checker_enabled" value="true" />
+    <string name="__phenotype_server_token">CAMSFg0T2-HnDgcXqgXUBQbABkIEXQTmBgM=</string>
+    <boolean name="Eastworld__enable_eastworld_daily_heartbeat_processor" value="false" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_app_crash" value="51200" />
+    <boolean name="Eastworld__enable_client_app_usage" value="false" />
+    <boolean name="EastworldError__ignore_empty_logs" value="true" />
+    <boolean name="SettingsStats__notification_bubbles" value="true" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_server_crash" value="51200" />
+    <string name="strip_after_regexp_system_server_native_crash"></string>
+    <string name="__phenotype_snapshot_token"> com.google.android.metrics 223 1 475845853 com.google.android.metrics  0</string>
+    <boolean name="surfaceflinger_simple_dumpsys" value="false" />
+    <long name="ControlledEventsFeature__ble_duration_millis" value="1000" />
+    <long name="clearcut_dropbox_upload_max_bytes_SYSTEM_CRASH_REPORT" value="196608" />
+    <boolean name="DropboxEntryCompression__enable_compression" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_system_server_lowmem" value="true" />
+    <long name="clearcut_dropbox_upload_qos_tier_system_server_anr" value="3" />
+    <long name="Eastworld__eastworld_battery_interval" value="14400000" />
+    <long name="clearcut_dropbox_upload_max_bytes_system_app_wtf" value="51200" />
+    <long name="clearcut_dropbox_upload_qos_tier_SYSTEM_KASAN_ERROR_REPORT" value="0" />
+    <boolean name="clearcut_dropbox_upload_realtime_SYSTEM_TOMBSTONE" value="true" />
+    <boolean name="clearcut_dropbox_upload_strip_logcat_data_app_native_crash" value="true" />
+    <boolean name="extract_apk_signing_certificates_hash_in_dropbox_util" value="true" />
+    <long name="AppErrors__dropbox_processing_throttling_max_times" value="5" />
+    <boolean name="diskstats_simple_dumpsys" value="false" />
+    <string name="StatsFlags__periodic_task_requires_device_idle">CgIIACoCCAA</string>
+</map>

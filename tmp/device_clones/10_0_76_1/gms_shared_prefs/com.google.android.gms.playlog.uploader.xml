@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="ClearcutUploader__brotli_window_size" value="22" />
+    <long name="plc_bytes_lru_cache_size" value="100" />
+    <string name="force_upload_api_caller_allowlist">Cjljb20uZ29vZ2xlLmFuZHJvaWQuYXBwcy5wbGF5LmJhdHRsZXN0YXIucGxheWNsaWVudHNlcnZpY2UKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXM</string>
+    <boolean name="ClearcutClientSideMonitoring__enabled" value="true" />
+    <long name="log_file_age_cutoff_millis" value="604800000" />
+    <long name="ClearcutUploader__read_timeout_millis" value="60000" />
+    <long name="ClearcutFunnel__buffer_size" value="81920" />
+    <string name="ClearcutUploader__network_attribution_allowlist">Cidjb20uZ29vZ2xlLmFuZHJvaWQuZ29vZ2xlcXVpY2tzZWFyY2hib3gKHGNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLm1hcHMKKWNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLmlucHV0bWV0aG9kLmxhdGluCiFjb20uZ29vZ2xlLmFuZHJvaWQuYXBwcy5tZXNzYWdpbmcKHmNvbS5nb29nbGUuYW5kcm9pZC5hcHBzLnBob3RvcwogY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMubWVldGluZ3MKFWNvbS5nb29nbGUuYW5kcm9pZC5nbQodY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMudHljaG8</string>
+    <boolean name="ClearcutLogStore__skip_drop_counters_when_metalogs_are_not_sampled" value="false" />
+    <boolean name="ClearcutLogStore__catch_eofexception_read_logs" value="false" />
+    <long name="ClearcutBackstop__task_interval_millis" value="86400000" />
+    <long name="qos_unmetered_or_daily_wait_charging_millis" value="0" />
+    <long name="qos_default_task_interval_millis" value="3600000" />
+    <boolean name="ClearcutMetalog__skip_metalogs_when_not_sampled" value="false" />
+    <string name="ClearcutLogOperation__caller_restrictions">CAESDAoIQURTSElFTEQQahIUCg9BTkRST0lEX1dFQlZJRVcQqAQSDwoKQVJDT1JFX1NESxCKCBIICgRDQVNUEEMSEQoMQklTS0lfQ0xJRU5UEN8GEhQKD0NBQlJJT19DT05TVU1FUhCwCBISCg1DQVJSSUVSX1NFVFVQENAFEgwKB0NPTkNPUkQQ/QMSGQoUQ09OTkVDVElWSVRZX01PTklUT1IQjAYSHAoXRklSRUJBU0VfSU5BUFBNRVNTQUdJTkcQ2wUSFAoPRklSRUJBU0VfTUxfU0RLEMsFEg0KCEZJUkVQRVJGEM4DEhYKEUZJUkVQRVJGX0FVVE9QVVNIEM0DEhsKFkZJUkVQRVJGX0lOVEVSTkFMX0hJR0gQpAUSGgoVRklSRVBFUkZfSU5URVJOQUxfTE9XEKMFEiUKIEdPT0dMRV9QREZfVklFV0VSX0FORFJPSURfUFJJTUVTEJsJEgkKBEdMQVMQpAkSDAoHR01BX1NESxC+AxIVChBHTUFfU0RLX0NPVU5URVJTEL8DEhAKDEdNTV9DT1VOVEVSUxBNEhoKFUdNTV9SRUFMVElNRV9DT1VOVEVSUxDKCxILCgdHTU1fVUUzEG4SBgoCTEUQERIMCghNQVBTX0FQSRBPEhYKEU1BUFNfQVBJX0NPVU5URVJTEI8BEhIKDU1PREVNX01FVFJJQ1MQ2gYSCgoFT01BRE0Q5QYSFQoQT1JOQU1FTlRfQU5EUk9JRBDyBxIMCgdPVkVSTEFZENAIEhsKFk9WRVJMQVlfQU5EUk9JRF9QUklNRVMQ7AgSDwoKUERGX1ZJRVdFUhC+ARISCg1QSVhFTF9IV19JTkZPENIEEhIKDVBPV0VSX0FOT01BTFkQvgYSGgoVVEVUSEVSSU5HX0VOVElUTEVNRU5UEMcFEgoKBlZJU0lPThBkEhMKDldGQ19BQ1RJVkFUSU9OEM0FEhgKE0ZJVEJJVF9BTkRST0lEX1dFQVIQ5g8iGAoTQU5EUk9JRF9NTF9QTEFURk9STRCUDCIeChlURkxJVEVfSU5GRVJFTkNFX0NPVU5URVJTEPIMIhsKFkFORFJPSURfTUxfUExBVEZPUk1fM1AQ0A0iIQocVEZMSVRFX0lORkVSRU5DRV9DT1VOVEVSU18zUBDRDSIUCg9XQUxMRVRfRFlOQU1JVEUQrg8iCwoGTUFQUzNEEI8V</string>
+    <long name="ClearcutUploader__brotli_compression_level" value="10" />
+    <string name="ClearcutUploader__compression_strategy">BROTLI_ONLY</string>
+    <long name="max_storage_size_bytes" value="10485760" />
+    <boolean name="ClearcutLogOperation__applied_sampling_rate" value="true" />
+    <long name="qos_unmetered_task_interval_millis" value="3600000" />
+    <long name="__phenotype_configuration_version" value="1775543100" />
+    <string name="ClearcutLogStore__compression_algorithm_for_flat_file">NONE</string>
+    <boolean name="ClearcutUploader__override_wear_qos_tier" value="false" />
+    <boolean name="ClearcutUploader__use_flag_value_for_task_parameters" value="true" />
+    <string name="batch_server_url">https://play.googleapis.com/log/batch</string>
+    <string name="__phenotype_server_token">CAMSBw0CmoTbCwM=</string>
+    <long name="max_entries_in_file_cache" value="40" />
+    <long name="max_log_requests_batched" value="100" />
+    <long name="ApiTimeOut__pseudonymous_id_api_timeout_ms" value="250" />
+    <long name="ClearcutUploader__qos_default_task_flex_override_seconds" value="0" />
+    <long name="ClearcutLogStore__max_entries_in_file_cache" value="400" />
+    <string name="__phenotype_snapshot_token"> com.google.android.gms.playlog.uploader 229 8 846981079 com.google.android.gms.playlog.uploader 846981079 1</string>
+    <boolean name="timestamp_events_kill_switch" value="false" />
+    <boolean name="ClearcutLogOperation__log_3p_log_senders" value="false" />
+    <boolean name="ClearcutUploader__switch_to_pseudonymous_api" value="false" />
+    <boolean name="ClearcutBackstop__enabled" value="true" />
+    <long name="ClearcutBackstop__check_last_successful_upload_millis" value="259200000" />
+    <long name="connection_timeout_millis" value="30000" />
+    <boolean name="ClearcutUploader__qos_default_task_requires_device_idle" value="false" />
+    <string name="ClearcutLogStore__log_cap_policy">CICAQBIbChRBQ1RJVklUWV9SRUNPR05JVElPThCAgMACEhUKDkFHU0FfQVNTSVNUQU5UEICAgAESFgoPQUdTQV9HT09HTEVfQVBQEICAgAUSEgoLQUdTQV9MRUdBQ1kQgIDAAhIQCglBR1NBX0xFTlMQgICAARIcCg9BSUFJX01BVENITUFLRVIQgIDA////////ARITCgxBTkRST0lEX0FVVEgQgICAAhIUCg1BTkRST0lEX0dNQUlMEICAwAQSEgoLQU5EUk9JRF9HU0EQgICABRIhChpBTkRST0lEX0dTQV9BTkRST0lEX1BSSU1FUxCAgMADEhcKEUFORFJPSURfTUVTU0FHSU5HEICAYBIYChFBTkRST0lEX01FU1NBR0lORxCAgJABEhkKDEFQUF9VU0FHRV8xUBCAgMD///////8BEhMKDEFUVl9MQVVOQ0hFUhCAgIADEhQKDUJBVFRFUllfU1RBVFMQgIDABBIZCgxCSVNLSV9DTElFTlQQgIDA////////ARISCgVCT09LUxCAgMD///////8BEg8KCENBTEVOREFSEICAgAESFgoPQ0FMRU5EQVJfQ0xJRU5UEICAgAISHAoVQ0FMRU5EQVJfVU5JRklFRF9TWU5DEICAgAMSCgoDQ0FSEICAwAISFwoQQ0FSUklFUl9TRVJWSUNFUxCAgKACEhYKD0NBU1RfU0VOREVSX1NESxCAgMAEEgwKBUNISU1FEICAgAESEQoKQ0hST01FU1lOQxCAgMAEEhoKE0NMSUVOVF9MT0dHSU5HX1BST0QQgIDgBBIWCg9DT05URVhUX01BTkFHRVIQgIDABBIQCgpDUk9ORVRfR01NEICAYBIMCgVEUklWRRCAgKAEEg8KCERST1BfQk9YEICAwAcSDwoIRklSRVBFUkYQgIDAAxIXChBGSVRORVNTX0dNU19DT1JFEICAgAUSCgoDR0NNEICAgAISEQoKR0VPX0FSX0xJQhCAgIAFEhgKEUdNQUlMX1NZTkNfSEVBTFRIEICAgAQSEwoMR01NX0NPVU5URVJTEICAgAESEQoKR01NX1BSSU1FUxCAgIAFEg4KB0dNTV9VRTMQgIDAAxIWCg9HTVNfQ09SRV9QRU9QTEUQgIDABBIVCg5HUkFQSElDU19TVEFUUxCAgIACEhUKCEhFUlJFVkFEEICAwP///////wESDAoFSUNJTkcQgIDgBBIYChFJREVOVElUWV9GUk9OVEVORBCAgIADEhAKCUxBVElOX0lNRRCAgOACEgwKBUxCX0FTEICAgAYSEgoLTEJfQ09VTlRFUlMQgICAAhILCgRMQl9EEICAwAESCwoETEJfVBCAgMACEg8KCE1BUFNfQVBJEICAoAISEgoLTUVESUFfU1RBVFMQgIDAAhIbChRNRUVUSU5HU19MT0dfUkVRVUVTVBCAgKAIEhcKEE1FVEFMT0dfQ09VTlRFUlMQgIDAARIZChJOT1RJRklDQVRJT05fU1RBVFMQgICAAhILCgROT1ZBEICAwAcSHwoZUEFJU0FfVVNFUl9BTkRST0lEX1BSSU1FUxCAgGASGgoTUEVPUExFX0FVVE9DT01QTEVURRCAgIAFEhAKCVBIRU5PVFlQRRCAgMAEEg0KBlBIT1RPUxCAgMACEhwKFVBIT1RPU19BTkRST0lEX1BSSU1FUxCAgIACEh4KGFBIT1RPU19HT19BTkRST0lEX1BSSU1FUxCAgGASHgoXUExBVEZPUk1fU1RBVFNfQ09VTlRFUlMQgIDAAhINCgZQUkVTVE8QgIDAARIRCgpQUk9DX1NUQVRTEICAgAMSFAoNUk9CSU5fQU5EUk9JRBCAgIACEiAKGVNFQVJDSExJVEVfQU5EUk9JRF9QUklNRVMQgIDABhIdChZTVFJFQU1aX1BIT1RPU19BTkRST0lEEICAwAkSGgoTVEFDSFlPTl9MT0dfUkVRVUVTVBCAgIAEEg8KCVRSQU5TTEFURRCAgGASHwoYVFJBTlNMQVRFX0FORFJPSURfUFJJTUVTEICAgAESCwoEVFJPThCAgIAFEhEKC1RWX0xBVU5DSEVSEICAYBIQCglXRVNUV09STEQQgICAAxIVCg5XSUZJX0FTU0lTVEFOVBCAgIAFEhwKFVdJRklfQVNTSVNUQU5UX1BSSU1FUxCAgIACGAA</string>
+    <float name="ClearcutLogOperation__user_consent_state_sampling_rate" value="0.01" />
+    <boolean name="ClearcutUploader__enable_network_attribution" value="true" />
+    <long name="ClearcutBackstop__task_initial_delay_millis" value="300000" />
+    <boolean name="ClearcutUploader__enable_network_attribution_allowlist" value="true" />
+    <boolean name="ClearcutLogSamplerV2__enabled" value="false" />
+    <boolean name="ClearcutUploader__enable_loading_native_brotli_lib" value="true" />
+    <boolean name="ClearcutUploader__skip_cookie_header_quoting" value="false" />
+    <boolean name="ClearcutLogOperation__collect_global_checkbox_user_consent_state" value="false" />
+    <string name="ClearcutLogOperation__webview_version_info_allowlist">ChFDTE9VRERQQ19DTEVBUkNVVAoIRFJPUF9CT1gKCEdNU19DT1JFCglXRVNUV09STEQ</string>
+    <long name="qos_unmetered_or_daily_wait_unmetered_millis" value="72000000" />
+    <long name="ClearcutUploader__wear_qos_tier_override_value" value="0" />
+</map>

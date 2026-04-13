@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="log_metadata175721243">ChII3fCAmwQQ0ZPCvtczGJkLKAAKEgj+iLSGBBDxq/Wp1zMYmQsoAAoSCP6i5/EDEPLFqJXXMxiZ&#10;CygAChII5ueA3QMQ2YrCgNczGJkLKAAKEgi2l5/IAxCpuuDr1jMYmQsoAAoSCJDZpLMDEIT85dbW&#10;MxiZCygAChIIubvMngMQrd6NwtYzGJkLKAAKEgi/p++JAxCzyrCt1jMYmQsoAAoSCJyFlfUCEJCo&#10;1pjWMxiZCygAChIIq9HG4AIQpvSHhNYzGJkLKAAKEgiR/L3LAhCMn//u1TMYmQsoAAoSCOvHzbYC&#10;EObqjtrVMxiZCygAChII387yoQIQ2vGzxdUzGJkLKAAKEgiQoqWNAhCLxeaw1TMYmAsoAAoSCIOG&#10;yfgBEP6oipzVMxiXCygAChIIxMP44wEQv+a5h9UzGJcLKAAKEgik25XPARCi/tby1DMYlwsoAAoS&#10;CJL9tLoBEJqg9t3UMxiXCygAChIIyt/WpQEQ04KYydQzGJcLKAAKEgi3qv+QARC/zcC01DMYlwso&#10;AA==&#10;    </string>
+    <long name="LAST_REPORT_TIME" value="1087177743735216" />
+    <set name="SENT_CONFIGS">
+        <string>175713611</string>
+        <string>175713051</string>
+        <string>175721243</string>
+    </set>
+    <set name="KEEP_UID_MAP_CONFIGS">
+        <string>175713051</string>
+        <string>175721243</string>
+    </set>
+    <string name="log_metadata175713051">ChMI1vCAmwQQypPCvtczGNvRASgAChMI99XMlwQQ6/iNu9czGIi2BSgAChMI8oi0hgQQ5qv1qdcz&#10;GJizAygAChMI8qLn8QMQ5sWoldczGLrjASgAChMI7f6x7gMQ4aHzkdczGK26BSgAChMIzeeA3QMQ&#10;wIrCgNczGOuqAygAChMIq5efyAMQnrrg69YzGIzeASgAChMIjoebxQMQgqrc6NYzGNbpBSgAChMI&#10;h9mkswMQ+/vl1tYzGNOuAygAChMIqrvMngMQnd6NwtYzGIW/ASgAChMIibKlnQMQ/dTmwNYzGJzN&#10;BSgAChMItqfviQMQqsqwrdYzGNvhAygAChMIkIWV9QIQhKjWmNYzGNuIBCgAChMInaWm7wIQkMjn&#10;ktYzGLHTBigAChMIntHG4AIQmfSHhNYzGOuaAygAChMIh/y9ywIQgp//7tUzGIygBSgAChMI38fN&#10;tgIQ2uqO2tUzGKCdAygAChMI1c7yoQIQ0PGzxdUzGMqsBSgAChMIiKKljQIQg8XmsNUzGIuRAygA&#10;ChMI/IXJ+AEQ96iKnNUzGNeQBSgA&#10;    </string>
+    <set name="ACTIVE_CONFIGS">
+        <string>175713051</string>
+        <string>175721243</string>
+    </set>
+</map>

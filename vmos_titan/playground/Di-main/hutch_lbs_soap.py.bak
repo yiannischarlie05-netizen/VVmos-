@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+import requests
+import sys
+API_URL = "https://lbs-gw.hutch.lk/api/lbs/v1/query"
+SOAP_ACTION = "http://hutch.lk/lbs/queryLocation"
+USERNAME = "lbs_operator"
+PASSWORD = "Hutch@LBS#2023"
+API_KEY = "hutch_lbs_apik_4d3c2b1a9f8e7d6c"
+def soap_payload(msisdn):
+    return f"""
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsse:UsernameToken>
+        <wsse:Username>{USERNAME}</wsse:Username>
+        <wsse:Password>{PASSWORD}</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soap:Header>
+  <soap:Body>
+    <ns1:queryLocationRequest xmlns:ns1="http://hutch.lk/lbs">
+      <msisdn>{msisdn}</msisdn>
+      <accuracy>high</accuracy>
+      <apiKey>{API_KEY}</apiKey>
+    </ns1:queryLocationRequest>
+  </soap:Body>
+</soap:Envelope>
+"""
+if len(sys.argv) < 2:
+    print("Usage: python hutch_lbs_soap.py 9477xxxxxxx")
+    sys.exit(1)
+msisdn = sys.argv[1]
+headers = {"SOAPAction": SOAP_ACTION, "Content-Type": "text/xml; charset=utf-8"}
+r = requests.post(API_URL, data=soap_payload(msisdn), headers=headers, timeout=15)
+print(r.text)

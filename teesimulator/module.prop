@@ -1,0 +1,7 @@
+id=teesimulator
+name=TEE Simulator for Play Integrity
+version=v1.0.0
+versionCode=100
+author=Titan Team
+description=Simulates TEE attestation for Play Integrity on devices without hardware keybox. Achieves MEETS_DEVICE_INTEGRITY level.
+updateJson=

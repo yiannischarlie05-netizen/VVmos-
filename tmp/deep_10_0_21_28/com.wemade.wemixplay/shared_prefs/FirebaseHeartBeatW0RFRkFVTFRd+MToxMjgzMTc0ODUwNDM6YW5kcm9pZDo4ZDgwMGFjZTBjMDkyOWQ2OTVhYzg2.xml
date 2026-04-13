@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <set name="fire-cls/19.3.0 fire-installations/18.0.0 android-min-sdk/24 kotlin/2.2.0 fire-android/33 android-installer/com.android.vending fire-core/21.0.0 fire-core-ktx/21.0.0 fire-analytics/22.1.2 android-platform/ fire-fcm/24.1.0 device-brand/OPPO fire-transport/19.0.0 android-target-sdk/36 device-model/OPD2A0 fire-sessions/2.0.7 device-name/PGCM10">
+        <string>2026-04-08</string>
+    </set>
+    <string name="last-used-date">2026-04-08</string>
+    <long name="fire-count" value="2" />
+    <long name="fire-global" value="1775540030143" />
+    <set name="fire-cls/19.3.0 fire-installations/18.0.0 android-min-sdk/24 kotlin/2.2.0 fire-android/33 android-installer/com.android.vending fire-core/21.0.0 fire-core-ktx/21.0.0 fire-analytics/22.1.2 android-platform/ fire-fcm/24.1.0 device-brand/OPPO fire-transport/19.0.0 android-target-sdk/36 fire-sessions/2.0.7 device-model/OPD2A0 device-name/PGCM10">
+        <string>2026-04-07</string>
+    </set>
+</map>

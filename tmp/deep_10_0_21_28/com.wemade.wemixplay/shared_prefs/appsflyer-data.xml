@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="AF_INSTALLATION">1769335894829-2599774306536726579</string>
+    <long name="af_rc_max_age" value="86400" />
+    <long name="af_rc_timestamp" value="1775540030826" />
+    <string name="af_remote_config">eyJmZWF0dXJlcyI6e30sInZlciI6ImRlZmF1bHQudjEuMTYzNzE0OTUyOSJ9</string>
+</map>

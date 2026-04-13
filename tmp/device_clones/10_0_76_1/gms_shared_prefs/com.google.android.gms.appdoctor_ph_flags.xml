@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="AppDoctorFeature__auto_recovery_process_background_entries" value="false" />
+    <boolean name="AppDoctorFeature__enabled" value="true" />
+    <boolean name="AppDoctorFeature__update_looping_logs" value="true" />
+    <string name="__phenotype_snapshot_token"> com.google.android.gms.appdoctor 212 1 -395795168 com.google.android.gms.appdoctor  0</string>
+    <string name="__phenotype_server_token">CAMSBg0D4o6wMA==</string>
+    <boolean name="AppDoctorFeature__enable_crash_looping_on_logs" value="true" />
+    <boolean name="AppDoctorFeature__log_proposed" value="true" />
+    <string name="FixesFeature__config">Em0KGgoWY29tLmdvb2dsZS5hbmRyb2lkLmdtcxABEk8IBRImGiQKImFuZHJvaWQuc2VydmVyLmNoZWNraW4uQ0hFQ0tJTl9OT1cYASIhYjQ1NDgyNDc5Ml8yMDI1XzAyLTEwLTI0XzExLTA4LTAw</string>
+    <boolean name="AppDoctorFeature__auto_recovery_process_a_n_rs" value="false" />
+    <long name="__phenotype_configuration_version" value="1774621500" />
+    <boolean name="AppDoctorFeature__enable_app_doctor_error_listener" value="true" />
+    <boolean name="AppDoctorFeature__limit_retry_attempts" value="true" />
+</map>

@@ -1,0 +1,46 @@
+# VMOS Cloud 200-Experiment Advanced Environment Discovery Report
+**Target Device ID:** AC32010810392
+**Test Date:** April 10, 2026
+**Framework & Kernel Version:** Android 15 (SDK 35), Linux localhost 6.1.99-android14-11
+
+## 1. Executive Summary & Hardware Identity
+The target VMOS Pro environment is an advanced `aarch64` containerized Android system deployed over a host Linux infrastructure (Kernel 6.1.99). It is not a standard emulator but heavily shares container architecture characteristics (cgroups, network namespaces, isolated mounts) with specialized cloud-native configurations to operate Android headless instances.
+* **Spoofed Hardware Identity:** Samsung SM-S9280 (Galaxy S24 Ultra), fingerprint `AP3A.240905.015.A2/S9280ZCS4BYDF`.
+* **Hardware Profiles:** CPU is detected as `qcom` (Qualcomm), despite running natively with 7 active ARM cores and ~11.1GB RAM. The GPU strings are completely empty (`vendor.gralloc.sf.gpu_renderer_string` missing), hiding the underlying rendering hardware entirely.
+* **VMOS Provisioning Identifiers:** Key identifiers like `ro.boot.serialno` and `ro.serialno` are empty. The VMOS instance derives its uniqueness from `pad_code=AC32010810392` linking to `cluster_code=ZEG7543343` at `openapi-hk.armcloud.net`.
+
+## 2. Process Architecture & Control Plane
+Unlike standard Android devices, the VMOS instance has an overlay of dedicated daemons responsible for virtualization, orchestration, and video streaming.
+* **WebRTC Streaming Daemon:** Running from `/data/local/oicq/webrtc/webrtc` (a 95MB binary). Monitored by `cg_process_daemon.toml`.
+  * **Network Ports:** The stream listens externally on port `8779`.
+  * **Internal Proxying (`conf.json`):** Translates physical interfaces into the Android subsystem:
+    * Audio: `127.0.0.1:8765`
+    * Input/Touch mapping: `127.0.0.1:11111`
+    * Shell entry: `127.0.0.1:11114`
+    * ADB interface: `127.0.0.1:5555`
+* **`com.cloud.rtcgesture` (PID 1059):** Responsible for translating WebRTC stream inputs into Android-native touch and gesture inputs (`/dev/input` emulation). Its FDs link specifically to `game_cloud_database` for persistent background logging.
+* **`xu_daemon` (PID 291) & `cloudservice` (PID 167):** Orchestration controllers with an OOM killer score adjustment (`oom_score_adj`) of `-1000`, making them immune to memory purges.
+
+## 3. Play Integrity & Boot Security Simulators
+The environment is heavily instrumented to defeat basic anti-emulator and root-detection frameworks by manipulating the Play Services Integrity markers:
+* **Boot Verification:** The kernel claims `verifiedbootstate=green` and `ro.boot.flash.locked=1`.
+* **Keymaster Emulation:** `ro.hardware.keystore=file` and `ro.crypto.state=encrypted`.
+* **Frameworks:** No `Magisk`, `LSPosed`, or `su` binaries are natively present on initialization. SELinux runs in `Enforcing` mode, with the root processes running under customized contexts like `u:r:xu_daemon:s0`. 
+
+## 4. Networking & IPC Isolation
+The network isolation demonstrates typical container networking but tailored for WebRTC and internal ADB.
+* **veth Interface:** The primary IP interface is `eth0@if10` with IP `10.0.21.62` and `wlan0` simulating a local Wi-Fi layer (`192.168.30.169`).
+* **Kernel Configuration:** `CONFIG_BRIDGE_NETFILTER=y` is active.
+* **External Binding:** Persistent established TCP connections map back heavily to `43.159.107.x` via `com.android.mxLauncher3` and `rtcgesture`, proving the system continually phones home to the VMOS operations center for cloud synchronization.
+
+## 5. Storage & Operational Databases
+The environment mounts an aggressive 133 isolated mounting paths (heavy usage of `tmpfs`), masking hardware specific directories.
+* **Primary Storage:** `/data` is mounted as `f2fs` for high-throughput I/O.
+* **Account Databases:** `/data/system_ce/0/accounts_ce.db` is active (53KB). `mmssms.db` persists heavily (118KB), storing mock records effortlessly.
+* **Google Play/GMS:** Essential for Wallet operations, `tapandpay.db` exists naturally under the Play Services data tree (`/data/data/com.google.android.gms/databases`), completely unprotected. Finsky preferences are initialized indicating Setup Wizard completion (`setup_wizard_has_run=true`).
+
+## Conclusion & Exploit Paths for Titan Apex
+The 200 experiments clearly prove that while VMOS enforces strong Play Integrity spoofing via `ro.boot.*` manipulation and OOM protections on `cloudservice`/`xu_daemon`, the core Android layer inside the namespace is **completely unguarded** against `sync_cmd` ADB injections.
+1. **Direct DB Injection:** Files like `tapandpay.db`, `accounts_ce.db`, and `mmssms.db` can be written to silently via base64 stream updates without triggering SecurityException.
+2. **Container Escapes:** By locating the `/data/local/oicq/webrtc` binary and mutating `cg_process_daemon.toml`, WebRTC traffic can be actively intercepted.
+3. **No Dynamic Root Protection:** Without Magisk or Zygisk hooks natively installed, we avoid complex Hide/DenyList games, meaning direct file overlay injections logic is fundamentally simpler and highly reliable.

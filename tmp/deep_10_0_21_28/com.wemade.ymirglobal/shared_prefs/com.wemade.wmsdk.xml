@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="appVersion">0.0.0</string>
+    <string name="auth">https://auth-bc.wemade.games</string>
+    <string name="accesstoken">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdXRoX3R5cGVfdXNlciI6IjExMzg1MDM5ODEzNjU3NzE2MjE0NCIsImF1ZCI6IjIwMTAtdVpFUkFoY2UuYXBwcy53ZW1hZGUuZ2FtZXMiLCJhdXRoX3R5cGUiOjEsIndlcGxhdF91c2VyX2lkIjoic3JfclZZWkdicHJodW9waXBZN2xtN3VBUF9FIiwiZGV2aWNlX21pZCI6IjM1ZDNhYTg4LTRjNjAtNDMzNS04ZTIyLTVlMjU0OTBiYjE2NSIsImFwcF9pZCI6ImNvbS53ZW1hZGUueW1pcmdsb2JhbCIsImlhdCI6MTc3NTc0MDc4NCwiZXhwaXJlc19pbiI6MTc3NTgyNzE4NCwianRpIjoiZDY4NmM3YjUtN2UwYi00YWUyLTg5YTgtNTE3NTI0NWY5YThiIiwiYXBwX2NvZGUiOjIwMTAsInVzZXJrZXkiOjIwMTU5MzkxLCJsb2dpbl9jb3VudHJ5IjoiUEgifQ.sOkPX83C_bN8wqHAAd-JwLzeN6niGCO7yNg4Ef40o4M</string>
+    <string name="uuid">35d3aa88-4c60-4335-8e22-5e25490bb165</string>
+    <string name="gameEnv">live</string>
+    <string name="push">https://push-bc.wemade.games</string>
+    <string name="provider">Google</string>
+    <string name="expire_in_token">1775827184</string>
+    <string name="appId">google:com.wemade.ymirglobal</string>
+    <string name="games">https://games-bc.wemade.games</string>
+    <string name="payment">https://payment-bc.wemade.games</string>
+    <string name="refreshtoken">AQVyBWATTEh3AmcaBUlzDWVfAklxAGgQCUg8UWgRVhtzBGEOB0EkV3wXB0lyGGlHBUhtUTQSBEhyDWFAUk0l</string>
+    <string name="account">https://account-bc.wemade.games</string>
+</map>

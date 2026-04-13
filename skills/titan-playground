@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+"""VMOS-Titan Playground CLI entry point."""
+import sys
+sys.path.insert(0, "/root/vmos-titan-unified/vmos_titan/playground/cli")
+sys.path.insert(0, "/root/vmos-titan-unified/vmos_titan/playground")
+sys.path.insert(0, "/root/vmos-titan-unified/vmos_titan/core")
+
+from main import main
+
+if __name__ == "__main__":
+    main()

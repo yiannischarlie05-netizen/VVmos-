@@ -1,0 +1,37 @@
+module_name = "process_daemon"                        # optional
+disable_prom = true
+dns = ["114.114.114.114", "119.29.29.29"] 
+
+[process_attr]
+gid=1279
+
+[cg_log]
+proxy_port=19999
+metrics="cg_log"
+channel_size=2048                               # optional
+routine_count=2                                 # optional
+max_buffer_line=16                              # optional
+
+[cg_log_proxy]
+proxy_port=19999
+channel_size=2048                               # optional
+routine_pool_size=4                             # optional
+max_routine_count=16                            # optional
+max_line_per_second=300                         # optional, max upload lines per second
+
+[prom_proxy]
+proxy_port=17220
+target="https://metrics.cloud-gaming.myqcloud.com/prometheus/gateway"
+
+[metrics_proxy]
+proxy_port=17396
+
+[[services]]
+module_name="webrtc"                                  # optional, only for report
+work_dir="/data/local/oicq/webrtc"                    # optional
+exe_path="/data/local/oicq/webrtc/webrtc"             # required
+param="-c ./conf/conf.json"                           # optional
+restart_interval=1                                    # optional
+max_restart_times=0                                   # optional
+extra_libraries = ["/data/local/oicq/so"]             # optional
+probe_accelerator=true

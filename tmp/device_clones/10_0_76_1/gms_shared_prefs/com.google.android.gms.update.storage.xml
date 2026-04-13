@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="control.installation.current_update_url">https://ota.googlezip.net/packages/ota-api/package/c015563c09841e62a30015b66fb5e56f480715a8.zip</string>
+    <string name="control.log.last_event_log_timestamp">1775797772478</string>
+    <string name="control.device.last_system_time_millis">1775844902136</string>
+    <string name="control.experiment.exp_name_space_key"></string>
+    <string name="control.log.heart_beat_task_scheduled">false</string>
+    <string name="control.device.boot_count">9</string>
+    <string name="control.device.provisioned_at">1774625805130</string>
+    <string name="control.installation.device_policy_updated_at">1774750589346</string>
+    <string name="control.event.pending_events"></string>
+    <string name="control.device.reboot_count">6</string>
+    <string name="control.experiment.exp_id_key">93357782</string>
+    <string name="execution.package_files_created">false</string>
+    <string name="control.experiment.exp_log_source_key">ANDROID_OTA</string>
+    <string name="control.device.last_elapsed_realtime">1143632772</string>
+    <string name="control.log.last_event_log_hash_code">-338044586</string>
+    <string name="control.device.last_device_off_period">2630718</string>
+    <string name="control.installation.update_url_changed_at">1774626132379</string>
+</map>

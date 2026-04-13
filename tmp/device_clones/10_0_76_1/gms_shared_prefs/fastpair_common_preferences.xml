@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="IS_PERIPHERAL_API_ENABLED" value="true" />
+    <string name="HAS_WATCH_PAIRED">NO</string>
+</map>

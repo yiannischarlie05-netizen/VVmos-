@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="token_expiration_millis" value="0" />
+    <long name="gaialess_token_expiration_millis" value="0" />
+</map>

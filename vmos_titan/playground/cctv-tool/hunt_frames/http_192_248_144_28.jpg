@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blocked — SONIQ Guardian</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&display=swap');
+
+    :root {
+      --primary: #7C3AED;
+      --primary-dark: #5B21B6;
+      --accent: #EC4899;
+      --bg-dark: #0F0B1A;
+      --bg-card: rgba(255,255,255,0.04);
+      --text-primary: #F1E8FF;
+      --text-muted: #9B8BB4;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .bg-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.3;
+      animation: float 12s ease-in-out infinite;
+    }
+    .bg-orb-1 { width: 500px; height: 500px; background: var(--primary); top: -150px; left: -100px; }
+    .bg-orb-2 { width: 400px; height: 400px; background: var(--accent); bottom: -100px; right: -80px; animation-delay: -4s; }
+    .bg-orb-3 { width: 300px; height: 300px; background: var(--primary-dark); top: 50%; left: 60%; animation-delay: -8s; }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -20px) scale(1.05); }
+      66% { transform: translate(-20px, 15px) scale(0.95); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 520px;
+      padding: 20px;
+    }
+
+    /* Shield / Logo area */
+    .logo-container {
+      margin-bottom: 32px;
+      animation: shieldIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+    }
+    @keyframes shieldIn { to { opacity: 1; transform: translateY(0) scale(1); } }
+
+    .shield {
+      width: 88px; height: 88px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .shield svg {
+      width: 100%; height: 100%;
+      filter: drop-shadow(0 0 30px rgba(124, 58, 237, 0.5));
+    }
+    .shield-pulse {
+      position: absolute;
+      inset: -10px;
+      border-radius: 50%;
+      border: 2px solid var(--primary);
+      opacity: 0;
+      animation: pulse 2.5s ease-out infinite;
+    }
+    .shield-pulse:nth-child(2) { animation-delay: 0.8s; }
+
+    @keyframes pulse {
+      0% { transform: scale(0.8); opacity: 0.6; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    /* Custom logo (when ISP provides one) */
+    .custom-logo {
+      display: none;
+      width: 120px;
+      height: auto;
+      margin: 0 auto;
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+    }
+    .custom-logo.visible { display: block; }
+    .custom-logo.visible + .shield { display: none; }
+
+    .blocked-title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+      animation: fadeUp 0.5s 0.15s both;
+    }
+
+    .main-heading {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 16px;
+      animation: fadeUp 0.5s 0.25s both;
+    }
+
+    .brand-name {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+
+    .description {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      animation: fadeUp 0.5s 0.35s both;
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(124, 58, 237, 0.15);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(20px);
+      margin-bottom: 28px;
+      animation: fadeUp 0.5s 0.45s both;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+    }
+    .info-row + .info-row { border-top: 1px solid rgba(255,255,255,0.05); }
+    .info-label { color: var(--text-muted); font-size: 13px; }
+    .info-value { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+    .info-value.blocked-badge {
+      background: rgba(239, 68, 68, 0.15);
+      color: #F87171;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      animation: fadeUp 0.5s 0.55s both;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      border: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 30px rgba(124, 58, 237, 0.5);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.04);
+      color: var(--text-primary);
+    }
+
+    .brand-footer {
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      animation: fadeUp 0.5s 0.65s both;
+    }
+    .brand-footer svg { width: 18px; height: 18px; }
+    .brand-footer-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .brand-footer-text span {
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Powered by SONIQ — always shown for white-label */
+    .powered-by {
+      margin-top: 16px;
+      font-size: 11px;
+      color: rgba(155,139,180,0.5);
+      animation: fadeUp 0.5s 0.75s both;
+    }
+    .powered-by a {
+      color: rgba(155,139,180,0.6);
+      text-decoration: none;
+    }
+    .powered-by a:hover { color: var(--text-muted); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      .main-heading { font-size: 22px; }
+      .actions { flex-direction: column; }
+      .btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+
+  <div class="container">
+
+    <div class="logo-container">
+      <!-- Custom ISP logo (shown if ?logo= param provided) -->
+      <img class="custom-logo" id="customLogo" alt="Logo" />
+      <!-- Default SONIQ shield (hidden when custom logo is present) -->
+      <div class="shield" id="defaultShield">
+        <div class="shield-pulse"></div>
+        <div class="shield-pulse"></div>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7V12C3 17.25 6.68 22.13 12 23C17.32 22.13 21 17.25 21 12V7L12 2Z" fill="url(#shieldGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+          <path d="M9 12L11 14L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="shieldGrad" x1="3" y1="2" x2="21" y2="23">
+              <stop stop-color="var(--primary)" id="gradStop1"/>
+              <stop offset="1" stop-color="var(--accent)" id="gradStop2"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blocked-title">Access Blocked</div>
+
+    <h1 class="main-heading">
+      This site has been blocked by<br/>
+      <span class="brand-name" id="brandName">SONIQ Guardian</span>
+    </h1>
+
+    <p class="description" id="descriptionText">
+      This website has been restricted by your network's content filtering policy. 
+      If you believe this is a mistake, contact your network administrator.
+    </p>
+
+    <div class="info-card">
+      <div class="info-row">
+        <span class="info-label">Requested Site</span>
+        <span class="info-value" id="blockedDomain">—</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Category</span>
+        <span class="info-value" id="blockedCategory">Content Policy</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Status</span>
+        <span class="info-value blocked-badge">Blocked</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Time</span>
+        <span class="info-value" id="blockedTime">—</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-primary" onclick="window.history.back()">← Go Back</button>
+      <a class="btn btn-ghost" id="dashboardLink" href="https://guardian.soniqnetworks.co.uk">Dashboard</a>
+    </div>
+
+    <div class="brand-footer" id="brandFooter">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L3 7V12C3 17.25 6.68 22.13 12 23C17.32 22.13 21 17.25 21 12V7L12 2Z" fill="url(#brandGrad)"/>
+        <defs>
+          <linearGradient id="brandGrad" x1="3" y1="2" x2="21" y2="23">
+            <stop stop-color="var(--primary)" id="brandGradStop1"/>
+            <stop offset="1" stop-color="var(--accent)" id="brandGradStop2"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="brand-footer-text">Protected by <span id="footerBrand">SONIQ Guardian</span></span>
+    </div>
+
+    <!-- Powered-by line — shown when white-labelled -->
+    <div class="powered-by" id="poweredBy" style="display:none;">
+      Powered by <a href="https://soniqnetworks.co.uk">SONIQ Networks</a>
+    </div>
+
+  </div>
+
+  <script>
+    // ========================================================================
+    // DYNAMIC WHITE-LABEL BLOCK PAGE
+    // ========================================================================
+    // URL params for ISP customisation:
+    //   ?brand=ISP+Name          — Brand name shown in heading + footer
+    //   ?logo=https://...        — Custom logo URL (replaces shield icon)
+    //   ?color=FF6600            — Primary brand color (hex without #)
+    //   ?accent=00CC88           — Accent color (hex without #)
+    //   ?support=https://...     — Dashboard/support URL for "Dashboard" button
+    //   ?domain=example.com      — Blocked domain name
+    //   ?category=Adult+Content  — Block category
+    //   ?msg=Custom+message      — Custom description text
+    //
+    // Examples:
+    //   Default SONIQ:  /blocked
+    //   White-label:    /blocked?brand=Sky+Broadband&color=0072C6&accent=E10000&logo=https://sky.com/logo.svg
+    //   With domain:    /blocked?domain=badsite.com&category=Malware
+    // ========================================================================
+
+    const p = new URLSearchParams(window.location.search);
+    const r = document.documentElement;
+
+    // -- Brand name --
+    const brand = p.get('brand');
+    if (brand) {
+      document.getElementById('brandName').textContent = brand;
+      document.getElementById('footerBrand').textContent = brand;
+      document.title = `Blocked — ${brand}`;
+      // Show "Powered by SONIQ" when white-labelled
+      document.getElementById('poweredBy').style.display = 'block';
+    }
+
+    // -- Custom logo --
+    const logo = p.get('logo');
+    if (logo) {
+      const logoEl = document.getElementById('customLogo');
+      logoEl.src = logo;
+      logoEl.classList.add('visible');
+      document.getElementById('defaultShield').style.display = 'none';
+    }
+
+    // -- Custom colors --
+    const color = p.get('color');
+    if (color && /^[0-9A-Fa-f]{3,8}$/.test(color)) {
+      r.style.setProperty('--primary', '#' + color);
+      r.style.setProperty('--primary-dark', '#' + color + '99');
+      // Update SVG gradient stops
+      document.getElementById('gradStop1').setAttribute('stop-color', '#' + color);
+      document.getElementById('brandGradStop1').setAttribute('stop-color', '#' + color);
+    }
+    const accent = p.get('accent');
+    if (accent && /^[0-9A-Fa-f]{3,8}$/.test(accent)) {
+      r.style.setProperty('--accent', '#' + accent);
+      document.getElementById('gradStop2').setAttribute('stop-color', '#' + accent);
+      document.getElementById('brandGradStop2').setAttribute('stop-color', '#' + accent);
+    }
+
+    // -- Support/Dashboard URL --
+    const support = p.get('support');
+    if (support) {
+      document.getElementById('dashboardLink').href = support;
+      document.getElementById('dashboardLink').textContent = 'Support';
+    }
+
+    // -- Custom description --
+    const msg = p.get('msg');
+    if (msg) {
+      document.getElementById('descriptionText').textContent = msg;
+    }
+
+    // -- Blocked domain info --
+    const domain = p.get('domain') || window.location.hostname || '—';
+    const category = p.get('category') || 'Content Policy';
+
+    document.getElementById('blockedDomain').textContent = domain;
+    document.getElementById('blockedCategory').textContent = category;
+    document.getElementById('blockedTime').textContent = new Date().toLocaleTimeString([], {
+      hour: '2-digit', minute: '2-digit'
+    });
+
+    if (!brand) {
+      document.title = `Blocked: ${domain} — SONIQ Guardian`;
+    }
+  </script>
+
+</body>
+</html>

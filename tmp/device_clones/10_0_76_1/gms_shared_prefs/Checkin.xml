@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="CheckinService_lastSim">no-sim&#10;no-imsi</string>
+    <long name="CheckinService_lastCheckinServerTime" value="1774625821457" />
+    <string name="CheckinService_lastSimOperator"></string>
+    <string name="lastRadio">86100.1000.00.05.14.04,86100.1000.00.05.14.04</string>
+    <long name="CheckinInterval_IntervalSeconds" value="574370" />
+    <long name="CheckinInterval_FlexSec" value="10800" />
+    <long name="aggregation_interval" value="1800" />
+    <long name="CheckinService_lastCheckinSuccessTime" value="1775455062402" />
+    <long name="CheckinService_last_checkin_ms_unspecified" value="1775455062408" />
+    <long name="aggregation_flex" value="600" />
+    <long name="CheckinService_checkinCompleteBroadcastTime" value="1775455062409" />
+    <string name="android_id">4239836201648965842</string>
+    <string name="CheckinService_versionInfo">MxlU6JQ69M4VIJ42qPW9kfBjTQz_0hk</string>
+    <string name="CheckinService_deviceDataVersionInfo">ABFEt1XRwhL7DDO2IkFyS4sX_HxQf3Zk9uF2lZxkPUgttO4s1KuU1Ga_fiI9c-tVnRUrpNzMIwDEMMOyWBEo3MmFno_qCEWtxZd5Lsdkdg-v7bIWsAs8M8-sQ4TfYCsK63RlM8I9ffQHLYH65byNhV20OBRm0QXJ7H_4OFfdi7GaBBXFqco7B5giAs9wj5WWLPsts633mtLlTYdqqGstj_IstUJM8x_lmLE9nVdBj7-HXPvqWop-quYSLTJ8q5hCtu6sDWI_UBbuY5-z9QoIwKyEUxd0oB57Bb1G5OUdCgNat1d2izD97okvg8_fYRSjSBfqMSOOefX-umi133BN2bQAvDlpYEs2NiojUJSEIKEWNwNBZchCB9RI920Y8jgGzKeyQaaD4TQeR5x0IPaZpZY99XLilX6RB65EyVOyHq3r1usQMYmSECKPYb20EmyI6mST5bIycfxRUeDiBzX_h5zeNi0Yib8Edw</string>
+    <long name="CheckinTask_bookmark" value="0" />
+</map>

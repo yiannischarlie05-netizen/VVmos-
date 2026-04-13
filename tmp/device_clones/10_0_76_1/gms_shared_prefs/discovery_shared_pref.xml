@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="key_has_provider_sent_session_nonce">NO_SESSION_NONCE</string>
+</map>

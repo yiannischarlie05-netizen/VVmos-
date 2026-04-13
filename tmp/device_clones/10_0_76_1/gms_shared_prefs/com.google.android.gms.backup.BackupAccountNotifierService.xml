@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="notified_timestamp" value="0" />
+    <boolean name="notified" value="false" />
+    <int name="notified_count" value="0" />
+</map>

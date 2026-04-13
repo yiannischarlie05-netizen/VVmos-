@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="gads:sdk_core_experiment_id"></string>
+    <boolean name="gads:include_package_name_v3:enabled" value="false" />
+    <boolean name="gms:expose_token_for_gma:enabled" value="true" />
+    <boolean name="gads:separate_url_generation:enabled" value="true" />
+    <int name="gads:fingerprint_number" value="10" />
+    <boolean name="gads:doritos_refresh_network_migration:enabled" value="true" />
+    <float name="gads:gmscore_logger_sampling_rate" value="1.0" />
+    <string name="gads:pan:experiment_id"></string>
+    <boolean name="gads:paw_delegate_web_view_client:enabled" value="false" />
+    <boolean name="gad:force_local_loading_enabled" value="false" />
+    <string name="gads:mediation_serving_domain:locale_list">ru</string>
+    <long name="gads:paw_cache:ttl_ms" value="60000" />
+    <boolean name="gads:interstitial_load_on_bg_thread" value="true" />
+    <string name="gads:afs:csa_tcf_data_to_collect">[{&quot;bk&quot;:&quot;tcString&quot;,&quot;sk&quot;:&quot;IABTCF_TCString&quot;,&quot;type&quot;:0},{&quot;bk&quot;:&quot;gdprApplies&quot;,&quot;sk&quot;:&quot;IABTCF_gdprApplies&quot;,&quot;type&quot;:1},{&quot;bk&quot;:&quot;usPrivacy&quot;,&quot;sk&quot;:&quot;IABUSPrivacy_String&quot;,&quot;type&quot;:0}]</string>
+    <boolean name="gads:disable_adapter_flag_shared_pref_listener_v3:enabled" value="false" />
+    <boolean name="gads:gma_attestation:request:enable" value="true" />
+    <float name="gads:cui_monitoring_session_sample_rate" value="0.03" />
+    <long name="gads:telephony_caching_expiry_ms:expiry" value="5000" />
+    <boolean name="gads:persist_flags_on_bg_thread" value="true" />
+    <boolean name="gads:reset_counts_on_local_flag_save_v3:enabled" value="false" />
+    <boolean name="gads:reset_counts_on_successful_service_v3:enabled" value="false" />
+    <boolean name="gads:return_null_ads_preloader_from_remote_creator" value="false" />
+    <boolean name="gads:video:metric_reporting_enabled" value="false" />
+    <string name="gads:sdk_core_js_location">https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.js</string>
+    <boolean name="gads:enable_content_fetching" value="true" />
+    <long name="gads:timeout_for_trustless_token:millis" value="2000" />
+    <int name="gads:content_age_weight" value="1" />
+    <boolean name="gads:token_anonymization:enabled" value="true" />
+    <boolean name="gads:cui_monitoring_v3_enabled" value="true" />
+    <int name="gads:min_content_len" value="11" />
+    <boolean name="gads:gma_attestation:image_hash" value="false" />
+    <boolean name="gads:leibniz:record_events:enable" value="false" />
+    <long name="gads:device_info_caching_expiry_ms:expiry" value="300000" />
+    <long name="gads:parallel_rendering:max_renderers" value="0" />
+    <boolean name="gads:flags_check_if_updating_v3:enabled" value="false" />
+    <boolean name="gads:paw_app_signals:document_start_js:enabled" value="false" />
+    <long name="gads:gma_attestation:click:enable_dynamite_version" value="9223372036854775807" />
+    <boolean name="gads:read_local_flags_cld_v3:enabled" value="false" />
+    <boolean name="gads:write_local_flags_cld_v3:enabled" value="false" />
+    <boolean name="gads:init:init_on_single_bg_thread" value="false" />
+    <long name="gads:battery_caching_expiry_ms:expiry" value="10000" />
+    <int name="gads:content_length_weight" value="1" />
+    <boolean name="StreamingFileFixes__use_copy_for_input_stream_closing" value="false" />
+    <boolean name="gads:save_flags_on_background_thread:enabled" value="false" />
+    <boolean name="gads:appopen_load_on_bg_thread" value="true" />
+    <boolean name="gads:tag_token_traffic" value="true" />
+    <boolean name="gads:signal_adapters:red_button" value="false" />
+    <long name="gads:cached_token:ttl_millis" value="10800000" />
+    <long name="gads:url_cache:max_size" value="200" />
+    <boolean name="gads:delegating_web_view_client_recursion_detection:enabled" value="false" />
+    <boolean name="gads:always_enable_crash_loop_counter_v3:enabled" value="false" />
+    <boolean name="gads:gma_attestation:click:qualification:enable" value="true" />
+    <boolean name="gads:adapter_settings:red_button" value="false" />
+    <long name="gads:app_index:timeout_ms" value="1000" />
+    <boolean name="gads:split_ad_request_traffic_by_app" value="true" />
+    <long name="gads:js_flags:update_interval" value="14400000" />
+    <long name="gads:audio_caching_expiry_ms:expiry" value="5000" />
+    <boolean name="gads:report_dynamite_crash_in_background_thread" value="false" />
+    <string name="gads:gma_attestation:click:macro_string">@click_attok@</string>
+    <string name="gads:temporary_experiment_id:10"></string>
+    <string name="gads:temporary_experiment_id:11"></string>
+    <string name="gads:temporary_experiment_id:12"></string>
+    <long name="gads:crash_without_write_reset_v3:count" value="-1" />
+    <string name="gads:temporary_experiment_id:13"></string>
+    <boolean name="gads:disable_flag_shared_pref_listener_v3:enabled" value="false" />
+    <string name="gads:temporary_experiment_id:14"></string>
+    <boolean name="gads:debug_logging_feature:enable" value="true" />
+    <boolean name="gads:crash_loop_stats_signal_v3:enabled" value="false" />
+    <string name="gads:app_index:experiment_id"></string>
+    <long name="gads:app_permissions_caching_expiry_ms:expiry" value="60000" />
+    <string name="gads:sdk_csi_server">https://csi.gstatic.com/csi</string>
+    <boolean name="gads:auto_location_by_gmscore" value="false" />
+    <boolean name="gads:write_local_flags_client_v3:enabled" value="false" />
+    <boolean name="gads:rewarded_load_bg_thread" value="true" />
+    <long name="gads:paw_cache:refresh_interval_seconds" value="30" />
+    <boolean name="gads:limit_scar_service_thread_ph:enabled" value="false" />
+    <boolean name="gads:ad_serving:enabled" value="true" />
+    <boolean name="gads:cui_monitoring_v2_enabled" value="true" />
+    <boolean name="gads:cui_monitoring_enabled" value="true" />
+    <boolean name="gads:enable_gmscore_logger" value="false" />
+    <boolean name="gads:init:init_on_bg_thread" value="true" />
+    <long name="gads:timeout_for_doritos_refresh:millis" value="300000" />
+    <long name="gads:gma_attestation:click:timeout" value="2000" />
+    <boolean name="gads:lite_sdk_retriever:version_number:enable" value="false" />
+    <boolean name="gads:reset_app_settings_v3:enabled" value="false" />
+    <string name="gads:block_autoclicks_experiment_id"></string>
+    <boolean name="gads:log:verbose_enabled" value="false" />
+    <string name="gads:afs:csa_webview_static_file_path">/afs/ads/i/webview.html</string>
+    <long name="gads:ad_loader:timeout_ms" value="60000" />
+    <int name="gads:sleep_sec" value="10" />
+    <long name="gads:sdk_environment_caching_expiry_ms:expiry" value="600000" />
+    <boolean name="gads:disable_sdkcore_refresh_client:enabled" value="false" />
+    <long name="gads:hsdp_caching_expiry_ms:expiry" value="600000" />
+    <long name="gads:timeout_for_app_set_id_info_gmscore:millis" value="2000" />
+    <boolean name="gads:js_flags:mf" value="false" />
+    <boolean name="gads:clearcut_log_verifier:enabled" value="false" />
+    <string name="gads:sdk_crash_report_class_prefix">com.google.</string>
+    <boolean name="gads:use_non_templated_client_sdkcore:enabled" value="false" />
+    <boolean name="gads:enable_adapter_flags:enabled" value="false" />
+    <boolean name="gads:referesh_rate_limit" value="false" />
+    <boolean name="gads:split_doritos_traffic_from_ads_tag" value="true" />
+    <string name="gads:afs:csa:experiment_id"></string>
+    <boolean name="gads:init_without_flag_write_count_v3:enabled" value="false" />
+    <long name="gads:rendering:timeout_ms" value="60000" />
+    <long name="gads:init_without_write_reset_v3:count" value="-1" />
+    <boolean name="gads:mediation_serving_domain:red_button" value="false" />
+    <boolean name="gads:rewarded_sku:override_test:enabled" value="false" />
+    <boolean name="gads:rewarded_sku:enabled" value="true" />
+    <boolean name="gads:use_non_templated_mediation_client_sdkcore:enabled" value="false" />
+    <boolean name="gads:signals_collection_on_service:enabled" value="true" />
+    <boolean name="gads:gma_attestation:click:report_error" value="true" />
+    <boolean name="gads:use_request_id_as_url_cache_key:enabled" value="true" />
+    <boolean name="gads:sdk_csi_write_to_file" value="false" />
+    <boolean name="gads:enabled_sdk_csi" value="false" />
+    <boolean name="gads:banner_destroy_bg_thread" value="false" />
+    <string name="gads:mediation_client_sdkcore_url">https://mediation.goog/mads/static/sdk/native/sdk-core-v40.html</string>
+    <boolean name="gads:lite_sdk_retriever:adapter:enable" value="false" />
+    <long name="gads:lite_sdk_retriever:dynamite_version" value="0" />
+    <boolean name="gads:cui_monitoring_v5_enabled" value="false" />
+    <boolean name="gads:read_local_flags_v3:enabled" value="false" />
+    <boolean name="gads:sdk_crash_report_enabled" value="false" />
+    <int name="gads:dynamite_load:fail:sample_rate" value="10000" />
+    <long name="gads:sequential_cache_delay_to_load_seconds" value="-1" />
+    <float name="gads:csi_reporting_ratio" value="0.05" />
+    <boolean name="gads:banner_pause_bg_thread" value="false" />
+    <boolean name="gads:ads_service_force_stop:red_button" value="false" />
+    <boolean name="gads:crash_without_flag_write_count_v3:enabled" value="false" />
+    <boolean name="gads:sdk_crash_report_full_stacktrace" value="false" />
+    <boolean name="gads:app_index:without_content_info_present:enabled" value="true" />
+    <boolean name="gads:gma_attestation:impression:enable" value="false" />
+    <boolean name="gads:query_info_bg_thread" value="true" />
+    <string name="gads:sdk_core_location">https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/sdk-core-v40-loader.html</string>
+    <long name="gads:minimum_service:version" value="-1" />
+    <long name="gads:memory_caching_expiry_ms:expiry" value="5000" />
+    <boolean name="gads:trustless_token_for_decagon:enabled" value="true" />
+    <float name="gads:trapped_exception_sample_rate" value="0.01" />
+    <string name="gads:temporary_experiment_id:15"></string>
+    <boolean name="gads:banner_load_bg_thread" value="true" />
+    <boolean name="gads:adaptive_banner:fail_invalid_ad_size" value="true" />
+    <string name="gads:google_ad_request_domains">googleads.g.doubleclick.net;pubads.g.doubleclick.net</string>
+    <string name="gads:safe_browsing:api_key">AIzaSyDRKQ9d6kfsoZT2lUnZcZnBYvH69HExNPE</string>
+    <boolean name="gads:clientside_javascript_flags:enabled" value="true" />
+    <boolean name="gads:gma_attestation:request:enable_javascript" value="false" />
+    <boolean name="gads:banner_refresh_sequential_caching:red_button" value="false" />
+    <boolean name="gads:always_collect_trustless_token_at_native_side" value="false" />
+    <boolean name="gads:afs:csa_send_tcf_data" value="true" />
+    <boolean name="gads:debug_logging_feature:intercept_web_view" value="true" />
+    <boolean name="gads:adloader_load_bg_thread" value="true" />
+    <boolean name="gads:invalidate_token_at_refresh_start" value="true" />
+    <string name="gads:gma_attestation:click:query_param">attok</string>
+    <boolean name="gads:auto_location_by_dynamite" value="false" />
+    <boolean name="gads:cui_monitoring_v4_enabled" value="true" />
+    <boolean name="gads:timeout_for_app_set_id_info_gmscore:enabled" value="false" />
+    <long name="gads:paw_cache:retry_delay_seconds" value="10" />
+    <string name="gads:mediation_templated_client_sdkcore_url">https://mediation.goog/mads/static/sdk/native/sdk-core-v40.html</string>
+    <boolean name="gads:paw_cache:enabled" value="false" />
+    <string name="gads:corewebview:experiment_id"></string>
+    <boolean name="gads:webview:permission:disabled" value="false" />
+    <boolean name="gads:gma_attestation:click:enable" value="false" />
+    <boolean name="gads:ad_preloading:enabled" value="true" />
+    <string name="gads:native:engine_js_url_with_protocol">https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/native_ads.js</string>
+    <boolean name="gads:write_local_flags_service_v3:enabled" value="false" />
+    <boolean name="gads:ad_key_enabled" value="true" />
+    <string name="gads:mediation_service_sdkcore_url">https://mediation.goog/mads/static/sdk/native/sdk-core-v40.html</string>
+    <boolean name="gads:paw_app_signals:enabled" value="false" />
+    <string name="gads:spam_app_context:experiment_id"></string>
+    <long name="gads:resolve_future:default_timeout_ms" value="30000" />
+    <boolean name="gads:sdk_use_dynamic_module" value="true" />
+    <boolean name="gad:force_dynamite_loading_enabled" value="false" />
+    <boolean name="gads:invoke_leibniz:enabled" value="false" />
+    <string name="gads:afs:csa_webview_custom_domain_param_key">csa_customDomain</string>
+    <boolean name="gads:adapter_initialization:red_button" value="false" />
+    <boolean name="gads:adshield:enable_adshield_instrumentation" value="false" />
+    <boolean name="gads:persist_js_flag:scar" value="true" />
+    <string name="gads:public_beta:traffic_multiplier">1.0</string>
+    <string name="gads:temporary_experiment_id:8"></string>
+    <boolean name="gads:safe_browsing:debug" value="false" />
+    <string name="gads:temporary_experiment_id:9"></string>
+    <string name="gads:temporary_experiment_id:6"></string>
+    <string name="gads:temporary_experiment_id:7"></string>
+    <string name="gads:temporary_experiment_id:4"></string>
+    <string name="gads:token_anonymization_key">CPGvoJcLEnAKZAo0dHlwZS5nb29nbGVhcGlzLmNvbS9nb29nbGUuY3J5cHRvLnRpbmsuSHBrZVB1YmxpY0tleRIqEgYIARABGAIaIBhwOBB-CLKaDpuRqp-lGwbdNg7LsYQXqt4yxspMlp4bGAMQARjxr6CXCyAB</string>
+    <string name="gad:dynamite_module:experiment_id"></string>
+    <string name="gads:temporary_experiment_id:5"></string>
+    <boolean name="gads:banner_resume_bg_thread" value="false" />
+    <string name="gads:temporary_experiment_id:2"></string>
+    <boolean name="gads:persist_js_flag:as" value="true" />
+    <string name="gads:temporary_experiment_id:3"></string>
+    <boolean name="gads:persist_js_flag:ars" value="true" />
+    <string name="gads:temporary_experiment_id:1"></string>
+    <boolean name="gads:reset_counts_on_failure_service_v3:enabled" value="false" />
+    <boolean name="gads:mediation_serving_domain:enabled" value="true" />
+</map>

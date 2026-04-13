@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="GmsCoreLoggerFeature__facet_usage">CAASCwkAAAAAAADwPygAKgQIgKMF</string>
+    <boolean name="Chimera__show_chimera_settings" value="false" />
+    <boolean name="DeviceDoctor__restart_process_when_requested_by_fix" value="true" />
+    <boolean name="ServiceTracking__enable_service_availability_files_cleanup" value="true" />
+    <boolean name="Scheduler__enable_recording_scheduler_doze_events" value="false" />
+    <boolean name="GoogleSettings__enable_subcategories" value="false" />
+    <boolean name="stats_wakeLocks_enable_work_chains_pi" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_people" value="false" />
+    <boolean name="DeviceDoctor__process_results_already_done_fixes_enabled" value="true" />
+    <boolean name="Network__migrate_account_data_service_to_common_network_library" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_mobiledataplan" value="false" />
+    <string name="GmsCoreLoggerFeature__data_collection_verification_data_config">CAAqAwjAcDIJCXsUrkfheoQ/</string>
+    <boolean name="DeviceDoctor__disable_modules_enabled" value="true" />
+    <boolean name="GmsCoreLoggerFeature__enable_periodic_files_cleanup" value="true" />
+    <string name="nts.task_filter">,-com.google.android.gms/com.google.android.gms.checkin.EventLogService:AggregationTaskTag</string>
+    <string name="ChimeraCriticalPath__blacklisted_modules_with_versions">,com.google.android.gms.smart_profile,com.google.android.gms.rcs,com.google.android.gms.flags,com.google.android.gms.flags.pkg,com.google.android.gms.panorama,com.google.android.gms.herrevad,com.google.android.gms.appintegrity,com.google.android.gms.matchstick</string>
+    <long name="Tracing__random_initialization_modulus" value="100" />
+    <string name="FacetUsageLoggingFeature__facet_event_logger_facet_id_allow_list">CoABogLKAu4FrAfKDNoF8hHzCvEK9AryCuYL3BDcC+QKF9ILngqSCYAPsA62EbQGmAKsAooK/AekCJgHwAL4D7YC+gaSDpwOtAGIDsoHzgnGD9oP5A/OE+AN7wqgAY4CxgXMF7YMKZoSnhmYG8IS6g3OGK4XoBCAGdoKhgimGPgZrxI</string>
+    <boolean name="SchedulerTasksExperiments__enable_update_current_if_different_for_tap_and_pay_tasks" value="true" />
+    <boolean name="FacetUsageLoggingFeature__background_init" value="false" />
+    <boolean name="ServiceTracking__enable_service_availability_logging_v2" value="false" />
+    <boolean name="WorkChainsPi__enable_retrieve_attribution_from_trace" value="true" />
+    <string name="GmsCoreLoggerFeature__safe_browsing">CAISCQl7FK5H4XqEPyoECICjBQ</string>
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_charging_restrictions_for_telephonyspam_tasks" value="true" />
+    <boolean name="GacMigration__remove_gac_manage_space_chimera_activity" value="true" />
+    <string name="ChimeraCriticalPath__allowed_container_optional_features_when_unprovisioned">CgplbnRlcnByaXNl</string>
+    <boolean name="Network__migrate_captcha_challenge_to_gms_network_engine" value="true" />
+    <boolean name="StrictModeFeature__enable_flogger" value="true" />
+    <long name="Tracing__high_frequency_tracing_duration" value="60" />
+    <boolean name="Network__migrate_validate_account_creds_to_common_network_library" value="false" />
+    <boolean name="Network__migrate_update_credentials_to_common_network_library" value="true" />
+    <boolean name="PermissionLogging__no_body_sensors_pre_kit_kat_watch" value="true" />
+    <boolean name="SchedulerClearcutLogging__enable_logging_task_uptime" value="true" />
+    <long name="NativeMemory__first_run_delay_in_millis" value="60000" />
+    <float name="WakelockMetrics__timeout_multiplier" value="10.0" />
+    <boolean name="WatchcatFeature__restart_fix_should_apply_enabled" value="true" />
+    <long name="KeyValuePreferencesFeature__dark_launch_diff_sampling_interval" value="0" />
+    <long name="Tracing__max_spans_per_trace" value="500" />
+    <long name="DeviceDoctor__fixer_framework_seconds_non_complete_fix_is_valid" value="3600" />
+    <long name="Primes__upload_interval_millis" value="86400000" />
+    <boolean name="DeviceDoctor__fixer_framework_enabled" value="true" />
+    <boolean name="OzTrafficShutdown__oz_traffic_shutdown_lookup_enabled" value="true" />
+    <string name="Chimera__app_feature_dependencies"></string>
+    <boolean name="FacetUsageLoggingFeature__omit_client_type" value="false" />
+    <boolean name="SchedulerTracing__avoid_begin_span_without_trace" value="true" />
+    <boolean name="Network__migrate_background_request_token_to_gms_network_engine" value="false" />
+    <string name="latency_service_whitelist">*</string>
+    <boolean name="Network__enable_cronet_for_backup" value="false" />
+    <boolean name="UncertifiedDevice__generate_notification_in_preprocessor" value="true" />
+    <boolean name="Chimera__disable_container_optional_module_download" value="false" />
+    <boolean name="WakelockMetrics__report_idle_state" value="true" />
+    <string name="ChimeraCheckin__allowed_module_update_pauses">com.google.android.gms.backup_d2d.D2D_MIGRATION_SOURCE:3600,com.google.android.gms.smartdevice.SMART_SETUP_SOURCE:3600,com.google.android.gms.setupservices.SUW_DEFERRED_SETUP:3600,com.google.android.gms.auth_account.KIDS_ONBOARDING_SOURCE:1200,com.google.android.gms.esim.ESIM_TRANSFER:600,com.google.android.gms.kids_settings.KIDS_ONBOARDING_SOURCE:1200,com.google.android.gms.core.CUI_ENTERPRISE_CLOUDDPC_SOURCE:3600,com.google.android.gms.core.CUI_ENTERPRISE_VOLTRON_SOURCE:3600,com.google.android.gms.core.CUI_ENTERPRISE_AUTH_MANAGED_SOURCE:3600</string>
+    <boolean name="PeriodicRestarts__enable_periodic_restarts_on_persistent_process" value="true" />
+    <boolean name="TestcodeTest__enable_test_code" value="false" />
+    <long name="Primes__throttler_interval_seconds" value="1" />
+    <boolean name="CommonAnalytics__system_health_log_post_chimera_update_enabled" value="true" />
+    <boolean name="enable_usage_reporting" value="true" />
+    <boolean name="TestcodeHashingFeature__enable_testcode_hashing" value="true" />
+    <long name="Tracing__expensive_trace_warn_cpu_ms" value="10000" />
+    <float name="WakelockMetrics__deadline_multiplier" value="100.0" />
+    <boolean name="Network__use_http_url_connection_instead_of_https_in_ads" value="false" />
+    <string name="AppFeature__common_gservices_prefixes">gms,location:,Chimera,ClientLogging__,DirectBoot__</string>
+    <boolean name="GoogleSettings__override_up_action_behavior" value="true" />
+    <long name="Phenotype__flag_committer_timeout" value="60000" />
+    <long name="Scheduler__max_schedule_requests_queue_size" value="700" />
+    <boolean name="AppFeature__task_graph_on_create" value="true" />
+    <boolean name="Network__migrate_app_cert_manager_to_common_network_library" value="true" />
+    <boolean name="Scheduler__enable_more_restrictive_charging_defaults" value="true" />
+    <string name="SchedulerTasksExperiments__preferred_network_restrictions_experiment_task_filter"></string>
+    <boolean name="Primes__include_device_encrypted_dir_stats" value="true" />
+    <boolean name="Primes__enable_primes_package" value="true" />
+    <boolean name="SchedulerDebug__allow_triggering_secondary_user_debug_tasks_for_0p" value="true" />
+    <boolean name="GmsCoreLoggerFeature__include_count_in_claros_logging" value="true" />
+    <string name="stats_wakeLocks_timeout_overrides">ChoKCkNhclNlcnZpY2USB19fYW55X18YgLiZKQomChZub24tc3RyZWFtaW5nLWFiLWFwcGx5EgdfX2FueV9fGIC4mSkKHwoPc3RyZWFtaW5nLWFwcGx5EgdfX2FueV9fGIC4mSkKLAocVXBkYXRlRnJvbVNkQ2FyZFZlcmlmaWVyVGFzaxIHX19hbnlfXxiAuJkpClUKRWNvbS5nb29nbGUuYW5kcm9pZC5nbXMuYmFja3VwLmNvbXBvbmVudC5EMmRTb3VyY2VTZXJ2aWNlLndha2Vsb2NrX3RhZxIHX19hbnlfXxiAuJkpCiIKElRhY2h5b25Qcm94aW1pdHlXTBIHX19hbnlfXxiAuJkpCi4KHm5lYXJieTpFeHBvc3VyZU1hdGNoaW5nU2VydmljZRIHX19hbnlfXxiAuJkpCi0KHUNBTExfQUNUSVZJVFlfU0NSRUVOX1dBS0VMT0NLEgdfX2FueV9fGIC4mSkKGAoJQ0FSLkZJUlNUEgdfX2FueV9fGKD+CgojChRObHBDb2xsZWN0b3JXYWtlTG9jaxIHX19hbnlfXxjA/BUKOgoUTmxwQ29sbGVjdG9yV2FrZUxvY2sSHk5ldHdvcmtMb2NhdGlvbkFjdGl2ZUNvbGxlY3Rvchjg1AMKGgoLTmxwV2FrZUxvY2sSB19fYW55X18YsOoBCjAKC05scFdha2VMb2NrEh1OZXR3b3JrTG9jYXRpb25TZW5zb3JVcGxvYWRlchjg1AMKLgofbWVzc2FnaW5nX3NlcnZpY2Vfd29ya193YWtlbG9jaxIHX19hbnlfXxjg1AMKLgofcmVnaXN0ZXJfc2VydmljZV9zdGFydF93YWtlbG9jaxIHX19hbnlfXxjAmgwKLgoeQ2FzdFNvY2tldE11bHRpcGxleGVyX1dha2VMb2NrEgdfX2FueV9fGIC4mSk</string>
+    <boolean name="MultiPackage__multi_package_user_not_opted_in" value="false" />
+    <boolean name="ClientLogging__enable_info_log_redaction" value="true" />
+    <boolean name="Bug116753498__suppressEnabled" value="false" />
+    <boolean name="SchedulerPowerSaverMode__enable_allowed_tasks_only_for_0p" value="false" />
+    <boolean name="Tracing__create_main_thread_spans" value="true" />
+    <boolean name="Chimera__eligible_for_chimera_test" value="false" />
+    <boolean name="SchedulerClearcutLogging__enable_logging_loggable_tags" value="true" />
+    <boolean name="Primes__disable_legacy_timer_configuration_registration" value="true" />
+    <boolean name="Providence__wrap_service_impl_in_closeable_binder" value="false" />
+    <boolean name="CoreStats__enable_wakelock_gcore_prefix" value="true" />
+    <boolean name="CoreStats__trace_aggregate_upload" value="false" />
+    <boolean name="ChimeraCriticalPath__remove_rejected_module_sets" value="false" />
+    <string name="Chimera__blocked_features">ChcKE3RmbGl0ZV9ncHVfZHluYW1pdGUQAQoYChR0ZmxpdGVfZGVsZWdhdGVfdGVzdBABChsKF3RmbGl0ZV9kZWxlZ2F0ZV9lZGdldHB1EAE</string>
+    <boolean name="Primes__important_process_uses_separate_latency_tracking_modulus" value="true" />
+    <boolean name="FacetUsageLoggingFeature__deferred_logging" value="false" />
+    <boolean name="stats:allow_non_googler_upload" value="false" />
+    <float name="SchedulerTasksExperiments__periodic_task_frequency_multiplier" value="1.0" />
+    <boolean name="Zapp__enable_native_brotli_for_zapp_v2" value="false" />
+    <boolean name="Common__enable_opted_in_logger_creator_pseudonymous_logger" value="true" />
+    <boolean name="GmsCoreLoggerFeature__enable_pending_metric_scheduler_on_process_startup" value="true" />
+    <boolean name="OzTrafficShutdown__oz_traffic_shutdown_list_enabled" value="true" />
+    <boolean name="Network__enable_tracing_network_requests" value="true" />
+    <long name="ChimeraCheckin__config_checkin_flex_seconds" value="21600" />
+    <boolean name="GmsCoreLoggerFeature__enable_pseudonymous_logger" value="true" />
+    <string name="Scheduler__stop_rescheduling_timed_out_gmscore_tasks_filter">-com.google.android.gms/.feedback.OfflineReportSendTaskService:*,-com.google.android.gms/.droidguard.DroidGuardFastRefreshGmsTaskBoundService:*</string>
+    <boolean name="NativeMemory__enable_memory_experiment" value="false" />
+    <boolean name="Grpc__enable_android_channel_network_monitoring" value="false" />
+    <string name="Chimera__module_set_list">CoA8Ch4KC3NpZGVjYXJfYXBzEO/KmQEYgQIg8O+i34mTvAQS3xsKEFNpZGVjYXJBcHMuaW50ZWcaGgoWYWNjb3VudF9jYXBhYmlsaXR5X2FwaRABGhgKFGFjY291bnRfZGF0YV9zZXJ2aWNlEAYaHwobYWNjb3VudF9kYXRhX3NlcnZpY2VfbGVnYWN5EAEaHgoaYWNjb3VudF9kYXRhX3NlcnZpY2VfdG9rZW4QCRojCh9hY2NvdW50X2RhdGFfc2VydmljZV92aXNpYmlsaXR5EAEaEwoPYXV0aF9ibG9ja3N0b3JlEAMaIQodYXV0aF9jbGVhcl9yZXN0b3JlX2NyZWRlbnRpYWwQARoiCh5hdXRoX2NyZWF0ZV9yZXN0b3JlX2NyZWRlbnRpYWwQARorCidhdXRoX2dldF9wcml2YXRlX3Jlc3RvcmVfY3JlZGVudGlhbF9rZXkQARofChthdXRoX2dldF9yZXN0b3JlX2NyZWRlbnRpYWwQARorCidhdXRoX3NldF9wcml2YXRlX3Jlc3RvcmVfY3JlZGVudGlhbF9rZXkQARoPCghhdXRoX3N1dxCNwf53GhwKGGJsb2Nrc3RvcmVfZGF0YV90cmFuc2ZlchABGhsKF2Jsb2Nrc3RvcmVfZGVsZXRlX2J5dGVzEAIaIgoeYmxvY2tzdG9yZV9lbmFibGVfY2xvdWRfYmFja3VwEAEaMQotYmxvY2tzdG9yZV9pc19lbmRfdG9fZW5kX2VuY3J5cHRpb25fYXZhaWxhYmxlEAEaIQodYmxvY2tzdG9yZV9ub3RpZnlfYXBwX3Jlc3RvcmUQARoqCiZibG9ja3N0b3JlX3JldHJpZXZlX2J5dGVzX3dpdGhfb3B0aW9ucxADGicKI2Jsb2Nrc3RvcmVfc3RvcmVfYnl0ZXNfd2l0aF9vcHRpb25zEAIaIQodY2FuY2VsX3RhcmdldF9kaXJlY3RfdHJhbnNmZXIQARoRCg1jb21tdW5hbF9hdXRoEAEaDwoLY29uZmlnX3N5bmMQARoVChFkZWxldGVfY3JlZGVudGlhbBABGhwKGGRlbGV0ZV9kZXZpY2VfcHVibGljX2tleRABGhQKEGRlbW9fYWNjb3VudF9hcGkQARoWChJkZXZpY2VfYWNjb3VudF9hcGkQARofChtkZXZpY2VfYWNjb3VudF9qd3RfY3JlYXRpb24QARoSCg5kZXZpY2VfcG9zdHVyZRABGg8KC2RldmljZV9zeW5jEAEaEwoPZW1iZWRkZWRfcmVhdXRoEAEaFQoRZW50ZXJwcmlzZV9sb2FkZXIQARoZChVlc2ltX2FjdGl2YXRpb25fc2V0dXAQAhogChxmYWN0b3J5X3Jlc2V0X3Byb3RlY3Rpb25fYXBpEAEaJwojZmFjdG9yeV9yZXNldF9wcm90ZWN0aW9uX3VubG9ja19hcGkQARovCitmZWF0dXJlX2VudGVycHJpc2VfbG9hZGVyX2NvbnNlbnRlZF9sb2dnaW5nEAEaIQodZmlyc3RfcGFydHlfYXBpX2dldF9saW5rX2luZm8QARocChhnYWlhaWRfcHJpbWFyeV9lbWFpbF9hcGkQARofChtnZW5lcmF0ZV9vcGVuX3ZhdWx0X3JlcXVlc3QQARo5CjVnZXRfYnJvd3Nlcl9oeWJyaWRfY2xpZW50X3JlZ2lzdHJhdGlvbl9wZW5kaW5nX2ludGVudBABGjEKLWdldF9icm93c2VyX2h5YnJpZF9jbGllbnRfc2lnbl9wZW5kaW5nX2ludGVudBABGhQKEGdldF9kb21haW5fc3RhdGUQARoQCgxnZXRfa2V5X2luZm8QARolCiFnZXRfb3JfZ2VuZXJhdGVfZGV2aWNlX3B1YmxpY19rZXkQARoQCgxnZXRfcGFzc2tleXMQARoUChBnZXRfcHJvZHVjdF9rZXlzEAEaHwobZ2V0X3Jlc3RyaWN0ZWRfYWNjb3VudHNfYXBpEAEaEwoPZ29vZ2xlX2F1dGhfYXBpEAEaIAocZ29vZ2xlX2F1dGhfc2VydmljZV9hY2NvdW50cxACGh0KGWdvb2dsZV9hdXRoX3NlcnZpY2VfdG9rZW4QAxoQCgxodWJfbW9kZV9hcGkQARo2CjJpc191c2VyX3ZlcmlmeWluZ19wbGF0Zm9ybV9hdXRoZW50aWNhdG9yX2F2YWlsYWJsZRABGkUKQWlzX3VzZXJfdmVyaWZ5aW5nX3BsYXRmb3JtX2F1dGhlbnRpY2F0b3JfYXZhaWxhYmxlX2Zvcl9jcmVkZW50aWFsEAEaEQoNa2V5X3JldHJpZXZhbBACGiMKH2xpc3RfcmVjb3ZlcmVkX3NlY3VyaXR5X2RvbWFpbnMQARoZChVsb2FkZXJfbXBfcmVzdWx0X2NvZGUQARoQCgxsc2tmX2NvbnNlbnQQARoZChVtYW5hZ2VkX2FjY291bnRfc2V0dXAQAhodChlwb3N0X3NldHVwXzNwX3Jlc3RvcmVfYXBpEAEaEgoOcG9zdF9zZXR1cF9hcGkQARogChxwb3N0X3NldHVwX2NsZWFuX3Jlc3RvcmVfYXBpEAEaEwoPcG9zdF9zZXR1cF9wYWlyEAQaGgoWcG9zdF9zZXR1cF9yZXN0b3JlX2FwaRABGhwKGHBvc3Rfc2V0dXBfc3RhcnRfcmVzdG9yZRABGioKJnBvc3Rfc2V0dXBfc3RhcnRfc2VydmljZV9vbl9zb3VyY2VfYXBpEAMaIwofcHJpdmlsZWdlZF9hcGlfbGlzdF9jcmVkZW50aWFscxACGiMKH3ByaXZpbGVnZWRfYXV0aGVudGljYXRlX3Bhc3NrZXkQAhoxCi1wcml2aWxlZ2VkX3JlZ2lzdGVyX3Bhc3NrZXlfd2l0aF9zeW5jX2FjY291bnQQARoWChJyZWNvdmVyYWJpbGl0eV9maXgQAhoZChVyZXNldF9zZWN1cml0eV9kb21haW4QAhoaChZzZWNvbmRfZGV2aWNlX2F1dGhfYXBpEAQaJQohc2lsZW50bHlfYWRkX2dhaWFfcGFzc3dvcmRfbWVtYmVyEAEaGAoUc291cmNlX2Jvb3RzdHJhcF9hcGkQAhoeChpzb3VyY2VfZGlyZWN0X3RyYW5zZmVyX2FwaRABGiwKKHNvdXJjZV9kaXJlY3RfdHJhbnNmZXJfd2l0aF9wcm9ncmVzc19hcGkQARoSCg5zdGFydF9yZWNvdmVyeRADGiAKHHN0YXJ0X3RhcmdldF9kaXJlY3RfdHJhbnNmZXIQARoaChZzeW5jX2FjY291bnRfc3RhdGVfYXBpEAEaHgoadGFyZ2V0X2RpcmVjdF90cmFuc2Zlcl9hcGkQARosCih0YXJnZXRfZGlyZWN0X3RyYW5zZmVyX3dpdGhfcHJvZ3Jlc3NfYXBpEAEaGgoWdGFyZ2V0X3F1aWNrX3N0YXJ0X2FwaRACGhIKDnVwZGF0ZV9wYXNza2V5EAEaJgoid29ya19hY2NvdW50X2NsaWVudF9pc193aGl0ZWxpc3RlZBABGhgKFHdvcmtfcHJvZmlsZV9yZXN0b3JlEAEaJwojemVyb19wYXJ0eV9hcGlfYXV0aGVudGljYXRlX3Bhc3NrZXkQAxpJCkV6ZXJvX3BhcnR5X2FwaV9nZXRfZmlkb19zZWN1cml0eV9rZXlfb25seV9yZWdpc3RyYXRpb25fcGVuZGluZ19pbnRlbnQQAhpBCj16ZXJvX3BhcnR5X2FwaV9nZXRfZmlkb19zZWN1cml0eV9rZXlfb25seV9zaWduX3BlbmRpbmdfaW50ZW50EAIaQAo8emVyb19wYXJ0eV9hcGlfZ2V0X2h5YnJpZF9jbGllbnRfcmVnaXN0cmF0aW9uX3BlbmRpbmdfaW50ZW50EAEaOAo0emVyb19wYXJ0eV9hcGlfZ2V0X2h5YnJpZF9jbGllbnRfc2lnbl9wZW5kaW5nX2ludGVudBABGjoKNnplcm9fcGFydHlfYXBpX2dldF9oeWJyaWRfZGF0YV90cmFuc2Zlcl9wZW5kaW5nX2ludGVudBABGlQKUHplcm9fcGFydHlfYXBpX2dldF9wcml2aWxlZ2VkX2ZpZG9fc2VjdXJpdHlfa2V5X29ubHlfcmVnaXN0cmF0aW9uX3BlbmRpbmdfaW50ZW50EAIaTApIemVyb19wYXJ0eV9hcGlfZ2V0X3ByaXZpbGVnZWRfZmlkb19zZWN1cml0eV9rZXlfb25seV9zaWduX3BlbmRpbmdfaW50ZW50EAIaSwpHemVyb19wYXJ0eV9hcGlfZ2V0X3ByaXZpbGVnZWRfaHlicmlkX2NsaWVudF9yZWdpc3RyYXRpb25fcGVuZGluZ19pbnRlbnQQARpDCj96ZXJvX3BhcnR5X2FwaV9nZXRfcHJpdmlsZWdlZF9oeWJyaWRfY2xpZW50X3NpZ25fcGVuZGluZ19pbnRlbnQQARowCix6ZXJvX3BhcnR5X2FwaV9saXN0X2Rpc2NvdmVyYWJsZV9jcmVkZW50aWFscxACGhsKF3plcm9fcGFydHlfYXBpX3JlZ2lzdGVyEAMaIwofemVyb19wYXJ0eV9hcGlfcmVnaXN0ZXJfcGFzc2tleRABGjUKMXplcm9fcGFydHlfYXBpX3JlZ2lzdGVyX3Bhc3NrZXlfd2l0aF9zeW5jX2FjY291bnQQARoXChN6ZXJvX3BhcnR5X2FwaV9zaWduEAMiDzI1MTYzMzgwNTEwMDQwMCgBMAJAABJlChpTaWRlY2FyQXBzRW50ZXJwcmlzZS5pbnRlZxoRCgplbnRlcnByaXNlEI3B/ncaHQoZZW50ZXJwcmlzZV96dF9tcF9jb21wbGV0ZRABIg8yNTE2MzM4MDUxMDA0MDAoATACQAAqHgoWYWNjb3VudF9jYXBhYmlsaXR5X2FwaRABGAEoASocChRhY2NvdW50X2RhdGFfc2VydmljZRAGGAEoASojChthY2NvdW50X2RhdGFfc2VydmljZV9sZWdhY3kQARgBKAEqIgoaYWNjb3VudF9kYXRhX3NlcnZpY2VfdG9rZW4QCRgBKAEqJwofYWNjb3VudF9kYXRhX3NlcnZpY2VfdmlzaWJpbGl0eRABGAEoASoXCg9hdXRoX2Jsb2Nrc3RvcmUQAxgBKAEqJQodYXV0aF9jbGVhcl9yZXN0b3JlX2NyZWRlbnRpYWwQARgBKAEqJgoeYXV0aF9jcmVhdGVfcmVzdG9yZV9jcmVkZW50aWFsEAEYASgBKi8KJ2F1dGhfZ2V0X3ByaXZhdGVfcmVzdG9yZV9jcmVkZW50aWFsX2tleRABGAEoASojChthdXRoX2dldF9yZXN0b3JlX2NyZWRlbnRpYWwQARgBKAEqLwonYXV0aF9zZXRfcHJpdmF0ZV9yZXN0b3JlX2NyZWRlbnRpYWxfa2V5EAEYASgBKiEKCGF1dGhfc3V3EI3B/ncYAToHCgUBAgMEBToFCgEIEB8qIAoYYmxvY2tzdG9yZV9kYXRhX3RyYW5zZmVyEAEYASgBKh8KF2Jsb2Nrc3RvcmVfZGVsZXRlX2J5dGVzEAIYASgBKiYKHmJsb2Nrc3RvcmVfZW5hYmxlX2Nsb3VkX2JhY2t1cBABGAEoASo1Ci1ibG9ja3N0b3JlX2lzX2VuZF90b19lbmRfZW5jcnlwdGlvbl9hdmFpbGFibGUQARgBKAEqJQodYmxvY2tzdG9yZV9ub3RpZnlfYXBwX3Jlc3RvcmUQARgBKAEqLgomYmxvY2tzdG9yZV9yZXRyaWV2ZV9ieXRlc193aXRoX29wdGlvbnMQAxgBKAEqKwojYmxvY2tzdG9yZV9zdG9yZV9ieXRlc193aXRoX29wdGlvbnMQAhgBKAEqJQodY2FuY2VsX3RhcmdldF9kaXJlY3RfdHJhbnNmZXIQARgBKAEqFQoNY29tbXVuYWxfYXV0aBABGAEoASoTCgtjb25maWdfc3luYxABGAEoASoZChFkZWxldGVfY3JlZGVudGlhbBABGAEoASogChhkZWxldGVfZGV2aWNlX3B1YmxpY19rZXkQARgBKAEqGAoQZGVtb19hY2NvdW50X2FwaRABGAEoASoaChJkZXZpY2VfYWNjb3VudF9hcGkQARgBKAEqIwobZGV2aWNlX2FjY291bnRfand0X2NyZWF0aW9uEAEYASgBKhYKDmRldmljZV9wb3N0dXJlEAEYASgBKhMKC2RldmljZV9zeW5jEAEYASgBKhcKD2VtYmVkZGVkX3JlYXV0aBABGAEoASomCgplbnRlcnByaXNlEI3B/ncYAToFCgEBEBw6AwoBAjoFCgEIEB8qGQoRZW50ZXJwcmlzZV9sb2FkZXIQARgBKAEqIQoZZW50ZXJwcmlzZV96dF9tcF9jb21wbGV0ZRABGAEoASodChVlc2ltX2FjdGl2YXRpb25fc2V0dXAQAhgBKAEqJAocZmFjdG9yeV9yZXNldF9wcm90ZWN0aW9uX2FwaRABGAEoASorCiNmYWN0b3J5X3Jlc2V0X3Byb3RlY3Rpb25fdW5sb2NrX2FwaRABGAEoASozCitmZWF0dXJlX2VudGVycHJpc2VfbG9hZGVyX2NvbnNlbnRlZF9sb2dnaW5nEAEYASgBKiUKHWZpcnN0X3BhcnR5X2FwaV9nZXRfbGlua19pbmZvEAEYASgBKiAKGGdhaWFpZF9wcmltYXJ5X2VtYWlsX2FwaRABGAEoASojChtnZW5lcmF0ZV9vcGVuX3ZhdWx0X3JlcXVlc3QQARgBKAEqPQo1Z2V0X2Jyb3dzZXJfaHlicmlkX2NsaWVudF9yZWdpc3RyYXRpb25fcGVuZGluZ19pbnRlbnQQARgBKAEqNQotZ2V0X2Jyb3dzZXJfaHlicmlkX2NsaWVudF9zaWduX3BlbmRpbmdfaW50ZW50EAEYASgBKhgKEGdldF9kb21haW5fc3RhdGUQARgBKAEqFAoMZ2V0X2tleV9pbmZvEAEYASgBKikKIWdldF9vcl9nZW5lcmF0ZV9kZXZpY2VfcHVibGljX2tleRABGAEoASoUCgxnZXRfcGFzc2tleXMQARgBKAEqGAoQZ2V0X3Byb2R1Y3Rfa2V5cxABGAEoASojChtnZXRfcmVzdHJpY3RlZF9hY2NvdW50c19hcGkQARgBKAEqFwoPZ29vZ2xlX2F1dGhfYXBpEAEYASgBKiQKHGdvb2dsZV9hdXRoX3NlcnZpY2VfYWNjb3VudHMQAhgBKAEqIQoZZ29vZ2xlX2F1dGhfc2VydmljZV90b2tlbhADGAEoASoUCgxodWJfbW9kZV9hcGkQARgBKAEqOgoyaXNfdXNlcl92ZXJpZnlpbmdfcGxhdGZvcm1fYXV0aGVudGljYXRvcl9hdmFpbGFibGUQARgBKAEqSQpBaXNfdXNlcl92ZXJpZnlpbmdfcGxhdGZvcm1fYXV0aGVudGljYXRvcl9hdmFpbGFibGVfZm9yX2NyZWRlbnRpYWwQARgBKAEqFQoNa2V5X3JldHJpZXZhbBACGAEoASonCh9saXN0X3JlY292ZXJlZF9zZWN1cml0eV9kb21haW5zEAEYASgBKh0KFWxvYWRlcl9tcF9yZXN1bHRfY29kZRABGAEoASoUCgxsc2tmX2NvbnNlbnQQARgBKAEqHQoVbWFuYWdlZF9hY2NvdW50X3NldHVwEAIYASgBKiEKGXBvc3Rfc2V0dXBfM3BfcmVzdG9yZV9hcGkQARgBKAEqFgoOcG9zdF9zZXR1cF9hcGkQARgBKAEqJAoccG9zdF9zZXR1cF9jbGVhbl9yZXN0b3JlX2FwaRABGAEoASoXCg9wb3N0X3NldHVwX3BhaXIQBBgBKAEqHgoWcG9zdF9zZXR1cF9yZXN0b3JlX2FwaRABGAEoASogChhwb3N0X3NldHVwX3N0YXJ0X3Jlc3RvcmUQARgBKAEqLgomcG9zdF9zZXR1cF9zdGFydF9zZXJ2aWNlX29uX3NvdXJjZV9hcGkQAxgBKAEqJwofcHJpdmlsZWdlZF9hcGlfbGlzdF9jcmVkZW50aWFscxACGAEoASonCh9wcml2aWxlZ2VkX2F1dGhlbnRpY2F0ZV9wYXNza2V5EAIYASgBKjUKLXByaXZpbGVnZWRfcmVnaXN0ZXJfcGFzc2tleV93aXRoX3N5bmNfYWNjb3VudBABGAEoASoaChJyZWNvdmVyYWJpbGl0eV9maXgQAhgBKAEqHQoVcmVzZXRfc2VjdXJpdHlfZG9tYWluEAIYASgBKh4KFnNlY29uZF9kZXZpY2VfYXV0aF9hcGkQBBgBKAEqKQohc2lsZW50bHlfYWRkX2dhaWFfcGFzc3dvcmRfbWVtYmVyEAEYASgBKhwKFHNvdXJjZV9ib290c3RyYXBfYXBpEAIYASgBKiIKGnNvdXJjZV9kaXJlY3RfdHJhbnNmZXJfYXBpEAEYASgBKjAKKHNvdXJjZV9kaXJlY3RfdHJhbnNmZXJfd2l0aF9wcm9ncmVzc19hcGkQARgBKAEqFgoOc3RhcnRfcmVjb3ZlcnkQAxgBKAEqJAocc3RhcnRfdGFyZ2V0X2RpcmVjdF90cmFuc2ZlchABGAEoASoeChZzeW5jX2FjY291bnRfc3RhdGVfYXBpEAEYASgBKiIKGnRhcmdldF9kaXJlY3RfdHJhbnNmZXJfYXBpEAEYASgBKjAKKHRhcmdldF9kaXJlY3RfdHJhbnNmZXJfd2l0aF9wcm9ncmVzc19hcGkQARgBKAEqHgoWdGFyZ2V0X3F1aWNrX3N0YXJ0X2FwaRACGAEoASoWCg51cGRhdGVfcGFzc2tleRABGAEoASoqCiJ3b3JrX2FjY291bnRfY2xpZW50X2lzX3doaXRlbGlzdGVkEAEYASgBKhwKFHdvcmtfcHJvZmlsZV9yZXN0b3JlEAEYASgBKisKI3plcm9fcGFydHlfYXBpX2F1dGhlbnRpY2F0ZV9wYXNza2V5EAMYASgBKk0KRXplcm9fcGFydHlfYXBpX2dldF9maWRvX3NlY3VyaXR5X2tleV9vbmx5X3JlZ2lzdHJhdGlvbl9wZW5kaW5nX2ludGVudBACGAEoASpFCj16ZXJvX3BhcnR5X2FwaV9nZXRfZmlkb19zZWN1cml0eV9rZXlfb25seV9zaWduX3BlbmRpbmdfaW50ZW50EAIYASgBKkQKPHplcm9fcGFydHlfYXBpX2dldF9oeWJyaWRfY2xpZW50X3JlZ2lzdHJhdGlvbl9wZW5kaW5nX2ludGVudBABGAEoASo8CjR6ZXJvX3BhcnR5X2FwaV9nZXRfaHlicmlkX2NsaWVudF9zaWduX3BlbmRpbmdfaW50ZW50EAEYASgBKj4KNnplcm9fcGFydHlfYXBpX2dldF9oeWJyaWRfZGF0YV90cmFuc2Zlcl9wZW5kaW5nX2ludGVudBABGAEoASpYClB6ZXJvX3BhcnR5X2FwaV9nZXRfcHJpdmlsZWdlZF9maWRvX3NlY3VyaXR5X2tleV9vbmx5X3JlZ2lzdHJhdGlvbl9wZW5kaW5nX2ludGVudBACGAEoASpQCkh6ZXJvX3BhcnR5X2FwaV9nZXRfcHJpdmlsZWdlZF9maWRvX3NlY3VyaXR5X2tleV9vbmx5X3NpZ25fcGVuZGluZ19pbnRlbnQQAhgBKAEqTwpHemVyb19wYXJ0eV9hcGlfZ2V0X3ByaXZpbGVnZWRfaHlicmlkX2NsaWVudF9yZWdpc3RyYXRpb25fcGVuZGluZ19pbnRlbnQQARgBKAEqRwo/emVyb19wYXJ0eV9hcGlfZ2V0X3ByaXZpbGVnZWRfaHlicmlkX2NsaWVudF9zaWduX3BlbmRpbmdfaW50ZW50EAEYASgBKjQKLHplcm9fcGFydHlfYXBpX2xpc3RfZGlzY292ZXJhYmxlX2NyZWRlbnRpYWxzEAIYASgBKh8KF3plcm9fcGFydHlfYXBpX3JlZ2lzdGVyEAMYASgBKicKH3plcm9fcGFydHlfYXBpX3JlZ2lzdGVyX3Bhc3NrZXkQARgBKAEqOQoxemVyb19wYXJ0eV9hcGlfcmVnaXN0ZXJfcGFzc2tleV93aXRoX3N5bmNfYWNjb3VudBABGAEoASobChN6ZXJvX3BhcnR5X2FwaV9zaWduEAMYASgBCqABChAKBGtpZHMQ8nkYASCm2rJKElAKCktpZHMuaW50ZWcQ8nkaCAoEa2lkcxAFGhIKDmtpZHNfZGFzaGJvYXJkEAIaFgoSa2lkc19sYXVuY2hlcl9tb2RlEAEiCTE1NjAyMDAwNioKCgRraWRzEAUYASoUCg5raWRzX2Rhc2hib2FyZBACGAEqGAoSa2lkc19sYXVuY2hlcl9tb2RlEAEYAQrFAwoXCgRraWRzELPPlAEYgQIg8Lan/9rTqQQS0QEKCktpZHMuaW50ZWcaCwoEa2lkcxDQhI50GhUKDmtpZHNfZGFzaGJvYXJkENCEjnQaJwoja2lkc19nZXRfcGFyZW50X3ZlcmlmaWNhdGlvbl9pbnRlbnQQAxobChdraWRzX3Jlc291cmNlX2ZpbHRlcmluZxAEGigKJGtpZHNfc2NyZWVudGltZV9yZXN0cmljdGlvbl9jYWxsYmFjaxACGhgKEWtpZHNfdHJhbnNwYXJlbmN5ENCEjnQiDzI0MzQ5OTYwMDEwMDQwMCgBMAJAACoVCgRraWRzENCEjnQYAToGCgIBAhAVKh8KDmtpZHNfZGFzaGJvYXJkENCEjnQYAToGCgIBAhAVKisKI2tpZHNfZ2V0X3BhcmVudF92ZXJpZmljYXRpb25faW50ZW50EAMYASgBKh8KF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQYASgBKiwKJGtpZHNfc2NyZWVudGltZV9yZXN0cmljdGlvbl9jYWxsYmFjaxACGAEoASoiChFraWRzX3RyYW5zcGFyZW5jeRDQhI50GAE6BgoCAQIQFQrlBQoXCgRraWRzEJmhnwEYgQIg8NaD5u2k0QQS2QIKCktpZHMuaW50ZWcaCwoEa2lkcxDw+bV8Gh8KG2tpZHNfY29udmVyc2F0aW9uX2ZpbHRlcmluZxABGhUKDmtpZHNfZGFzaGJvYXJkEPD5tXwaJAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQ8Pm1fBonCiNraWRzX2dldF9wYXJlbnRfdmVyaWZpY2F0aW9uX2ludGVudBADGh8KG2tpZHNfZ2V0X3N1cHBvcnRlZF9mZWF0dXJlcxAFGhsKF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQaHgoXa2lkc19yZXZva2Vfc3VwZXJ2aXNpb24Q8Pm1fBooCiRraWRzX3NjcmVlbnRpbWVfcmVzdHJpY3Rpb25fY2FsbGJhY2sQAhoYChFraWRzX3RyYW5zcGFyZW5jeRDw+bV8Ig8yNjA5MzA4MDAxMDA0MDAoATACQAAqFQoEa2lkcxDw+bV8GAE6BgoCAQIQFyojChtraWRzX2NvbnZlcnNhdGlvbl9maWx0ZXJpbmcQARgBKAEqHwoOa2lkc19kYXNoYm9hcmQQ8Pm1fBgBOgYKAgECEBcqKAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQ8Pm1fBgBKAEqKwoja2lkc19nZXRfcGFyZW50X3ZlcmlmaWNhdGlvbl9pbnRlbnQQAxgBKAEqIwoba2lkc19nZXRfc3VwcG9ydGVkX2ZlYXR1cmVzEAUYASgBKh8KF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQYASgBKiIKF2tpZHNfcmV2b2tlX3N1cGVydmlzaW9uEPD5tXwYASgBKiwKJGtpZHNfc2NyZWVudGltZV9yZXN0cmljdGlvbl9jYWxsYmFjaxACGAEoASoiChFraWRzX3RyYW5zcGFyZW5jeRDw+bV8GAE6BgoCAQIQFwrlBQoXCgRraWRzEIGpnwEYgQIg8LrW9O/B0QQS2QIKCktpZHMuaW50ZWcaCwoEa2lkcxDkhLx8Gh8KG2tpZHNfY29udmVyc2F0aW9uX2ZpbHRlcmluZxABGhUKDmtpZHNfZGFzaGJvYXJkEOSEvHwaJAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQ5IS8fBonCiNraWRzX2dldF9wYXJlbnRfdmVyaWZpY2F0aW9uX2ludGVudBADGh8KG2tpZHNfZ2V0X3N1cHBvcnRlZF9mZWF0dXJlcxAFGhsKF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQaHgoXa2lkc19yZXZva2Vfc3VwZXJ2aXNpb24Q5IS8fBooCiRraWRzX3NjcmVlbnRpbWVfcmVzdHJpY3Rpb25fY2FsbGJhY2sQAhoYChFraWRzX3RyYW5zcGFyZW5jeRDkhLx8Ig8yNjEwMzA1MDAxMDA0MDAoATACQAAqFQoEa2lkcxDkhLx8GAE6BgoCAQIQFyojChtraWRzX2NvbnZlcnNhdGlvbl9maWx0ZXJpbmcQARgBKAEqHwoOa2lkc19kYXNoYm9hcmQQ5IS8fBgBOgYKAgECEBcqKAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQ5IS8fBgBKAEqKwoja2lkc19nZXRfcGFyZW50X3ZlcmlmaWNhdGlvbl9pbnRlbnQQAxgBKAEqIwoba2lkc19nZXRfc3VwcG9ydGVkX2ZlYXR1cmVzEAUYASgBKh8KF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQYASgBKiIKF2tpZHNfcmV2b2tlX3N1cGVydmlzaW9uEOSEvHwYASgBKiwKJGtpZHNfc2NyZWVudGltZV9yZXN0cmljdGlvbl9jYWxsYmFjaxACGAEoASoiChFraWRzX3RyYW5zcGFyZW5jeRDkhLx8GAE6BgoCAQIQFwrlBQoXCgRraWRzEOmwnwEYgQIg8ILB04Tf0QQS2QIKCktpZHMuaW50ZWcaCwoEa2lkcxDMk8J8Gh8KG2tpZHNfY29udmVyc2F0aW9uX2ZpbHRlcmluZxABGhUKDmtpZHNfZGFzaGJvYXJkEMyTwnwaJAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQzJPCfBonCiNraWRzX2dldF9wYXJlbnRfdmVyaWZpY2F0aW9uX2ludGVudBADGh8KG2tpZHNfZ2V0X3N1cHBvcnRlZF9mZWF0dXJlcxAFGhsKF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQaHgoXa2lkc19yZXZva2Vfc3VwZXJ2aXNpb24QzJPCfBooCiRraWRzX3NjcmVlbnRpbWVfcmVzdHJpY3Rpb25fY2FsbGJhY2sQAhoYChFraWRzX3RyYW5zcGFyZW5jeRDMk8J8Ig8yNjExMzA3MDAxMDA0MDAoATACQAAqFQoEa2lkcxDMk8J8GAE6BgoCAQIQFyojChtraWRzX2NvbnZlcnNhdGlvbl9maWx0ZXJpbmcQARgBKAEqHwoOa2lkc19kYXNoYm9hcmQQzJPCfBgBOgYKAgECEBcqKAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQzJPCfBgBKAEqKwoja2lkc19nZXRfcGFyZW50X3ZlcmlmaWNhdGlvbl9pbnRlbnQQAxgBKAEqIwoba2lkc19nZXRfc3VwcG9ydGVkX2ZlYXR1cmVzEAUYASgBKh8KF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQYASgBKiIKF2tpZHNfcmV2b2tlX3N1cGVydmlzaW9uEMyTwnwYASgBKiwKJGtpZHNfc2NyZWVudGltZV9yZXN0cmljdGlvbl9jYWxsYmFjaxACGAEoASoiChFraWRzX3RyYW5zcGFyZW5jeRDMk8J8GAE6BgoCAQIQFwrlBQoXCgRraWRzENG4nwEYgQIg8I7qm4780QQS2QIKCktpZHMuaW50ZWcaCwoEa2lkcxCIoMh8Gh8KG2tpZHNfY29udmVyc2F0aW9uX2ZpbHRlcmluZxABGhUKDmtpZHNfZGFzaGJvYXJkEIigyHwaJAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQiKDIfBonCiNraWRzX2dldF9wYXJlbnRfdmVyaWZpY2F0aW9uX2ludGVudBADGh8KG2tpZHNfZ2V0X3N1cHBvcnRlZF9mZWF0dXJlcxAFGhsKF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQaHgoXa2lkc19yZXZva2Vfc3VwZXJ2aXNpb24QiKDIfBooCiRraWRzX3NjcmVlbnRpbWVfcmVzdHJpY3Rpb25fY2FsbGJhY2sQAhoYChFraWRzX3RyYW5zcGFyZW5jeRCIoMh8Ig8yNjEyMzA2MDAxMDA0MDAoATACQAAqFQoEa2lkcxCIoMh8GAE6BgoCAQIQFyojChtraWRzX2NvbnZlcnNhdGlvbl9maWx0ZXJpbmcQARgBKAEqHwoOa2lkc19kYXNoYm9hcmQQiKDIfBgBOgYKAgECEBcqKAoda2lkc19lbnN1cmVfc3VwZXJ2aXNpb25fc2V0dXAQiKDIfBgBKAEqKwoja2lkc19nZXRfcGFyZW50X3ZlcmlmaWNhdGlvbl9pbnRlbnQQAxgBKAEqIwoba2lkc19nZXRfc3VwcG9ydGVkX2ZlYXR1cmVzEAUYASgBKh8KF2tpZHNfcmVzb3VyY2VfZmlsdGVyaW5nEAQYASgBKiIKF2tpZHNfcmV2b2tlX3N1cGVydmlzaW9uEIigyHwYASgBKiwKJGtpZHNfc2NyZWVudGltZV9yZXN0cmljdGlvbl9jYWxsYmFjaxACGAEoASoiChFraWRzX3RyYW5zcGFyZW5jeRCIoMh8GAE6BgoCAQIQFwqmAgoiCg90ZmxpdGVfZHluYW1pdGUQ2fGZARiBAiDwpOSfwqO9BBJNChxUZmxpdGVEeW5hbWl0ZUR5bmFtaXRlLmludGVnGhYKD3RmbGl0ZV9keW5hbWl0ZRC25px4Ig8yNTIxMzAxMDIxMDA0MDAoATACQAASVAofVGZsaXRlR3B1RHluYW1pdGVEeW5hbWl0ZS5pbnRlZxoaChN0ZmxpdGVfZ3B1X2R5bmFtaXRlELbmnHgiDzI1MjEzMDEwMjEwMDQwMCgBMAJAACooCg90ZmxpdGVfZHluYW1pdGUQtuaceBgBOgcKBQECBQYIOgUKAQQQISoxChN0ZmxpdGVfZ3B1X2R5bmFtaXRlELbmnHgYAToFCgEBEBc6BQoBCBAfOgUKAQUQHQqNAQodCgp2aXNpb25fb2NyEPmtjQEYgQIg4N266pXNjgQSQQoXVmlzaW9uT2NyRHluYW1pdGUuaW50ZWcaEQoKdmlzaW9uLm9jchDi8bduIg8yMzE2MDI0MDIxMDAwMDAoATACKikKCnZpc2lvbi5vY3IQ4vG3bhgBMhQKEG1sa2l0Lm9jci5jb21tb24QAQqGBAonChRubmFwaWRyaXZlcl9keW5hbWl0ZRDFxYgBGIECIPCm5bnh1PwDElQKIE5uYXBpZHJpdmVyQXJtTWFsaUR5bmFtaXRlLmludGVnGhsKFG5uYXBpZHJpdmVyX2FybV9tYWxpEICm1moiDzIyMzcxMjAwMDEwMDQwMCgAMAASVgohTm5hcGlkcml2ZXJRY1NtNzI1MER5bmFtaXRlLmludGVnGhwKFW5uYXBpZHJpdmVyX3FjX3NtNzI1MBCAptZqIg8yMjM3MTIwMDAxMDA0MDAoADAAElYKIU5uYXBpZHJpdmVyUWNTbTgyNTBEeW5hbWl0ZS5pbnRlZxocChVubmFwaWRyaXZlcl9xY19zbTgyNTAQgKbWaiIPMjIzNzEyMDAwMTAwNDAwKAAwABJWCiFObmFwaWRyaXZlclFjU204MzUwRHluYW1pdGUuaW50ZWcaHAoVbm5hcGlkcml2ZXJfcWNfc204MzUwEICm1moiDzIyMzcxMjAwMDEwMDQwMCgAMAAqHQoUbm5hcGlkcml2ZXJfYXJtX21hbGkQgKbWahgBKh4KFW5uYXBpZHJpdmVyX3FjX3NtNzI1MBCAptZqGAEqHgoVbm5hcGlkcml2ZXJfcWNfc204MjUwEICm1moYASoeChVubmFwaWRyaXZlcl9xY19zbTgzNTAQgKbWahgBCoYECicKFG5uYXBpZHJpdmVyX2R5bmFtaXRlEJ3IjAEYgQIg8K65g5fSiwQSVAogTm5hcGlkcml2ZXJBcm1NYWxpRHluYW1pdGUuaW50ZWcaGwoUbm5hcGlkcml2ZXJfYXJtX21hbGkQqLTobSIPMjMwMzAwMjAwMTAwNDAwKAEwAhJWCiFObmFwaWRyaXZlclFjU203MjUwRHluYW1pdGUuaW50ZWcaHAoVbm5hcGlkcml2ZXJfcWNfc203MjUwEKi06G0iDzIzMDMwMDIwMDEwMDQwMCgBMAISVgohTm5hcGlkcml2ZXJRY1NtODI1MER5bmFtaXRlLmludGVnGhwKFW5uYXBpZHJpdmVyX3FjX3NtODI1MBCotOhtIg8yMzAzMDAyMDAxMDA0MDAoATACElYKIU5uYXBpZHJpdmVyUWNTbTgzNTBEeW5hbWl0ZS5pbnRlZxocChVubmFwaWRyaXZlcl9xY19zbTgzNTAQqLTobSIPMjMwMzAwMjAwMTAwNDAwKAEwAiodChRubmFwaWRyaXZlcl9hcm1fbWFsaRCotOhtGAEqHgoVbm5hcGlkcml2ZXJfcWNfc203MjUwEKi06G0YASoeChVubmFwaWRyaXZlcl9xY19zbTgyNTAQqLTobRgBKh4KFW5uYXBpZHJpdmVyX3FjX3NtODM1MBCotOhtGAEKhgQKJwoUbm5hcGlkcml2ZXJfZHluYW1pdGUQveeMARiBAiDwhrTexMaMBBJUCiBObmFwaWRyaXZlckFybU1hbGlEeW5hbWl0ZS5pbnRlZxobChRubmFwaWRyaXZlcl9hcm1fbWFsaRDg54BuIg8yMzA3MDAwMDAxMDA0MDAoATACElYKIU5uYXBpZHJpdmVyUWNTbTcyNTBEeW5hbWl0ZS5pbnRlZxocChVubmFwaWRyaXZlcl9xY19zbTcyNTAQ4OeAbiIPMjMwNzAwMDAwMTAwNDAwKAEwAhJWCiFObmFwaWRyaXZlclFjU204MjUwRHluYW1pdGUuaW50ZWcaHAoVbm5hcGlkcml2ZXJfcWNfc204MjUwEODngG4iDzIzMDcwMDAwMDEwMDQwMCgBMAISVgohTm5hcGlkcml2ZXJRY1NtODM1MER5bmFtaXRlLmludGVnGhwKFW5uYXBpZHJpdmVyX3FjX3NtODM1MBDg54BuIg8yMzA3MDAwMDAxMDA0MDAoATACKh0KFG5uYXBpZHJpdmVyX2FybV9tYWxpEODngG4YASoeChVubmFwaWRyaXZlcl9xY19zbTcyNTAQ4OeAbhgBKh4KFW5uYXBpZHJpdmVyX3FjX3NtODI1MBDg54BuGAEqHgoVbm5hcGlkcml2ZXJfcWNfc204MzUwEODngG4YAQogCh4KEHZpc2lvbl9ibG9ja2xpc3QQvIwGGAAgwI+u3AM</string>
+    <boolean name="NotificationLoggingFeature__enable_notification_id_logging" value="true" />
+    <boolean name="GacMigration__remove_gac_system_health_utils" value="true" />
+    <boolean name="Cronet__stop_memorize_in_lazy_cronet_engine" value="true" />
+    <boolean name="NativeMemory__load_to_physical_memory" value="false" />
+    <boolean name="Tracing__enable_tracing" value="false" />
+    <boolean name="Threads__enable_decorated_tasks_in_execute" value="true" />
+    <long name="Zapp__zapp_phonesky_connection_retry_attempt_timeout" value="0" />
+    <boolean name="ChimeraCriticalPath__enable_embedded_apk_extraction_prioritization" value="false" />
+    <boolean name="Primes__enable_primes_memory" value="false" />
+    <boolean name="Primes__enable_latency_logging_hash_rotation" value="false" />
+    <float name="StrictModeFeature__flogger_sampling_rate" value="1.0" />
+    <string name="Chimera__module_set_install_and_update_allowlist_for_optout_devices"></string>
+    <boolean name="Primes__register_primes_timer" value="true" />
+    <boolean name="Primes__enable_primes_network" value="false" />
+    <boolean name="ChimeraCriticalPath__disable_standalone_dynamite_loader" value="false" />
+    <boolean name="Common__base_app_request_queue_methods_throw" value="true" />
+    <boolean name="ServiceVisibility__enable_full_launch" value="true" />
+    <boolean name="OzTrafficShutdown__oz_traffic_shutdown_get_enabled" value="true" />
+    <string name="ServiceVisibility__service_ids_common_full_launch">124,29,130,167,38,139,28,50,25,43,5,35</string>
+    <string name="Notifications__blocked_modules"></string>
+    <boolean name="Network__migrate_check_token_handle_to_common_network_library" value="true" />
+    <boolean name="ChimeraCheckin__enable_system_component_update_opt_out" value="true" />
+    <long name="stats:network_usage:interval_in_seconds" value="0" />
+    <string name="GmsCoreLoggerFeature__permission_usage">CAASEQl7FK5H4XqEPxAjGAEiACgBKgMIwHA</string>
+    <boolean name="MultiPackage__enable_multi_package_mode" value="false" />
+    <boolean name="Primes__enable_primes" value="true" />
+    <float name="Primes__tracing_sampling_probability" value="0.005" />
+    <long name="DelayedIntentOperations__boot_completed_new_priority_location" value="0" />
+    <boolean name="Primes__enable_primes_network_logging_for_cronet" value="false" />
+    <long name="SchedulerPowerSaverMode__critical_allowlist_mode_enabled_if_battery_level_is_no_greater_than" value="-1" />
+    <boolean name="GmsCoreLoggerFeature__enable_logging_cumulative_metalogs" value="true" />
+    <boolean name="ChimeraCriticalPath__enable_dynamite_module_load_without_container" value="true" />
+    <float name="Bug116753498__suppress_crash_probability" value="1.0" />
+    <boolean name="ChimeraCriticalPath__enable_dynamite_process_killed_logging" value="false" />
+    <boolean name="GmsCoreLoggerFeature__enable_data_collection_verification_per_use_case_sampling" value="true" />
+    <boolean name="ServiceTracking__enable_providence_status_code_refactor" value="true" />
+    <boolean name="DeviceDoctor__enable_process_stable_feature_flag_read" value="true" />
+    <boolean name="Providence__enable_legacy_service_state_update" value="false" />
+    <boolean name="SchedulerClearcutLogging__enable_logs" value="true" />
+    <boolean name="CommonBrotli__enable_find_native_brotli_for_device_compatibility_check" value="true" />
+    <long name="PeriodicRestarts__scheduled_restart_task_start_delay_in_seconds" value="43200" />
+    <boolean name="Primes__enable_url_auto_sanitization" value="false" />
+    <boolean name="Tracing__begin_new_roots_within_error_traces" value="true" />
+    <boolean name="NotificationLoggingFeature__enable_notification_logging_v2" value="true" />
+    <string name="SchedulerTasksExperiments__periodic_task_frequency_multiplier_task_filter">-*/*:*</string>
+    <boolean name="FacetUsageLoggingFeature__omit_entrypoint_name" value="false" />
+    <long name="Primes__package_stats_collection_interval_hours" value="168" />
+    <boolean name="Tracing__monitor_device_state_idempotent_init" value="false" />
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_charging_restrictions_for_all_tasks" value="true" />
+    <boolean name="Primes__enable_primes_profiling" value="false" />
+    <long name="Primes__trace_sampling_scale_down_interval_milliseconds" value="7200000" />
+    <long name="CoreStats__trace_upload_maximum_time_milliseconds" value="172800000" />
+    <boolean name="FacetUsageLoggingFeature__early_consent_true" value="true" />
+    <long name="SchedulerTasksExperiments__minimum_execution_window_length_secs_for_forced_preferred_charging" value="-1" />
+    <boolean name="TestcodeAlternateIdsFeature__enable_testcode_alternate_ids" value="true" />
+    <boolean name="Network__enable_cronet_http_channel_for_autofill" value="false" />
+    <boolean name="Network__migrate_request_token_to_common_network_library" value="false" />
+    <string name="uncertified_exceptions_whitelist">151,130,40,25,257,185,51,218</string>
+    <boolean name="GmsNetworkEngineTrafficLogging__enable_traffic_logging" value="false" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_herrevad" value="false" />
+    <boolean name="SchedulerTasksExperiments__force_1p_3p_tasks_to_wait_for_charging" value="false" />
+    <long name="ChimeraCheckin__config_checkin_initial_backoff_seconds" value="3600" />
+    <string name="GmsCoreLoggerFeature__loaded_modules_usage_logging_config">CAASDQl7FK5H4XqEPxAHGAEqBAiAowU</string>
+    <long name="PaymentsRelease__overall_experiment_id" value="0" />
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_charging_restrictions_for_auth_folsom_task" value="true" />
+    <float name="DeviceDoctor__shush_crash_force_popup_probability" value="0.0" />
+    <long name="Primes__throttler_initial_events" value="10000" />
+    <long name="Chimera__wait_for_phenotype_sync_timeout_seconds" value="60" />
+    <boolean name="Common__enable_safe_unbind" value="true" />
+    <long name="DelayedIntentOperations__intent_operation_concurrency" value="1" />
+    <boolean name="SafeBoot__safeboot_upload_platform_stats_log" value="true" />
+    <float name="ClientLogging__sampling_rate_severe" value="0.01" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_icing" value="false" />
+    <string name="GmsCoreLoggerFeature__usonia_health">CAISEQl7FK5H4XqEPxAjGAEiACgB</string>
+    <float name="ClientLogging__sampling_rate_warning" value="0.001" />
+    <boolean name="CoreStats__share_wireless_radio_activity_summary" value="false" />
+    <boolean name="stats:network_usage:network_tracking_androidN_enabled" value="true" />
+    <boolean name="ChimeraCheckin__progress_listener_callback_immediately" value="true" />
+    <boolean name="FacetUsageLoggingFeature__facet_event_logger_enable_deny_list" value="false" />
+    <boolean name="Tracing__enable_gms_application_oncreate_primes_trace" value="false" />
+    <long name="Zapp__zapp_phonesky_connection_retry_timeout" value="0" />
+    <long name="KeyValuePreferencesFeature__dark_launch_error_sampling_interval" value="0" />
+    <long name="PaymentsRelease__partition_experiment_id" value="0" />
+    <boolean name="WakelockMetrics__log_unmetered_only" value="false" />
+    <boolean name="ChimeraCheckin__enable_immediate_staleness_logging" value="false" />
+    <boolean name="SchedulerTasksExperiments__require_any_network_and_any_charging_for_droid_guard_task_in_droidguard" value="false" />
+    <boolean name="GmsCoreLoggerFeature__enable_positive_hash" value="false" />
+    <boolean name="SchedulerDebug__disable_trigger_0p_tasks_in_prod" value="true" />
+    <boolean name="CommonAnalytics__system_health_log_post_gservice_update_enabled" value="false" />
+    <string name="Scheduler__throttling_config_for_cloud_message_sent">1800,1,1</string>
+    <boolean name="Common__fix_location_icon_background_race" value="true" />
+    <boolean name="SchedulerTasksExperiments__prefer_unmetered_and_charging_for_droid_guard_task_in_ads_v2" value="true" />
+    <long name="DeviceDoctor__teledoctor_disableModules" value="0" />
+    <long name="Scheduler__preferred_constraints_execution_window_portion_percents" value="100" />
+    <long name="ChimeraCriticalPath__unmetered_network_download_timeout_seconds" value="79200" />
+    <string name="GmsCoreLoggerFeature__notifications">CAASEQkAAAAAAADwPxAjGAEiACgBKgQIgKMF</string>
+    <boolean name="NotificationLoggingFeature__enable_notification_logging" value="false" />
+    <boolean name="StrictModeFeature__enable_vm_policy" value="true" />
+    <long name="Primes__dir_stats_inverse_sample_rate" value="100" />
+    <string name="DeviceDoctor__shush_crash_whitelist"></string>
+    <string name="ClientLogging__logcat_incident_response_config"></string>
+    <long name="NotificationLoggingFeature__periodic_task_delay_seconds" value="86400" />
+    <boolean name="Network__fix_gms_url_request_noop_callback" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_telephony_spam" value="false" />
+    <boolean name="Chimera__enable_checkin_logging" value="false" />
+    <boolean name="NotificationLoggingFeature__enable_daily_snapshot_logging" value="true" />
+    <boolean name="Tracing__include_explicit_intent_0p_component" value="true" />
+    <boolean name="Chimera__enable_zapp_partial_module_info_response" value="true" />
+    <boolean name="PeriodicRestarts__check_premature_restart" value="true" />
+    <float name="Primes__timer_sample_probability" value="0.01" />
+    <boolean name="FacetUsageLoggingFeature__enable_background_facet_logging_for_main_thread" value="false" />
+    <string name="Scheduler__throttling_config_for_google_http_client">1800,1,1</string>
+    <boolean name="CommonAnalytics__system_health_log_post_gms_core_update_enabled" value="false" />
+    <long name="SchedulerPowerSaverMode__ignored_if_battery_level_is_over" value="0" />
+    <boolean name="ClientLogging__enable_client_logging" value="true" />
+    <long name="PeriodicRestarts__max_wait_for_writer_lock_in_seconds" value="43200" />
+    <long name="Primes__random_latency_tracking_modulus" value="100" />
+    <float name="SchedulerClearcutLogging__schedule_request_sample_rate" value="0.12" />
+    <boolean name="Chimera__enable_chimera_clearcut_logger" value="false" />
+    <boolean name="Scheduler__execute_expired_tasks_after_engine_init" value="false" />
+    <boolean name="FacetUsageLoggingFeature__enable_background_facet_logging" value="false" />
+    <long name="Scheduler__inactivity_idle_threshold_millis" value="900000" />
+    <long name="Phenotype__initial_retry_timeout_millis" value="0" />
+    <string name="Chimera__module_set_install_allowlist_for_optout_devices">CgRraWRzCgtzaWRlY2FyX2Fwcw</string>
+    <boolean name="SQLite__use_idle_connection_timeout_modules" value="false" />
+    <boolean name="Chimera__config_checkin_enabled" value="true" />
+    <boolean name="ServiceTracking__enable_providence_status_code_refactor_auth_proxy" value="true" />
+    <string name="DeviceDoctor__disabled_modules_list"></string>
+    <boolean name="CpuProfiling__enable_profiling" value="false" />
+    <string name="Network__migration_to_cronet_allow_list">brella,</string>
+    <long name="GmsCoreLoggerFeature__delay_period_finalization_scheduling_seconds" value="0" />
+    <boolean name="Primes__enable_primes_tracing" value="true" />
+    <string name="Scheduler__extended_timeout_allowlist">-*/*:*,+com.google.android.gms/.actionlearner.service.PoseDataManagementService:*</string>
+    <boolean name="MemoryMetricLogging__collect_garbage_when_logging" value="false" />
+    <string name="ChimeraCriticalPath__mixed_mode_32_bit_blocklist"></string>
+    <boolean name="Primes__enable_primes_network_for_volley" value="false" />
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_network_restrictions_for_telephonyspam_tasks" value="true" />
+    <boolean name="Grpc__enable_data_collection_registry_runtime_verification" value="true" />
+    <boolean name="Chimera__chimera_update_prefers_device_idle" value="true" />
+    <string name="Chimera__allowed_app_module_dep_features">photopicker_activity,games,vision.barcode,vision.face,vision.ica,vision.ocr,tflite_dynamite,home,cam_feature_combo_query,health_tracking_base,</string>
+    <boolean name="LogSyntheticOperations__enable_logging" value="true" />
+    <long name="DelayedIntentOperations__boot_completed_new_priority_gcm" value="0" />
+    <boolean name="ClientLogging__enable_sampling" value="true" />
+    <boolean name="PeriodicRestarts__enable_prefer_device_charging" value="true" />
+    <long name="NativeMemory__periodic_read_delay_in_millis" value="60000" />
+    <boolean name="Bug116753498__generic_suppress_enabled" value="true" />
+    <boolean name="Scheduler__isolate_task_root_trace" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_core_stats" value="false" />
+    <boolean name="GmsCoreBackendCounters__immediate_logging" value="false" />
+    <boolean name="DeviceDoctor__delete_files_enabled" value="true" />
+    <string name="Scheduler__scheduler_doze_task_filter">-*/*:*</string>
+    <boolean name="Chimera__check_permit_metered_network" value="true" />
+    <boolean name="Network__enable_primes_reporting_for_http_url_connection" value="false" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_ads" value="false" />
+    <boolean name="Primes__enable_primes_dir_stats" value="true" />
+    <boolean name="Common__enable_opted_in_logger_opt_in_listener" value="false" />
+    <boolean name="BoundService__always_use_bound_service_lifecycle_synchronizer" value="false" />
+    <boolean name="GmsCoreLoggerFeature__enable_compacting_on_file_size_threshold" value="true" />
+    <long name="Chimera__zapp_minimum_play_store_version" value="80700000" />
+    <boolean name="Tracing__include_system_uid" value="true" />
+    <boolean name="WakelockMetrics__enable_metrics" value="true" />
+    <long name="Primes__timer_sample_rate_per_second" value="10" />
+    <boolean name="StrictModeFeature__enable_logging_original_throwable" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_wallet" value="false" />
+    <long name="Primes__max_event_proto_bytes" value="500000" />
+    <long name="stats:alarms:level" value="0" />
+    <boolean name="Scheduler__enable_new_connectivity_manager_apis" value="false" />
+    <long name="WatchcatFeature__default_hard_violation_seconds" value="7200" />
+    <long name="Zapp__zapp_phonesky_connection_sleep_between_attempts" value="0" />
+    <boolean name="SchedulerTracing__create_significant_span_for_wakelock" value="true" />
+    <string name="SchedulerClearcutLogging__loggable_tags_overflow">DSUW_TASK,DEFAULT_INPUT_METHOD_TASK,REMIND_ME_LATER_TASK,qos_oneoff,qos_collect_for_debug_upload,PhenotypeRetryAfter,PhenotypeSyncAfter,PhenotypeSyncAfterRetry,PhenotypeSyncImmediately,ChromeSyncWalletSpecificsPeriodic,pass.periodic.logging,MoonlanderMddRefresh,NORMAL_SUPERVISION_STATE_OPERATIONS</string>
+    <boolean name="StrictModeFeature__enable_thread_policy" value="true" />
+    <boolean name="Phenotype__retry_on_get_config_failure" value="false" />
+    <boolean name="NativeMemory__check_remaining_storage" value="false" />
+    <boolean name="NotificationLoggingFeature__should_set_persisted_for_scheduled_task" value="true" />
+    <boolean name="Tracing__enable_binder_wrapper_uid_attribution_fallback" value="true" />
+    <boolean name="Common__enable_checkin_client_android_id" value="false" />
+    <boolean name="DelayedIntentOperations__reduce_intent_operation_concurrency" value="false" />
+    <boolean name="NativeMemory__enable_testcode_logging" value="false" />
+    <boolean name="SchedulerTasksExperiments__force_1p_3p_tasks_to_wait_for_unmetered_network" value="false" />
+    <boolean name="GmsCoreLoggerFeature__facet_usage_device_state_common_dimension" value="false" />
+    <long name="WatchcatFeature__memory_usage_checker_violation_kb" value="256000" />
+    <boolean name="Chimera__enable_vision_feature_parser" value="true" />
+    <boolean name="DelayedIntentOperations__enable_tiered_intent_delivery" value="false" />
+    <boolean name="FacetUsageLoggingFeature__omit_device_state" value="false" />
+    <boolean name="GmsCoreLoggerFeature__facet_usage_facet_event_dimension" value="true" />
+    <boolean name="Tracing__create_main_thread_spans_skip_broken" value="true" />
+    <boolean name="Scheduler__use_is_screen_on_for_is_interactive_for_pre_l" value="true" />
+    <boolean name="GmsCoreLoggerFeature__enable_report_event_count_per_period" value="false" />
+    <string name="SchedulerPowerSaverMode__critical_allowlist_filter">-*/*:*</string>
+    <boolean name="Scheduler__nullify_outgoing_messenger" value="true" />
+    <boolean name="GmsCoreLoggerFeature__enable_parcelable_log_events" value="true" />
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_charging_restrictions_for_tap_and_pay_tasks" value="true" />
+    <boolean name="Primes__skip_legacy_on_create_metric_capture" value="false" />
+    <boolean name="ServiceTracking__enable_service_availability_logging" value="false" />
+    <long name="Tracing__expensive_trace_warn_count" value="1000" />
+    <boolean name="ServiceTracking__enable_service_availability_via_metered" value="true" />
+    <string name="Chimera__bound_service_lifecycle_blocklist"></string>
+    <long name="ChimeraCheckin__forced_checkin_moduleset_poll_retries" value="7" />
+    <boolean name="Tracing__send_empty_traces" value="true" />
+    <boolean name="WatchcatFeature__uptime_resource_checker_enabled" value="true" />
+    <float name="WakelockMetrics__base_sample_rate" value="2.0E-6" />
+    <boolean name="Common__enable_gms_tag_validation" value="true" />
+    <boolean name="FacetUsageLoggingFeature__enable_facet_usage_logging" value="false" />
+    <boolean name="SafeBoot__safeboot_disabled_in_direct_boot" value="true" />
+    <float name="ServiceConnection__sampling_rate" value="1.0" />
+    <boolean name="Bug116753498__nlp_suppress_enabled" value="true" />
+    <boolean name="GmsCoreLoggerFeature__enable_computing_disk_space_used_in_mem" value="true" />
+    <string name="ChimeraCriticalPath__configuration_mode_list"></string>
+    <boolean name="GmsCoreLoggerFeature__enable_async_common_dimension_building" value="false" />
+    <boolean name="ChimeraCheckin__enable_file_apk_storage_space_logging" value="false" />
+    <long name="NativeMemory__allocation_size_in_bytes" value="0" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_ipa" value="false" />
+    <string name="DelayedIntentOperations__reduced_intent_operation_concurrency_allowlist"></string>
+    <boolean name="SchedulerTasksExperiments__prefer_unmetered_and_charging_for_droid_guard_task_in_ads" value="false" />
+    <long name="Primes__memory_sample_rate_per_second" value="3" />
+    <boolean name="ServiceTracking__enable_synchronous_consent_check" value="true" />
+    <boolean name="PermissionLogging__no_body_sensors_on_b_star" value="true" />
+    <boolean name="SchedulerPowerSaverMode__execute_0p_tasks_on_android_l" value="false" />
+    <boolean name="Threads__enable_ignore_pooled_thread_priority" value="true" />
+    <boolean name="Phenotype__targeted_notifications_enabled" value="true" />
+    <boolean name="Grpc__enable_android_channel_builder" value="false" />
+    <long name="NativeMemory__allocation_type" value="0" />
+    <boolean name="Scheduler__enable_using_non_wakeful_alarms" value="true" />
+    <string name="ChimeraCriticalPath__always_auto_enable_module_id_list">CgA</string>
+    <boolean name="Network__enable_cronet_migrate_sessions_on_network_change" value="false" />
+    <boolean name="Scheduler__enable_sending_crash_like_data_on_task_time_out" value="false" />
+    <boolean name="Tracing__expensive_trace_logging" value="false" />
+    <boolean name="SchedulerDebug__enable_trigger_task_for_bound_service" value="true" />
+    <boolean name="PeriodicRestarts__is_enabled" value="true" />
+    <boolean name="NativeMemory__enable_periodic_read" value="false" />
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_network_restrictions_for_tap_and_pay_tasks" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_auth" value="false" />
+    <boolean name="Network__migrate_account_reauth_settings_to_common_network_library" value="true" />
+    <long name="Primes__throttler_max_bank_events" value="10000" />
+    <boolean name="WatchcatFeature__enabled" value="true" />
+    <long name="Tracing__cpu_sample_rate_per_thousand" value="5" />
+    <string name="Scheduler__throttling_config_for_cloud_message_received">1800,1,1</string>
+    <boolean name="ClientTelemetry__enable_telemetry_logging" value="true" />
+    <boolean name="WatchcatFeature__cpu_usage_checker_enabled" value="true" />
+    <string name="CpuProfiling__primes_profiling_default_process_config">CiZwcm9jZXNzX25hbWVfaWdub3JlZF9mb3JfZGVmYXVsdF92YWx1ZRCYdRjoByAFKICgHzC4Fw</string>
+    <string name="ChimeraCriticalPath__container_apk_basenames_to_skip_extracting">ProviderInstaller.apk</string>
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_charging_restrictions_for_all_tasks_v2" value="true" />
+    <boolean name="ClientLogging__use_same_log_source" value="true" />
+    <boolean name="ServiceTracking__enable_service_tracking" value="false" />
+    <float name="Scheduler__sample_rate_for_sending_crash_like_data_on_task_time_out" value="0.001" />
+    <boolean name="NotificationLoggingFeature__enable_notification_tag_logging" value="true" />
+    <long name="stats:wakeLocks:max_timeout_heldlock" value="600000" />
+    <boolean name="SchedulerDatabase__enable_swallowing_errors_on_insert" value="true" />
+    <boolean name="PeriodicRestarts__do_not_persist_scheduled_task" value="false" />
+    <boolean name="Network__migrate_auth_account_to_common_network_library" value="true" />
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_network_restrictions_for_autofill_task" value="false" />
+    <boolean name="Network__create_correct_instance_of_gms_url_request_impl" value="true" />
+    <boolean name="GmsCoreLoggerFeature__delay_init_on_main_thread" value="true" />
+    <string name="KeyValuePreferencesFeature__dark_launch_allowlist">CAA</string>
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_network_restrictions_for_auth_folsom_task" value="false" />
+    <boolean name="ServiceVisibility__use_always_on_logger" value="true" />
+    <long name="DelayedIntentOperations__boot_completed_new_priority_tapandpay" value="0" />
+    <boolean name="GoogleApiClient__lock_and_check_sign_in_client_access" value="false" />
+    <string name="Chimera__whitelisted_app_module_dep_packages">com.google.android.apps.chromecast.app,com.google.stadia.androidtv,</string>
+    <boolean name="Scheduler__user_context_cache_no_reflection" value="true" />
+    <boolean name="SafeBoot__optimize_for_drop_box_entry_size" value="true" />
+    <boolean name="DeviceDoctor__log_open_file_descriptors_on_crash" value="false" />
+    <long name="SQLite__idle_connection_timeout_ms" value="30000" />
+    <string name="Scheduler__should_use_restrictive_charging_defaults_filter">-*/com.google.android.gms.audit.upload.AuditGcmTaskService:audit_task</string>
+    <boolean name="DelayedIntentOperations__boot_completed_700_priority_thunderbird" value="false" />
+    <boolean name="MemoryMetricLogging__enabled" value="true" />
+    <boolean name="ServiceConnection__enable_logging" value="false" />
+    <boolean name="FacetUsageLoggingFeature__omit_entrypoint_type" value="false" />
+    <boolean name="PeriodicRestarts__enable_periodic_restarts_on_gms_process" value="true" />
+    <boolean name="ServiceVisibility__checkbox_only" value="true" />
+    <boolean name="Scheduler__ignore_dreaming_stop_action_when_interactive" value="true" />
+    <boolean name="Network__enable_network_attribution_by_tracing" value="true" />
+    <boolean name="Common__enable_tri_state_location_permission_monitor" value="true" />
+    <float name="MemoryMetricLogging__log_fraction" value="0.001" />
+    <boolean name="ChimeraCriticalPath__enable_log_installed_feature_splits" value="true" />
+    <boolean name="PeriodicRestarts__enable_periodic_restart_lock_v2" value="true" />
+    <boolean name="Chimera__enable_dynamite_module_runtime_bitness_logging" value="false" />
+    <string name="ChimeraCriticalPath__blocked_modules_with_versions_for_atv">com.google.android.gms.admob,com.google.android.gms.common_account__generic,,com.google.android.gms.appstate,,com.google.android.gms.places,,com.google.android.gms.smart_profile,,com.google.android.gms.streamprotect,,com.google.android.gms.wallet_tv,,com.google.android.gms.firebase_storage,,com.google.android.gms.firebase_database,,com.google.android.gms.identity,,com.google.android.gms.cast_mirroring_only,,com.google.android.gms.kids</string>
+    <long name="Tracing__gcore_client_cache_size" value="50" />
+    <boolean name="GmsCoreLoggerFeature__enable_logging_total_number_of_slices_in_mem" value="true" />
+    <boolean name="SchedulerDatabase__enable_database_schema_version_15" value="true" />
+    <boolean name="Scheduler__enable_more_restrictive_network_defaults" value="true" />
+    <string name="Primes__primes_profiling_default_process_config">CiZwcm9jZXNzX25hbWVfaWdub3JlZF9mb3JfZGVmYXVsdF92YWx1ZRCYdRjoByAFKICgHzC4Fw</string>
+    <long name="Phenotype__checkin_interval_in_seconds" value="86400" />
+    <string name="GmsCoreLoggerFeature__metalogging">CAASDwn8qfHSTWJQPxAjGAEiACoECICjBQ</string>
+    <string name="Primes__primes_profiling_process_configs">CjIKIWNvbS5nb29nbGUuYW5kcm9pZC5nbXMucGVyc2lzdGVudBCYdRjoByABKICgHzC4Fw</string>
+    <long name="DelayedIntentOperations__boot_completed_new_priority_scheduler_v2" value="0" />
+    <string name="TestcodeToggleLogSourcesFeature__event_code_log_sources"></string>
+    <boolean name="NotificationLoggingFeature__enable_notification_channel_logging" value="true" />
+    <long name="CoreStats__trace_upload_period_milliseconds" value="86400000" />
+    <long name="Primes__tracing_sample_rate_per_second" value="1000" />
+    <boolean name="Scheduler__enable_using_bind_service_on_pre_l_for_gms_core_tasks" value="true" />
+    <float name="SchedulerClearcutLogging__exec_finished_sample_rate" value="0.12" />
+    <boolean name="FacetUsageLoggingFeature__enable_logging_only_for_root_traces" value="false" />
+    <long name="DelayedIntentOperations__boot_completed_new_priority_checkin" value="0" />
+    <long name="DeviceDoctor__teledoctor_NoFix" value="0" />
+    <string name="GmsCoreLoggerFeature__weather_data_upload_logging_config">CAASJQmamZmZmZmpPxAHGAEiFndlYXRoZXJfZGF0YV9jb2xsZWN0b3IqBwiAowUokE4</string>
+    <boolean name="IntentOperationMigration__enabled_batch_1" value="false" />
+    <float name="ServiceVisibility__sample_rate" value="0.01" />
+    <boolean name="SchedulerPrediction__enable_adjusting_network_constraints_with_predictions_v2" value="false" />
+    <boolean name="Phenotype__skip_bulk_register_timeout" value="true" />
+    <boolean name="ChimeraCriticalPath__loaded_module_kill_for_config_mode_change" value="true" />
+    <string name="ServiceVisibility__packages_common_dark_launch">com.google.android.instantapps.supervisor,com.waymo.carapp,com.area120.reply,com.area120.soundbite,com.area120.soundbite.dev,com.area120.soundbite.dogfood,com.area120.soundbite.fishfood,com.google.android.apps.seekh,com.niksoftware.snapseed,com.obsidian.ft,com.piotrs.betatest,com.raterhub.android.apps.eval.ewoq,com.raterhub.mera,com.ridewith,com.syntheticsoft.telecomm,com.test.iconphish,com.test.smsexpdetoct2,com.test.smsexpdetoct4,com.waze,com.whereabout.location,com.google.android.apps.cerebra.health.cala.chayka,experimental.com.google.android.apps.youtube.casual.videoeditdemo,merchant.app.package,org.chromium.arc.gms,org.socratic.android,universal,work.gamut.jobs</string>
+    <boolean name="Tracing__log_missing_traces" value="false" />
+    <boolean name="Scheduler__force_start_service_for_gms_core_tasks" value="false" />
+    <boolean name="Chimera__enable_brotli_file_by_file" value="true" />
+    <boolean name="SchedulerTracing__enable_scheduler_tracing" value="true" />
+    <string name="client_telemetry_config">CAsQiCcqCGNsZWFyY3V0KglwaGVub3R5cGUqDHBzZXVkb255bW91czLeAQjoBxIGCAE4ZEAOEhgIASoMCNcCOgcKApANEJBOOGRADmABaAESMDhkQDdYAWABaAFyDG1sa2l0OnZpc2lvbnIWbWxraXQ6bmF0dXJhbF9sYW5ndWFnZRIGOGRADmABEgY4ZEAOaAESGDhkQA5YAWABaAFyDHRydXN0ZWRfdGltZRIeOGRADlgBYAFoAXISYWRzX2lkZW50aWZpZXI6YXBpEhQ4ZEAOWAFgAXIKZHJvaWRndWFyZBIbOGRADlgBYAFoAXIPbWVhc3VyZW1lbnQ6YXBpIGQwgN3bATiACA</string>
+    <boolean name="Ui__enable_system_component_update_google_settings" value="true" />
+    <long name="WatchcatFeature__cpu_usage_checker_violation_percentage" value="85" />
+    <string name="SchedulerTasksExperiments__force_preferred_charging_task_filter">-*/*:*</string>
+    <boolean name="Tracing__enable_dump_expensive_traces" value="false" />
+    <boolean name="DeviceDoctor__shush_enabled" value="true" />
+    <boolean name="Chimera__enable_zapp_diff_downloading" value="true" />
+    <long name="ChimeraCheckin__progress_listener_timeout_secs" value="150" />
+    <boolean name="AppFeature__use_executor_in_app_init" value="true" />
+    <boolean name="ServiceVisibility__add_event_type" value="true" />
+    <float name="SchedulerClearcutLogging__wakeup_sample_rate" value="0.018" />
+    <string name="CommonDownload__download_json">[]</string>
+    <string name="Scheduler__should_use_restrictive_network_defaults_filter">-*/com.google.android.gms.audit.upload.AuditGcmTaskService:audit_task</string>
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_instantapps" value="false" />
+    <boolean name="Tracing__enable_throw_exception_when_double_bind" value="false" />
+    <long name="Primes__memory_timer" value="30000" />
+    <long name="SchedulerPowerSaverMode__max_starvation_millis" value="604800000" />
+    <float name="SchedulerClearcutLogging__init_finished_sample_rate" value="1.0" />
+    <boolean name="GoogleSettings__enable_category_headers_fix" value="true" />
+    <string name="Chimera__zapp_diff_base_installed_packages"></string>
+    <boolean name="AppFeature__use_gservices_delegate" value="false" />
+    <boolean name="DelayedIntentOperations__enable_delay_between_intent_tiers" value="false" />
+    <boolean name="Cronet__enable_lazy_cronet_engine" value="true" />
+    <float name="WakelockMetrics__manual_multiplier" value="1.0" />
+    <boolean name="WatchcatFeature__memory_usage_checker_enabled" value="true" />
+    <boolean name="CoreStats__enable_schedule_gcm_tasks_on_module_start" value="false" />
+    <boolean name="Scheduler__enable_scheduler_doze" value="false" />
+    <boolean name="DeviceDoctor__enable_fixer_log_sampling" value="true" />
+    <boolean name="Primes__enable_primes_latency_metric_upload" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_tap_and_pay" value="false" />
+    <boolean name="Notifications__manager_enabled" value="true" />
+    <string name="CpuProfiling__primes_profiling_process_configs">CjIKIWNvbS5nb29nbGUuYW5kcm9pZC5nbXMucGVyc2lzdGVudBCYdRjoByABKICgHzC4Fw</string>
+    <boolean name="Network__enable_network_engine_implementation" value="true" />
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_contactinteractions" value="false" />
+    <boolean name="SchedulerClearcutLogging__noop_scheduler_flag_gmscore_autoramp" value="false" />
+    <string name="ChimeraCriticalPath__blocked_installed_apk_version_checker_rules">Ch9jb20uZ29vZ2xlLmFuZHJvaWQuYXBwcy5maXRuZXNzCh9jb20uZ29vZ2xlLmFuZHJvaWQud2VhcmFibGUuYXBwCiNjb20uZ29vZ2xlLmFuZHJvaWQuZ21zLnBvbGljeV9pY2luZwonY29tLmdvb2dsZS5hbmRyb2lkLmFwcHMua2lkcy5mYW1pbHlsaW5rCihjb20uZ29vZ2xlLmFuZHJvaWQucGxheS5nYW1lczo8MjkyNTEwMDQw</string>
+    <boolean name="GmsCoreBackendCounters__enable" value="false" />
+    <boolean name="OpenSourceLicenses__enable_read_licenses_from_pixelmigrate_and_restore" value="true" />
+    <boolean name="DelayedIntentOperations__boot_completed_550_priority_auth" value="false" />
+    <string name="Scheduler__should_not_restore_non_persisted_tasks_filter"></string>
+    <string name="TestcodeToggleLogSourcesFeature__active_log_sources">CghHTVNfQ09SRQoWR01TQ09SRV9BTkRST0lEX1BSSU1FUwoTQ0xJRU5UX0xPR0dJTkdfUFJPRAoCTEUKFEFVVE9GSUxMX1dJVEhfR09PR0xF</string>
+    <boolean name="GoogleSettings__enable_debug_menu" value="false" />
+    <boolean name="FacetUsageLoggingFeature__enable_lazy_facet_logger_initialization" value="false" />
+    <long name="Primes__package_stats_inverse_sample_rate" value="100" />
+    <long name="stats:network_usage:flex_time_in_seconds" value="3600" />
+    <long name="DelayedIntentOperations__boot_completed_new_priority_clearcut" value="0" />
+    <long name="DelayedIntentOperations__boot_completed_new_priority_app_doctor" value="0" />
+    <boolean name="GmsCoreLoggerFeature__enable_explicit_id_removal" value="true" />
+    <string name="SQLite__idle_connection_timeout_blacklisted_database_names">DocList.db,matchstickv9.db,pluscontacts.db</string>
+    <long name="__phenotype_configuration_version" value="1775163300" />
+    <boolean name="ClientLogging__use_same_clearcut_logger" value="true" />
+    <long name="Chimera__finsky_app_module_dependency_request_timeout_millis" value="150000" />
+    <boolean name="Tracing__gcore_client_fix_zero_party_usage2" value="true" />
+    <string name="GmsCoreLoggerFeature__weather_data_collection_logging_config">CAASJQmamZmZmZmpPxAHGAEiFndlYXRoZXJfZGF0YV9jb2xsZWN0b3IqBwiAowUokE4</string>
+    <boolean name="SchedulerClearcutLogging__enable_logging_wakeup_events" value="true" />
+    <long name="upload_internal_stats_interval" value="0" />
+    <long name="TestcodeToggleLogSourcesFeature__toggle_test_code_hours_throttle" value="24" />
+    <string name="__phenotype_server_token">CAMSYA1ZvZTuD5oiBo8WBOU2BOIABJAOhAQEyg2hEwahBQSXF6UFGZsXhgYE6QgE6AIE6BeBDwSMIgTkhQa2FpEUA7wbxBkEuhOWFAPrGAPhBAPhAAWrBQXuBQX-BgWABAFuBA==</string>
+    <long name="NativeMemory__allocation_process_name" value="1" />
+    <boolean name="Chimera__use_wrapper_pending_intent" value="false" />
+    <long name="WakelockMetrics__max_samples_per_day" value="3" />
+    <float name="SchedulerClearcutLogging__sample_rate" value="0.01" />
+    <boolean name="AppFeature__cache_common_gservices_prefixes_direct_boot" value="true" />
+    <boolean name="GmsCoreLoggerFeature__enable_fluent_logger_own_service" value="true" />
+    <boolean name="SchedulerTasksExperiments__enable_using_preferred_network_restrictions_for_all_tasks" value="true" />
+    <string name="__phenotype_snapshot_token"> com.google.android.gms 212 7 -518158537 com.google.android.gms -518158537 1</string>
+    <long name="stats:wakeLocks:level" value="0" />
+    <string name="GmsCoreLoggerFeature__permission_state_data_config">CAISCQn8qfHSTWJgPw</string>
+    <string name="Chimera__required_features">CgwKCHNwb29uX3BjEAE</string>
+    <boolean name="SchedulerTasksExperiments__use_new_periodic_task_apis_for_security" value="false" />
+    <boolean name="SchedulerPrediction__enable_adjusting_charging_constraints_with_predictions_v2" value="false" />
+    <boolean name="Network__enable_data_collection_runtime_verification" value="true" />
+    <boolean name="LogSyntheticOperations__enable_package_manager_permissions_wrapper" value="true" />
+    <long name="ChimeraCheckin__config_checkin_interval_secs" value="43201" />
+    <string name="SchedulerPowerSaverMode__general_allowlist_filter"></string>
+    <boolean name="FacetUsageLoggingFeature__facet_event_logger_enable_allow_list" value="true" />
+    <boolean name="enable_settings_search_indexing" value="true" />
+    <long name="ProtoDataStoreFeature__dasu_sampling_interval" value="100" />
+    <boolean name="GoogleSettingsAuto__show_send_feedback_car" value="true" />
+    <boolean name="Providence__crash_on_0p_developer_error" value="false" />
+    <boolean name="PermissionLogging__fix_app_op_mode_default_logic" value="true" />
+    <long name="Primes__trace_sampling_log2_histogram_buckets" value="11" />
+    <boolean name="ChimeraCriticalPath__enable_dynamite_analytics" value="false" />
+    <boolean name="CoreStats__synchronize_periodstatstracker" value="true" />
+    <string name="gad:dynamite_module:experiment_id"></string>
+    <boolean name="enable_dynamic_settings_search_indexing" value="true" />
+</map>

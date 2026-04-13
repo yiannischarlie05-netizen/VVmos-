@@ -1,0 +1,64 @@
+# ── Virtual environment (464MB) ──────────────────────────────
+.venv/
+
+# ── Generated output / large data (1.9GB) ────────────────────
+output/
+tmp/
+screenshots/
+frames/
+streaming_archive/
+neighbor_backups/
+
+# ── Reports / scan results (JSON blobs) ──────────────────────
+reports/
+sweep/
+*.json
+
+# ── Binary / model files ─────────────────────────────────────
+*.pt
+*.bin
+*.db
+*.apk
+*.so
+*.aar
+
+# ── Python cache ─────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ── Media / CCTV ─────────────────────────────────────────────
+cctv/
+cctv-tool/
+vmos_titan/playground/cctv-tool/
+*.mp4
+*.mkv
+*.avi
+*.jpg
+*.jpeg
+*.png
+
+# ── Node / Electron ──────────────────────────────────────────
+node_modules/
+electron/
+
+# ── Debian packaging ─────────────────────────────────────────
+debian/
+
+# ── Experiments / large docs / scan data ─────────────────────
+experiments/
+docs/
+skills/
+.github/agents/
+.github/skills/
+*.txt
+*masscan_results*
+*target_cidr*
+*_manifest.txt
+
+# ── Keys / secrets ───────────────────────────────────────────
+adb_key
+adb_key_decoded
+*.pem
+*.key

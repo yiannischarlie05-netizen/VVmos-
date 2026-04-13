@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="public_key">MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+mvdvAMtBhqTlrqpsBQtBQbA/+KkgoEzZzeGCWrm+HOnuINs4JHS+M8bUOqIVzwAcbsmfuiFQk7WC695GOhpgQ==</string>
+    <long name="last_consent_checked_timestamp_for_trigger_millis" value="1775844346440" />
+    <boolean name="device_consent" value="false" />
+    <long name="sync_retry_scheduling_frozen_timestamp_in_millis" value="1775930827113" />
+    <long name="primary_device_id" value="4239836201648965842" />
+    <boolean name="is_public_key_acked" value="false" />
+    <string name="private_key">MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgYzOcDXN+aiLF9W8lDn/6xua32vcHwjVO6hHse4nztDKhRANCAAT6a928Ay0GGpOWuqmwFC0FBsD/4qSCgTNnN4YJaub4c6e4g2zgkdL4zxtQ6ohXPABxuyZ+6IVCTtYLr3kY6GmB</string>
+    <long name="next_sync_timestamp_in_millis" value="1775851627026" />
+    <boolean name="checkers_active" value="false" />
+    <string name="recent_get_consent_timestamps_in_seconds">1775844356</string>
+    <long name="last_client_state_check_timestamp_millis" value="1775844346435" />
+    <string name="next_sync_retry_timestamp_and_index_in_millis">1775848027026,1</string>
+    <long name="last_consent_check_with_server_time_millis" value="1775844367001" />
+    <boolean name="automatic_cost_setting" value="false" />
+    <string name="gcm_token">f7BcK7mQmYI:APA91bGeBJwnoKvXLaMGKPQ9tgQ07ETZY7Yowfn-OSrb4MK5n9-7LlJwyteCJ4wsxRxvkk88EM7r-42qiUkJ8l9-xSz93KNztmFATMfOLKxVZ2siqFoHVIQ</string>
+    <long name="constellation_consent" value="0" />
+</map>

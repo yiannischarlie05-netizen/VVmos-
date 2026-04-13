@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <set name="snet_verify_apps_api_usage">
+        <string>com.apkpure.aegon</string>
+        <string>com.google.android.gms</string>
+    </set>
+</map>

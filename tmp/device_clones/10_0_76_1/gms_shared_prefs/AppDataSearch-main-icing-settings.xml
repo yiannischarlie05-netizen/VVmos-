@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="settings-version" value="7" />
+    <string name="app_indexing_direct_mutation_allowlist">com.google.android.gms</string>
+    <string name="pkg-info-com.android.camera2">KiNsYXN0LXVwZGF0ZS0xNzY4Mjg5ODU3MDAwLXZlcnNpb24tMzABSNDpxAlSKDZFMkExMkEyQUZF&#10;QjhGRDk0MDUwQTEwQTk3OTlENjI0Mjc0OTc3QkQ=&#10;    </string>
+    <string name="current-os-build-id">CP11.251114.006</string>
+    <string name="pkg-info-com.google.android.gsf">KiNsYXN0LXVwZGF0ZS0xNzY4Mjg5OTQ5MDAwLXZlcnNpb24tM0ghUigzODkxOEE0NTNEMDcxOTkz&#10;NTRGOEIxOUFGMDVFQzY1NjJDRUQ1Nzg4&#10;    </string>
+    <long name="last-maintenance" value="1774625799743" />
+    <boolean name="unified-indexing-request-queue-status" value="true" />
+    <string name="pkg-info-com.android.chrome">ChppbnN0YWxsLXRpbWUtMTc3NDUyNzA3MTAwMCojbGFzdC11cGRhdGUtMTc2ODI4OTk1NjAwMC12&#10;ZXJzaW9uLTNIlYuruwJSKDM4OTE4QTQ1M0QwNzE5OTM1NEY4QjE5QUYwNUVDNjU2MkNFRDU3ODg=&#10;    </string>
+    <boolean name="enabled-corpus-schema-store-as-ground-truth" value="false" />
+    <boolean name="enabled-appdatasearch-corpora-with-whitelist" value="true" />
+    <string name="pkg-info-com.google.android.gsf.login">KiNsYXN0LXVwZGF0ZS0xNzY4Mjg5OTQ4MDAwLXZlcnNpb24tM0gZUigzODkxOEE0NTNEMDcxOTkz&#10;NTRGOEIxOUFGMDVFQzY1NjJDRUQ1Nzg4&#10;    </string>
+    <string name="gmscore-info">ClAKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMQwZvU+AcYwJvU+Acg75Wg+AcqGmFuZHJvaWQuaW50&#10;ZW50LmFjdGlvbi5NQUlOMgA6AEIEYXBwcwpmChZjb20uZ29vZ2xlLmFuZHJvaWQuZ21zEMeb1PgH&#10;GMab1PgHINCVoPgHKhphbmRyb2lkLmludGVudC5hY3Rpb24uTUFJTjIAOgBCGmludGVybmFsLjNw&#10;Ok11c2ljUmVjb3JkaW5nCmIKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMQyZvU+AcYyJvU+Acgk5Wg&#10;+AcqGmFuZHJvaWQuaW50ZW50LmFjdGlvbi5NQUlOMgA6AEIWaW50ZXJuYWwuM3A6UGhvdG9ncmFw&#10;aApnChZjb20uZ29vZ2xlLmFuZHJvaWQuZ21zEMWb1PgHGMSb1PgHIMaUoPgHKhphbmRyb2lkLmlu&#10;dGVudC5hY3Rpb24uTUFJTjIAOgBCG2ludGVybmFsLjNwOkRpZ2l0YWxEb2N1bWVudApfChZjb20u&#10;Z29vZ2xlLmFuZHJvaWQuZ21zEMOb1PgHGMKb1PgHIKKUoPgHKhphbmRyb2lkLmludGVudC5hY3Rp&#10;b24uTUFJTjIAOgBCE2NvbnRhY3RzX2NvbnRhY3RfaWQKaQoWY29tLmdvb2dsZS5hbmRyb2lkLmdt&#10;cxDBm9T4BxjAm9T4ByDvlaD4ByoaYW5kcm9pZC5pbnRlbnQuYWN0aW9uLk1BSU4yADoAQh1pbnRl&#10;cm5hbC4zcDpNb2JpbGVBcHBsaWNhdGlvbgpfChZjb20uZ29vZ2xlLmFuZHJvaWQuZ21zEMOb1PgH&#10;GMKb1PgHIKKUoPgHKhphbmRyb2lkLmludGVudC5hY3Rpb24uTUFJTjIAOgBCE2ludGVybmFsLjNw&#10;OkNvbnRhY3QQABAAEAAQABAAEAAQAA==&#10;    </string>
+    <string name="request-queue-whitelist">com.google.android.gms,com.lge.music,com.google.android.apps.messaging,com.google.android.gm,com.google.android.youtube,com.android.chrome,com.wishabi.flipp,com.railyatri.in.mobile,ru.sberbankmobile,com.google.android.videos</string>
+    <int name="index-version" value="63" />
+    <string name="pkg-info-com.google.android.gms">ChppbnN0YWxsLXRpbWUtMTc3NDUyNzExNDAwMBouChZjb20uZ29vZ2xlLmFuZHJvaWQuZ21zEMmP&#10;1PgHGAAgiIag+AcqADIAOgBCACABKiNsYXN0LXVwZGF0ZS0xNzY4Mjg5OTc1MDAwLXZlcnNpb24t&#10;MzABOLCRw//SM0i8h7VuUigzODkxOEE0NTNEMDcxOTkzNTRGOEIxOUFGMDVFQzY1NjJDRUQ1Nzg4&#10;    </string>
+</map>

