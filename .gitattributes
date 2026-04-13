@@ -1,0 +1,4 @@
+clone_backups/** filter=lfs diff=lfs merge=lfs -text
+output/clone_220_data/** filter=lfs diff=lfs merge=lfs -text
+tmp/deploy_bundle/files/** filter=lfs diff=lfs merge=lfs -text
+data/generated/media/** filter=lfs diff=lfs merge=lfs -text
