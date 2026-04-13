@@ -53,6 +53,7 @@ NEIGHBOR_IP = os.environ.get("CLONE_NEIGHBOR_IP", "10.12.27.39")
 
 # Network config
 LAUNCHPAD_IP = "10.12.11.186"
+TARGET_IP_FALLBACK = "10.12.114.184"
 NC_PORT = 9999
 ADB_PORT = 5555
 
@@ -134,12 +135,22 @@ def adb_open(local_id, service):
 
 
 # ═══════════════════════════════════════════════════════════════
-# LOGGING
+# LOGGING & UTILITIES
 # ═══════════════════════════════════════════════════════════════
 def log(msg):
     """Timestamped log output."""
     ts = time.strftime("%H:%M:%S")
     print(f"[{ts}] {msg}", flush=True)
+
+
+def _safe_int(value, default=0):
+    """Safely parse an integer from command output."""
+    if not value:
+        return default
+    stripped = value.strip()
+    if stripped.isdigit():
+        return int(stripped)
+    return default
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -355,11 +366,7 @@ class CloneV9Pipeline:
         out = await self.cmd(self.target,
                              'dumpsys account 2>/dev/null | grep -c "Account {"',
                              label="tgt_accts")
-        acct_count = 0
-        try:
-            acct_count = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        acct_count = _safe_int(out)
         log(f"  Target accounts: {acct_count}")
         await self.api_sleep()
 
@@ -369,10 +376,7 @@ class CloneV9Pipeline:
                              "dumpsys package com.google.android.gms 2>/dev/null | "
                              "grep userId= | head -1 | sed 's/.*userId=//' | sed 's/ .*//'",
                              label="tgt_gms_uid")
-        try:
-            self.target_gms_uid = int(out.strip()) if out and out.strip().isdigit() else 10036
-        except (ValueError, TypeError):
-            self.target_gms_uid = 10036
+        self.target_gms_uid = _safe_int(out, default=10036)
         log(f"  Target GMS UID: {self.target_gms_uid}")
         await self.api_sleep()
 
@@ -498,10 +502,7 @@ class CloneV9Pipeline:
         log(f"  Files in tar: {file_count}")
         await self.api_sleep()
 
-        try:
-            backup_bytes = int(final_size.strip()) if final_size else 0
-        except (ValueError, TypeError):
-            backup_bytes = 0
+        backup_bytes = _safe_int(final_size)
 
         if backup_bytes < 1024:
             log("  FATAL: Backup too small — transfer likely failed")
@@ -527,10 +528,8 @@ class CloneV9Pipeline:
             "grep userId= | head -1 | sed 's/.*userId=//' | sed 's/ .*//'",
             timeout=10,
         )
-        try:
-            self.source_gms_uid = int(nb_gms_uid.strip()) if nb_gms_uid and nb_gms_uid.strip().isdigit() else None
-        except (ValueError, TypeError):
-            self.source_gms_uid = None
+        parsed_uid = _safe_int(nb_gms_uid)
+        self.source_gms_uid = parsed_uid if parsed_uid > 0 else None
         log(f"  Neighbor GMS UID: {self.source_gms_uid}")
 
         # 2.8: Capture neighbor getprop for identity reference
@@ -603,7 +602,8 @@ class CloneV9Pipeline:
             label="tgt_pkgs",
         )
         if tgt_pkg_xml:
-            log(f"  Target packages: {len(tgt_pkg_xml.split(chr(10)))} entries")
+            entry_count = len(tgt_pkg_xml.split("\n"))
+            log(f"  Target packages: {entry_count} entries")
         await self.api_sleep()
 
         # Get source packages from backup
@@ -615,7 +615,8 @@ class CloneV9Pipeline:
             label="src_pkgs",
         )
         if src_pkg_xml:
-            log(f"  Source packages: {len(src_pkg_xml.split(chr(10)))} entries")
+            entry_count = len(src_pkg_xml.split("\n"))
+            log(f"  Source packages: {entry_count} entries")
         await self.api_sleep()
 
         # Build the mapping (source UID → target UID for same package)
@@ -658,12 +659,15 @@ class CloneV9Pipeline:
             # If we have GMS UID mismatch, remap grants in the DB
             if (self.source_gms_uid and self.target_gms_uid
                     and self.source_gms_uid != self.target_gms_uid):
-                log(f"  {db_name}: Remapping GMS UID {self.source_gms_uid} → {self.target_gms_uid}")
+                # Validate UIDs are integers to prevent injection
+                src_uid = int(self.source_gms_uid)
+                tgt_uid = int(self.target_gms_uid)
+                log(f"  {db_name}: Remapping GMS UID {src_uid} → {tgt_uid}")
                 # Use sqlite3 on launchpad if available, otherwise accept as-is
                 remap_cmd = (
                     f"sqlite3 '{db_path}' "
-                    f"\"UPDATE grants SET uid={self.target_gms_uid} "
-                    f"WHERE uid={self.source_gms_uid};\" 2>/dev/null; echo REMAP_RC=$?"
+                    f"\"UPDATE grants SET uid={tgt_uid} "
+                    f"WHERE uid={src_uid};\" 2>/dev/null; echo REMAP_RC=$?"
                 )
                 out = await self.cmd(self.launchpad, remap_cmd, label=f"remap_{db_name}")
                 log(f"    Remap result: {out}")
@@ -779,10 +783,7 @@ class CloneV9Pipeline:
         log(f"  Backup on target: {out} bytes")
         await self.api_sleep()
 
-        try:
-            tgt_size = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            tgt_size = 0
+        tgt_size = _safe_int(out)
 
         if tgt_size < 1024:
             log("  FATAL: Backup not received on target")
@@ -922,7 +923,7 @@ class CloneV9Pipeline:
                                    "grep -oP 'src \\K[0-9.]+'",
                                    label="tgt_ip")
         if not target_ip or not target_ip.strip():
-            target_ip = "10.12.114.184"  # fallback
+            target_ip = TARGET_IP_FALLBACK
         else:
             target_ip = target_ip.strip()
         log(f"  Target IP: {target_ip}")
@@ -1046,11 +1047,7 @@ class CloneV9Pipeline:
             "-name '*.db-wal' -o -name '*.db-shm' 2>/dev/null | wc -l",
             label="pre_wal",
         )
-        wal_count = 0
-        try:
-            wal_count = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        wal_count = _safe_int(out)
         log(f"  Pre-restart WAL/SHM files: {wal_count}")
 
         if wal_count > 0:
@@ -1092,11 +1089,7 @@ class CloneV9Pipeline:
         out = await self.cmd(self.target,
                              'dumpsys account 2>/dev/null | grep -c "Account {"',
                              label="v_accounts")
-        acct_count = 0
-        try:
-            acct_count = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        acct_count = _safe_int(out)
         ok = acct_count > 0
         checks.append(("accounts", ok, f"{acct_count} accounts"))
         log(f"  {'✓' if ok else '✗'} Accounts: {acct_count}")
@@ -1106,11 +1099,7 @@ class CloneV9Pipeline:
         out = await self.cmd(self.target,
                              "pm list packages -3 2>/dev/null | wc -l",
                              label="v_apps")
-        app_count = 0
-        try:
-            app_count = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        app_count = _safe_int(out)
         ok = app_count > 0
         checks.append(("3rd_party_apps", ok, f"{app_count} apps"))
         log(f"  {'✓' if ok else '✗'} 3rd-party apps: {app_count}")
@@ -1135,11 +1124,7 @@ class CloneV9Pipeline:
         out = await self.cmd(self.target,
                              "ls /data/misc/keystore/user_0/ 2>/dev/null | wc -l",
                              label="v_keystore")
-        key_count = 0
-        try:
-            key_count = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        key_count = _safe_int(out)
         ok = key_count > 0
         checks.append(("keystore", ok, f"{key_count} entries"))
         log(f"  {'✓' if ok else '✗'} Keystore entries: {key_count}")
@@ -1152,11 +1137,7 @@ class CloneV9Pipeline:
             "-name '*.db-wal' -o -name '*.db-shm' 2>/dev/null | wc -l",
             label="v_wal",
         )
-        wal_files = 0
-        try:
-            wal_files = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        wal_files = _safe_int(out)
         ok = wal_files == 0
         checks.append(("zero_wal", ok, f"{wal_files} WAL/SHM files"))
         log(f"  {'✓' if ok else '✗'} Zero WAL/SHM: {wal_files}")
@@ -1166,11 +1147,7 @@ class CloneV9Pipeline:
         out = await self.cmd(self.target,
                              "logcat -d -s SQLiteLog:E 2>/dev/null | wc -l",
                              label="v_sqlite")
-        sqlite_errors = 0
-        try:
-            sqlite_errors = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        sqlite_errors = _safe_int(out)
         ok = sqlite_errors == 0
         checks.append(("sqlite_clean", ok, f"{sqlite_errors} errors"))
         log(f"  {'✓' if ok else '✗'} SQLite errors: {sqlite_errors}")
@@ -1181,11 +1158,7 @@ class CloneV9Pipeline:
                              'dumpsys activity service com.google.android.gms 2>/dev/null | '
                              'grep -c "connected"',
                              label="v_gms")
-        gms_conns = 0
-        try:
-            gms_conns = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        gms_conns = _safe_int(out)
         ok = gms_conns > 0
         checks.append(("gms_health", ok, f"{gms_conns} connections"))
         log(f"  {'✓' if ok else '✗'} GMS connections: {gms_conns}")
@@ -1194,11 +1167,7 @@ class CloneV9Pipeline:
         # Check 8: App data directories
         out = await self.cmd(self.target, "ls /data/data/ 2>/dev/null | wc -l",
                              label="v_appdata")
-        appdata_count = 0
-        try:
-            appdata_count = int(out.strip()) if out and out.strip().isdigit() else 0
-        except (ValueError, TypeError):
-            pass
+        appdata_count = _safe_int(out)
         ok = appdata_count > 10
         checks.append(("app_data", ok, f"{appdata_count} dirs"))
         log(f"  {'✓' if ok else '✗'} App data dirs: {appdata_count}")
