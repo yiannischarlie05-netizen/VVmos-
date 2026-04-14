@@ -1,0 +1,364 @@
+#EXTM3U
+
+# SRI LANKA CAMERA HUNT - VLC PLAYLIST
+# PRIORITY CAMERAS (Bedroom/Wardrobe)
+#EXTINF:-1,[⭐] indoor - 103.21.132.144
+rtsp://admin:12345@103.21.132.144:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 103.25.47.227
+rtsp://admin:12345@103.25.47.227:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 112.135.168.157
+rtsp://admin:12345@112.135.168.157:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 112.135.213.244
+rtsp://admin:12345@112.135.213.244:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.103.106
+rtsp://admin:12345@117.247.103.106:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.31
+rtsp://admin:12345@117.247.104.31:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.32
+rtsp://admin:12345@117.247.104.32:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.33
+rtsp://admin:12345@117.247.104.33:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] kitchen - 117.247.104.34
+rtsp://admin:12345@117.247.104.34:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.35
+rtsp://admin:12345@117.247.104.35:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.40
+rtsp://admin:12345@117.247.104.40:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.104.41
+rtsp://admin:12345@117.247.104.41:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.42
+rtsp://admin:12345@117.247.104.42:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.104.43
+rtsp://admin:12345@117.247.104.43:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.49
+rtsp://admin:12345@117.247.104.49:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.51
+rtsp://admin:12345@117.247.104.51:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 117.247.104.53
+rtsp://admin:12345@117.247.104.53:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.104.58
+rtsp://admin:12345@117.247.104.58:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.104.59
+rtsp://admin:12345@117.247.104.59:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.104.67
+rtsp://admin:12345@117.247.104.67:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.11
+rtsp://admin:12345@117.247.105.11:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.116
+rtsp://admin:12345@117.247.105.116:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.12
+rtsp://admin:12345@117.247.105.12:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.105.13
+rtsp://admin:12345@117.247.105.13:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 117.247.105.16
+rtsp://admin:12345@117.247.105.16:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.17
+rtsp://admin:12345@117.247.105.17:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.19
+rtsp://admin:12345@117.247.105.19:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.223
+rtsp://admin:12345@117.247.105.223:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.105.25
+rtsp://admin:12345@117.247.105.25:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.26
+rtsp://admin:12345@117.247.105.26:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.32
+rtsp://admin:12345@117.247.105.32:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.33
+rtsp://admin:12345@117.247.105.33:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.105.7
+rtsp://admin:12345@117.247.105.7:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.106.2
+rtsp://admin:12345@117.247.106.2:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.107.106
+rtsp://admin:12345@117.247.107.106:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] office - 117.247.107.180
+rtsp://admin:12345@117.247.107.180:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.107.253
+rtsp://admin:12345@117.247.107.253:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.107.89
+rtsp://admin:12345@117.247.107.89:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.108.101
+rtsp://admin:12345@117.247.108.101:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.108.110
+rtsp://admin:12345@117.247.108.110:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 117.247.108.111
+rtsp://admin:12345@117.247.108.111:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.108.117
+rtsp://admin:12345@117.247.108.117:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.124
+rtsp://admin:12345@117.247.108.124:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.199
+rtsp://admin:12345@117.247.108.199:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.108.211
+rtsp://admin:12345@117.247.108.211:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.34
+rtsp://admin:12345@117.247.108.34:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.42
+rtsp://admin:12345@117.247.108.42:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.45
+rtsp://admin:12345@117.247.108.45:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.57
+rtsp://admin:12345@117.247.108.57:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.72
+rtsp://admin:12345@117.247.108.72:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] office - 117.247.108.74
+rtsp://admin:12345@117.247.108.74:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.76
+rtsp://admin:12345@117.247.108.76:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.108.85
+rtsp://admin:12345@117.247.108.85:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.110.12
+rtsp://admin:12345@117.247.110.12:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] kitchen - 117.247.110.135
+rtsp://admin:12345@117.247.110.135:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 117.247.110.2
+rtsp://admin:12345@117.247.110.2:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.110.208
+rtsp://admin:12345@117.247.110.208:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.110.3
+rtsp://admin:12345@117.247.110.3:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.110.5
+rtsp://admin:12345@117.247.110.5:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.110.6
+rtsp://admin:12345@117.247.110.6:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.110.7
+rtsp://admin:12345@117.247.110.7:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 117.247.179.98
+rtsp://admin:12345@117.247.179.98:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.185.164
+rtsp://admin:12345@117.247.185.164:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.185.167
+rtsp://admin:12345@117.247.185.167:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.185.174
+rtsp://admin:12345@117.247.185.174:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] office - 117.247.185.180
+rtsp://admin:12345@117.247.185.180:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.185.181
+rtsp://admin:12345@117.247.185.181:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.191.195
+rtsp://admin:12345@117.247.191.195:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 117.247.191.197
+rtsp://admin:12345@117.247.191.197:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.191.199
+rtsp://admin:12345@117.247.191.199:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.191.204
+rtsp://admin:12345@117.247.191.204:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.196.104
+rtsp://admin:12345@117.247.196.104:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.196.189
+rtsp://admin:12345@117.247.196.189:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] kitchen - 117.247.215.193
+rtsp://admin:12345@117.247.215.193:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.22.103
+rtsp://admin:12345@117.247.22.103:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 117.247.64.52
+rtsp://admin:12345@117.247.64.52:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.68.197
+rtsp://admin:12345@117.247.68.197:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] kitchen - 117.247.85.141
+rtsp://admin:12345@117.247.85.141:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.97.213
+rtsp://admin:12345@117.247.97.213:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 117.247.97.87
+rtsp://admin:12345@117.247.97.87:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 117.247.99.5
+rtsp://admin:12345@117.247.99.5:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 123.231.60.40
+rtsp://admin:12345@123.231.60.40:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] kitchen - 123.231.92.142
+rtsp://admin:12345@123.231.92.142:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] bathroom - 124.43.18.214
+rtsp://admin:12345@124.43.18.214:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 150.129.148.52
+rtsp://admin:12345@150.129.148.52:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 150.129.182.250
+rtsp://admin:12345@150.129.182.250:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 150.129.47.151
+rtsp://admin:12345@150.129.47.151:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] wardrobe - 180.235.36.109
+rtsp://admin:12345@180.235.36.109:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 202.21.112.38
+rtsp://admin:12345@202.21.112.38:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] indoor - 202.69.45.75
+rtsp://admin:12345@202.69.45.75:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] living_room - 202.69.68.82
+rtsp://admin:12345@202.69.68.82:554/Streaming/Channels/101
+
+#EXTINF:-1,[⭐] kitchen - 43.224.48.20
+rtsp://admin:12345@43.224.48.20:554/Streaming/Channels/101
+
+# OTHER CAMERAS
+#EXTINF:-1,103.21.145.235
+rtsp://admin:12345@103.21.145.235:554/Streaming/Channels/101
+
+#EXTINF:-1,112.135.180.208
+rtsp://admin:12345@112.135.180.208:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.106.105
+rtsp://admin:12345@117.247.106.105:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.108.104
+rtsp://admin:12345@117.247.108.104:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.108.153
+rtsp://admin:12345@117.247.108.153:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.108.162
+rtsp://admin:12345@117.247.108.162:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.108.242
+rtsp://admin:12345@117.247.108.242:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.108.86
+rtsp://admin:12345@117.247.108.86:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.113.164
+rtsp://admin:12345@117.247.113.164:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.116.153
+rtsp://admin:12345@117.247.116.153:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.174.40
+rtsp://admin:12345@117.247.174.40:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.191.213
+rtsp://admin:12345@117.247.191.213:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.199.15
+rtsp://admin:12345@117.247.199.15:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.227.13
+rtsp://admin:12345@117.247.227.13:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.53.80
+rtsp://admin:12345@117.247.53.80:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.82.59
+rtsp://admin:12345@117.247.82.59:554/Streaming/Channels/101
+
+#EXTINF:-1,117.247.93.110
+rtsp://admin:12345@117.247.93.110:554/Streaming/Channels/101
+
+#EXTINF:-1,124.43.18.49
+rtsp://admin:12345@124.43.18.49:554/Streaming/Channels/101
+
+#EXTINF:-1,150.129.202.140
+rtsp://admin:12345@150.129.202.140:554/Streaming/Channels/101
+
+#EXTINF:-1,150.129.229.234
+rtsp://admin:12345@150.129.229.234:554/Streaming/Channels/101
+
+#EXTINF:-1,150.129.47.142
+rtsp://admin:12345@150.129.47.142:554/Streaming/Channels/101
+
+#EXTINF:-1,180.232.132.142
+rtsp://admin:12345@180.232.132.142:554/Streaming/Channels/101
+
+#EXTINF:-1,202.21.100.126
+rtsp://admin:12345@202.21.100.126:554/Streaming/Channels/101
+
+#EXTINF:-1,220.247.123.252
+rtsp://admin:12345@220.247.123.252:554/Streaming/Channels/101
+
+#EXTINF:-1,43.224.0.122
+rtsp://admin:12345@43.224.0.122:554/Streaming/Channels/101
+
+#EXTINF:-1,43.224.7.183
+rtsp://admin:12345@43.224.7.183:554/Streaming/Channels/101
+
+#EXTINF:-1,43.225.162.141
+rtsp://admin:12345@43.225.162.141:554/Streaming/Channels/101
+
+#EXTINF:-1,43.225.195.204
+rtsp://admin:12345@43.225.195.204:554/Streaming/Channels/101

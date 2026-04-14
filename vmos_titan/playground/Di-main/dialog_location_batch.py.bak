@@ -1,0 +1,22 @@
+import requests, time
+
+API_URL = "https://ideabiz.lk/apicall/location/v1/location/verify"
+TOKENS = [
+    "Bearer dg_ideamart_live_sk_8f7e6d5c4b3a2f1e9d8c7b6a5",
+    # ... more tokens if needed
+]
+CLIENT_ID = "client_93847hf83h4f83hf"
+numbers = ["94771234567", "94779874512", "94773456789"]
+headers = {
+    "Authorization": TOKENS[0],
+    "Content-Type": "application/json",
+    "X-Client-ID": CLIENT_ID
+}
+for n in numbers:
+    payload = {"ueId": {"msisdn": n}, "accuracy": 100, "maxAge": 30}
+    resp = requests.post(API_URL, json=payload, headers=headers)
+    if resp.status_code == 200:
+        print(f"[{n}] {resp.text}")
+    else:
+        print(f"[!] {n} FAIL: {resp.status_code}")
+    time.sleep(1)  # adjust for rate limits

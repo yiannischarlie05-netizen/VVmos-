@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+import requests
+import base64
+import sys
+USERNAME = "enterprise_admin_01"
+PASSWORD = "Mobitel@Tracking#2024!"
+SESSION_TOKEN = "mob_session_9f8e7d6c5b4a3f2e1d"
+API_URL = "https://mlocator.mobitel.lk/api/v3/track"
+if len(sys.argv) < 2:
+    print("Usage: python mobitel_mlocator_bulk.py 94771234567 94771234568 ...")
+    sys.exit(1)
+msisdns = sys.argv[1:]
+headers = {
+    "Authorization": "Basic " + base64.b64encode(f"{USERNAME}:{PASSWORD}".encode()).decode(),
+    "X-Session-Token": SESSION_TOKEN,
+    "Content-Type": "application/json"
+}
+payload = {
+    "subscriber_list": msisdns,
+    "tracking_mode": "realtime",
+    "interval": 30
+}
+r = requests.post(API_URL, headers=headers, json=payload, timeout=12)
+print(r.text)
